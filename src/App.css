@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+.page-footer{
+
+  background-color: #31393C  ;
+  color: white;
+}
+
+.headersColor{
+  color: #FF7777  ;
+  text-align: left;
+}
+
+.ulJustify{
+  text-align: left;
+}
+.footer-copyright{
+  text-align: left;
+  font-size: 14px;
+}
