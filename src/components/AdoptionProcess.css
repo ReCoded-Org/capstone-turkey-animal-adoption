@@ -1,0 +1,42 @@
+#root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.adoption-container img {
+    width: 100%;
+    max-width: 170px;
+    height: 170px;
+    border-radius: 170px;
+}
+
+.adoption-container h1, 
+.adoption-container p {
+    color: #FF3E3E;
+}
+
+.adoption-container p {
+    font-weight: 700;
+}
+
+.adoption-container span {
+    color: #777777;
+}
+
+/* Media Queries */
+@media screen and (max-width:767px) {
+    #root {
+        height: auto
+    }
+}
+
+@media screen and (max-width:1500px) and (orientation: landscape) {
+    #root {
+        height: auto
+    }
+}
