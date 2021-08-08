@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+footer{
+  background-color:  #31393C;
+  color: white;
+}
+h3{
+  color: #FF7777;
+  text-align: center;
+
+}
+a{
+  color: white;
+}
+h4{
+  color: #FF7777;
+  text-align: left;
+}
+
+.dogImage{
+width: 30;
+height: 20;
+border-radius: 5px;
+}
