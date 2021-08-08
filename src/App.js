@@ -1,26 +1,24 @@
 import React from "react";
-import HeroSection from "./components/HeroSection/HeroSection";
+import logo from "./logo.svg";
 import "./App.css";
-import milkdog from "./images/milkdog.png";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row } from 'react-bootstrap';
-
-
-const heroSectionMaterial = {
-  img:`${milkdog}`,
-  title:"Adopt Please",
-  text:"We are We are non-profit organization who wants to help people who wants to adopt-profit organization"
-
-}
 
 function App() {
-  
   return (
     <div className="App">
-      <HeroSection heroSectionMaterial={heroSectionMaterial} />
-      
-    
-      
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }

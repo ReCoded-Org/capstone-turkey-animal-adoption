@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container container"
+  style={
+    Object {
+      "backgroundImage": "url(undefined)",
+    }
+  }
+>
+  <div
+    className="row row"
+  >
+    <div
+      className="col-sm-8"
+    >
+      <h2 />
+      <p />
+      <a
+        href="/search"
+      >
+        <button
+          className="findmebutton"
+        >
+          <img
+            className="buttonlogo"
+            src="buttonlogo.png"
+          />
+          Find A Pet
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;

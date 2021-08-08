@@ -19,13 +19,16 @@
     outline: none;
     padding: 0.5rem 0;
 }
+
 .container h2 {
     color: #FF3E3E;
 }
+
 .container p {
     color: #777777;
     
 }
+
 .buttonlogo {
     width: 100%;
     max-width:50px;
