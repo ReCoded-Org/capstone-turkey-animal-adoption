@@ -1,9 +1,3 @@
-#root {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
 .container {
     text-align: center;
 }
@@ -26,17 +20,4 @@
 
 .adoption-container span {
     color: #777777;
-}
-
-/* Media Queries */
-@media screen and (max-width:767px) {
-    #root {
-        height: auto
-    }
-}
-
-@media screen and (max-width:1500px) and (orientation: landscape) {
-    #root {
-        height: auto
-    }
 }
