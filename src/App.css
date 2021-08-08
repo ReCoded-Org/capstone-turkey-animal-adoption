@@ -42,8 +42,8 @@ footer{
   color: white;
 }
 h3{
-  color: #FF7777;
-  text-align: center;
+  color: hsl(0, 100%, 73%);
+  text-align: left;
 
 }
 a{
