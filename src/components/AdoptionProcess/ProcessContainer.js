@@ -1,7 +1,7 @@
 import React from "react";
 import ProcessItems from "./ProcessItems";
 import { Container, Row, Col } from "react-bootstrap";
-import  { adoptionProcess } from "./data";
+import { adoptionProcess } from "./data";
 
 const ProcessContainer = () => {
   // here import of adoptionProcess is coming from data.js file.
