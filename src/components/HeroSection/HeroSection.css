@@ -1,41 +1,37 @@
 .container {
-    background-position: center;
-    background-size: cover;
-    height:55vh;
-    width:100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
+  background-position: center;
+  background-size: cover;
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .findmebutton {
-    width: 100%;
-    max-width:200px;
-    background:#FF7777;
-    color:white;
-    border-radius: 25px;
-    border:none;
-    outline: none;
-    padding: 0.5rem 0;
+  width: 100%;
+  max-width: 200px;
+  background: #ff7777;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0;
 }
 
 .container h2 {
-    color: #FF3E3E;
+  color: #ff3e3e;
 }
 
 .container p {
-    color: #777777;
-    
+  color: #777777;
 }
 
 .buttonlogo {
-    width: 100%;
-    max-width:50px;
-
+  width: 100%;
+  max-width: 50px;
 }
 
 .row {
-align-content: flex-start;
+  align-content: flex-start;
 }
-
