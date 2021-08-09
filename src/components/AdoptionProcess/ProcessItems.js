@@ -15,4 +15,3 @@ const ProcessItems = ({ img, text, firstDescription, secondDescription }) => {
 }
 
 export default ProcessItems
-

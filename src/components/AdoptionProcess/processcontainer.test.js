@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import ProcessItems from './ProcessItems.js';
+import ProcessContainer from './ProcessContainer.js';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<ProcessItems />)
+    .create(<ProcessContainer />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
