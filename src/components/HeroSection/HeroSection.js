@@ -4,19 +4,17 @@ import logo from "../../images/buttonlogo.png";
 import "./HeroSection.css";
 
 const HeroSection = ({ img, title, text, side }) => {
-
   const background = {
     backgroundImage: `url(${img})`,
   };
 
   const changeLeftOrRight = () => {
-
     if (side === "left") {
-      return "containerForLeft"
+      return "containerForLeft";
     } else {
-      return "containerForRight"
+      return "containerForRight";
     }
-  }
+  };
 
   return (
     <Container className={changeLeftOrRight()} style={background}>
