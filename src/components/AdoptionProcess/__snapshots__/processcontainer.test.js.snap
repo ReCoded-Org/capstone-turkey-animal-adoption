@@ -2,76 +2,80 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="adoption-container py-5 row"
+  className="container"
 >
   <div
-    className="col-sm-12"
+    className="adoptionContainer py-5 row"
   >
-    <h1>
-      Pet Adoption Process
-    </h1>
     <div
-      className="mt-5 row"
+      className="col-sm-12"
     >
+      <h1>
+        Pet Adoption Process
+      </h1>
       <div
-        className="mb-5 col-lg-4"
+        className="mt-5 items row"
       >
-        <img
-          alt="img"
-          className="mb-3"
-          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
-        />
-        <p>
-          Find Your Pet
-        </p>
-        <span>
-          Lorem Ipsum Lorem Ipsum Lorem
-        </span>
-         
-        <br />
-        <span>
-          Lorem Ipsum Lorem Ipsum Lorem
-        </span>
-      </div>
-      <div
-        className="mb-5 col-lg-4"
-      >
-        <img
-          alt="img"
-          className="mb-3"
-          src="https://i.pinimg.com/736x/5f/80/85/5f80854fd1475958717a19e345695942.jpg"
-        />
-        <p>
-          Know Your Pet
-        </p>
-        <span>
-          Lorem Ipsum Lorem Ipsum Lorem
-        </span>
-         
-        <br />
-        <span>
-          Lorem Ipsum Lorem Ipsum Lorem
-        </span>
-      </div>
-      <div
-        className="mb-5 col-lg-4"
-      >
-        <img
-          alt="img"
-          className="mb-3"
-          src="https://i.pinimg.com/736x/2e/23/d3/2e23d3827c8293c27cea544a8acbcd59.jpg"
-        />
-        <p>
-          Take Your Pet Home
-        </p>
-        <span>
-          Lorem Ipsum Lorem Ipsum Lorem
-        </span>
-         
-        <br />
-        <span>
-          Lorem Ipsum Lorem Ipsum Lorem
-        </span>
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <img
+            alt="img"
+            className="mb-3"
+            src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+          />
+          <p>
+            Find Your Pet
+          </p>
+          <span>
+            Lorem Ipsum Lorem Ipsum Lorem
+          </span>
+           
+          <br />
+          <span>
+            Lorem Ipsum Lorem Ipsum Lorem
+          </span>
+        </div>
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <img
+            alt="img"
+            className="mb-3"
+            src="https://i.pinimg.com/736x/5f/80/85/5f80854fd1475958717a19e345695942.jpg"
+          />
+          <p>
+            Know Your Pet
+          </p>
+          <span>
+            Lorem Ipsum Lorem Ipsum Lorem
+          </span>
+           
+          <br />
+          <span>
+            Lorem Ipsum Lorem Ipsum Lorem
+          </span>
+        </div>
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <img
+            alt="img"
+            className="mb-3"
+            src="https://i.pinimg.com/736x/2e/23/d3/2e23d3827c8293c27cea544a8acbcd59.jpg"
+          />
+          <p>
+            Take Your Pet Home
+          </p>
+          <span>
+            Lorem Ipsum Lorem Ipsum Lorem
+          </span>
+           
+          <br />
+          <span>
+            Lorem Ipsum Lorem Ipsum Lorem
+          </span>
+        </div>
       </div>
     </div>
   </div>
