@@ -3,20 +3,30 @@ import { Container, Row, Col } from "react-bootstrap";
 import logo from "../../images/buttonlogo.png";
 import "./HeroSection.css";
 
-const HeroSection = ({ img, title, text }) => {
+const HeroSection = ({ img, title, text, side }) => {
+
   const background = {
     backgroundImage: `url(${img})`,
   };
 
+  const changeLeftOrRight = () => {
+
+    if (side === "left") {
+      return "containerForLeft"
+    } else {
+      return "containerForRight"
+    }
+  }
+
   return (
-    <Container className="container" style={background}>
-      <Row className="row">
+    <Container className={changeLeftOrRight()} style={background}>
+      <Row>
         <Col sm="8">
           <h2>{title}</h2>
           <p>{text}</p>
           <a href="/search">
-            <button className="findmebutton">
-              <img className="buttonlogo" src={logo} />
+            <button className="findMeButton">
+              <img className="buttonLogo" src={logo} />
               Find A Pet
             </button>
           </a>

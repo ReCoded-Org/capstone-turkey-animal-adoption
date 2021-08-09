@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="container container"
+  className="containerForRight container"
   style={
     Object {
       "backgroundImage": "url(undefined)",
@@ -10,7 +10,7 @@ exports[`renders correctly 1`] = `
   }
 >
   <div
-    className="row row"
+    className="row"
   >
     <div
       className="col-sm-8"
@@ -21,10 +21,10 @@ exports[`renders correctly 1`] = `
         href="/search"
       >
         <button
-          className="findmebutton"
+          className="findMeButton"
         >
           <img
-            className="buttonlogo"
+            className="buttonLogo"
             src="buttonlogo.png"
           />
           Find A Pet

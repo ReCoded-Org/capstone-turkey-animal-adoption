@@ -1,4 +1,4 @@
-.container {
+.containerForLeft {
   background-position: center;
   background-size: cover;
   height: 55vh;
@@ -8,7 +8,17 @@
   align-items: center;
 }
 
-.findmebutton {
+.containerForRight {
+  background-position: center;
+  background-size: cover;
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.findMeButton {
   width: 100%;
   max-width: 200px;
   background: #ff7777;
@@ -27,7 +37,7 @@
   color: #777777;
 }
 
-.buttonlogo {
+.buttonLogo {
   width: 100%;
   max-width: 50px;
 }
