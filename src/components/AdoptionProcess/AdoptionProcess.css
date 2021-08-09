@@ -1,23 +1,23 @@
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .adoption-container img {
-    width: 100%;
-    max-width: 170px;
-    height: 170px;
-    border-radius: 170px;
+  width: 100%;
+  max-width: 170px;
+  height: 170px;
+  border-radius: 170px;
 }
 
-.adoption-container h1, 
+.adoption-container h1,
 .adoption-container p {
-    color: #FF3E3E;
+  color: #ff3e3e;
 }
 
 .adoption-container p {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .adoption-container span {
-    color: #777777;
+  color: #777777;
 }
