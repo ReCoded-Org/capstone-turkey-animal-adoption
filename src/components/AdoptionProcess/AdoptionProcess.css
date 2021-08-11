@@ -2,15 +2,9 @@
   text-align: center;
 }
 
-.items {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-}
-
-.items div {
-  margin-bottom: 3rem;
+.adoptionContainer {
+  background-color: #F4F4F4;
+  padding: 1rem;
 }
 
 .adoptionContainer img {
