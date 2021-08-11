@@ -2,7 +2,10 @@ import React from "react";
 import GuestItems from "./GuestItems";
 import { Container, Row, Col } from "react-bootstrap";
 
-const GuestContainer = ({ guests, guestsTitle }) => {
+const GuestContainer = ({ 
+  guests, 
+  guestsTitle 
+}) => {
   return (
     <Container>
       <Row className="guestsContainer py-5">

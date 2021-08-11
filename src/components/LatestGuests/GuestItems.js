@@ -2,7 +2,12 @@ import React from "react";
 import { Col } from "react-bootstrap";
 import "./LatestGuests.css";
 
-const GuestItems = ({ img, buttonText, id }) => {
+const GuestItems = ({
+  img,
+  buttonText,
+  id,
+}) => {
+
   const background = {
     backgroundImage: `url(${img})`,
   };

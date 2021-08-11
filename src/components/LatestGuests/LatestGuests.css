@@ -19,14 +19,14 @@
   outline: none;
   border: none;
   background: #fff;
-  color: #ff7777;
+  color: #FF7777;
   font-weight: 600;
-  padding: 0.5rem 2rem;
+  padding: .5rem 2rem;
   border-radius: 2rem;
 }
 
 .guestsContainer h1 {
-  color: #ff3e3e;
+  color: #FF3E3E;
 }
 
 .guestsContainer h6 {
