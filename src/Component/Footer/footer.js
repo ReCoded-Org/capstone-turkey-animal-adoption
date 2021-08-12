@@ -30,9 +30,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col">
-            <h4>PRODUCTS</h4>
-            <ul className="list-group">
+          <div className="col pl-5">
+            <h4 className="pl-5">PRODUCTS</h4>
+            <ul className="list-group pl-5">
               <li className="list-unstyled text-white">Features </li>
               <li className="list-unstyled text-white">Personal License </li>
               <li className="list-unstyled text-white">Personal License </li>
@@ -41,9 +41,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col pb-2">
+          <div className="col">
             <h4>LATEST POSTS</h4>
-            <ul className="list-group pb-2">
+            <ul className="list-group pb-2 ">
               <div className=" d-flex align-items-center">
                 <img
                   src={dog}
@@ -56,7 +56,7 @@ const Footer = () => {
                   Lawyaw uses AI to help lawyers draft documents faster
                 </li>
               </div>
-              <div className=" d-flex align-items-center pt-2">
+              <div className="d-flex align-items-center pt-2">
                 <img
                   src={dog}
                   alt="dog"
