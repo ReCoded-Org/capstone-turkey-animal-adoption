@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="containerForRight container"
+  className="containerForLeft container"
   style={
     Object {
-      "backgroundImage": "url(undefined)",
+      "backgroundImage": "url(https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg)",
     }
   }
 >
@@ -15,8 +15,12 @@ exports[`renders correctly 1`] = `
     <div
       className="col-sm-8"
     >
-      <h2 />
-      <p />
+      <h2>
+        Adopt Please
+      </h2>
+      <p>
+        We are non-profit organization
+      </p>
       <a
         href="/search"
       >
