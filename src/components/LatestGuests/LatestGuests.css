@@ -1,0 +1,32 @@
+.items {
+    justify-content: space-around;
+}
+
+.guestItems {
+    background-position: center;
+    background-size: cover;
+    height: 35vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.viewButton {
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    background: #fff;
+    color: #FF7777;
+    font-weight: 600;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+}
+
+.guestsContainer h1 {
+    color: #FF3E3E;
+}
+
+.guestsContainer h6 {
+    color: #777777;
+}

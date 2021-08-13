@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="guestsContainer py-5 row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <h1>
+        Latests Guests
+      </h1>
+      <h6>
+        Home is behind, the world ahead and there are many paths to tread through shadows to the edge.
+      </h6>
+      <div
+        className="mt-5 items row"
+      >
+        <div
+          className="mb-5 guestItems col-lg-4"
+          style={
+            Object {
+              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+            }
+          }
+        >
+          <button
+            className="viewButton"
+          >
+            View
+          </button>
+        </div>
+        <div
+          className="mb-5 guestItems col-lg-4"
+          style={
+            Object {
+              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+            }
+          }
+        >
+          <button
+            className="viewButton"
+          >
+            View
+          </button>
+        </div>
+        <div
+          className="mb-5 guestItems col-lg-4"
+          style={
+            Object {
+              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+            }
+          }
+        >
+          <button
+            className="viewButton"
+          >
+            View
+          </button>
+        </div>
+        <div
+          className="mb-5 guestItems col-lg-4"
+          style={
+            Object {
+              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+            }
+          }
+        >
+          <button
+            className="viewButton"
+          >
+            View
+          </button>
+        </div>
+        <div
+          className="mb-5 guestItems col-lg-4"
+          style={
+            Object {
+              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+            }
+          }
+        >
+          <button
+            className="viewButton"
+          >
+            View
+          </button>
+        </div>
+        <div
+          className="mb-5 guestItems col-lg-4"
+          style={
+            Object {
+              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+            }
+          }
+        >
+          <button
+            className="viewButton"
+          >
+            View
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
