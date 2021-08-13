@@ -1,24 +1,24 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import ChecklistContainer from "./components/ChecklistContainer";
 
 function App() {
-
-
-const data = [ 
-  {text:"hello",
-  title:"yoyoyo",
-  id:"denemeLink"
-}, {text:"hello",
-title:"yoyoyo",
-id:"ikiucdort"
-}
-]
-
   return (
     <div className="App">
-      <ChecklistContainer data={data} />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }

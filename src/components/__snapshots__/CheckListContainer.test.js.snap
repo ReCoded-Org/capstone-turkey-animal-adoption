@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="py-5 row"
+  >
+    <div
+      className="checkList col-lg-4"
+    >
+      <div
+        className="checkListLogo"
+      >
+        <img
+          className="catLogo"
+          src="catLogo.png"
+        />
+      </div>
+      <h2>
+        yoyoyo
+      </h2>
+      <p
+        className="checkListText"
+      >
+        hello
+      </p>
+      <a
+        href="denemeLink"
+      >
+        <button
+          className="checkListButton"
+        >
+          Read More
+        </button>
+      </a>
+    </div>
+    <div
+      className="checkList col-lg-4"
+    >
+      <div
+        className="checkListLogo"
+      >
+        <img
+          className="catLogo"
+          src="catLogo.png"
+        />
+      </div>
+      <h2>
+        yoyoyo
+      </h2>
+      <p
+        className="checkListText"
+      >
+        hello
+      </p>
+      <a
+        href="ikiucdort"
+      >
+        <button
+          className="checkListButton"
+        >
+          Read More
+        </button>
+      </a>
+    </div>
+    <div
+      className="checkList col-lg-4"
+    >
+      <div
+        className="checkListLogo"
+      >
+        <img
+          className="catLogo"
+          src="catLogo.png"
+        />
+      </div>
+      <h2>
+        yoyoyo
+      </h2>
+      <p
+        className="checkListText"
+      >
+        hello
+      </p>
+      <a
+        href="ikiucdort"
+      >
+        <button
+          className="checkListButton"
+        >
+          Read More
+        </button>
+      </a>
+    </div>
+    <div
+      className="checkList col-lg-4"
+    >
+      <div
+        className="checkListLogo"
+      >
+        <img
+          className="catLogo"
+          src="catLogo.png"
+        />
+      </div>
+      <h2>
+        yoyoyo
+      </h2>
+      <p
+        className="checkListText"
+      >
+        hello
+      </p>
+      <a
+        href="ikiucdort"
+      >
+        <button
+          className="checkListButton"
+        >
+          Read More
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;

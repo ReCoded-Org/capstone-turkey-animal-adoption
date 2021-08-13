@@ -1,0 +1,43 @@
+.checkListLogo {
+    background-color:#FF7777;
+    width: 100%;
+    max-width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -30px;
+}
+
+.catLogo {
+    width: 100%;
+    max-width: 50px;
+    
+    
+}
+
+.checkListText {
+    color:#7D7D7D;
+}
+
+.checkListButton {
+    border-radius: 25px;
+    background-color:#FF7777;
+    color:#FFFFFF;
+    border:none;
+    outline: none;
+    padding: 0.5rem 1rem;
+}
+
+.checkList {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding: 2rem 0;
+    box-shadow: 0 4px 4px -2px #7D7D7D;
+}
