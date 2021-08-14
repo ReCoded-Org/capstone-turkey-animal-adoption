@@ -1,4 +1,4 @@
-export let adoptionProcess = [
+export let adoptionProcessItems = [
   {
     id: 1,
     img:
@@ -25,6 +25,6 @@ export let adoptionProcess = [
   },
 ];
 
-export let sectionTitle = {
+export let adoptionProcessTitle = {
   title: "Pet Adoption Process",
 };

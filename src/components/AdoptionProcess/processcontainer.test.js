@@ -1,14 +1,14 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import ProcessContainer from "./ProcessContainer.js";
-import { adoptionProcess, sectionTitle } from "../data/data";
+import { adoptionProcessItems, adoptionProcessTitle } from "../data/data";
 
 it("renders correctly", () => {
   const tree = renderer
     .create(
       <ProcessContainer
-        adoptionProcess={adoptionProcess}
-        sectionTitle={sectionTitle}
+        adoptionProcessItems={adoptionProcessItems}
+        adoptionProcessTitle={adoptionProcessTitle}
       />
     )
     .toJSON();
