@@ -3,10 +3,7 @@ import ProcessItems from "./ProcessItems";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const ProcessContainer = ({ 
-  adoptionProcessItems, 
-  adoptionProcessTitle 
-}) => {
+const ProcessContainer = ({ adoptionProcessItems, adoptionProcessTitle }) => {
   return (
     <Container>
       <Row className="adoptionContainer py-5">
