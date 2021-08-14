@@ -12,7 +12,26 @@
     border-radius: 7px;
 }
 
-.viewButton {
+.guestsContainer h1 {
+    color: #FF3E3E;
+}
+
+.guestsContainer h6 {
+    color: #777777;
+}
+
+.modalImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.close {
+    display: none;
+}
+
+/* to override the default styles and not to use important, i gave id */
+#viewButton, #closeButton {
     margin-bottom: 2rem;
     outline: none;
     border: none;
@@ -23,10 +42,58 @@
     border-radius: 2rem;
 }
 
-.guestsContainer h1 {
-    color: #FF3E3E;
+#closeButton {
+    background: #FF7777;
+    color: #fff;
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto 1rem auto;
 }
 
-.guestsContainer h6 {
-    color: #777777;
+#modalHeader {
+    background-color: #FF7777;
+    justify-content: center;
+}
+
+#modalBody {
+    text-align: center;
+    background: url("https://t3.ftcdn.net/jpg/00/84/55/66/360_F_84556601_W71hd1xmCxZUhsscyNlokY1an7Kqx6ZJ.jpg");
+    color: #FF7777;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 2rem 1rem 1rem 0 !important;
+    font-size: 18px;
+}
+
+#modalFooter {
+    background: url("https://t3.ftcdn.net/jpg/00/84/55/66/360_F_84556601_W71hd1xmCxZUhsscyNlokY1an7Kqx6ZJ.jpg");
+    border-top: none !important;
+}
+
+/* Carousel CSS, those classes are coming from bootstrap data, not showing in html. 
+So it is not possible to give additional classes or ids. Since they have inline 
+styles from backside, i have to use important to override the default css */
+.carousel-indicators {
+    bottom: -50px !important;
+}
+
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+    background-color: #FF7777 !important;
+}
+
+/* 
+for screens under 1024px, cards will not be displayed, 
+the carousel will be replaced instead.
+For mobile 
+*/
+@media screen and (max-width:1024px) {
+    .carousel {
+        display: block !important;
+    }
+    .items {
+        display: none !important;
+    }
 }

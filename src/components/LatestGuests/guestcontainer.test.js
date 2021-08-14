@@ -1,13 +1,13 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import GuestContainer from "./GuestContainer";
-import { guests, guestsTitle } from "../../data/data"
+import { latestAddedGuests, latestGuestsTitle } from "../../data/data"
 
 it("renders correctly", () => {
   const tree = renderer.create(
     <GuestContainer 
-      guests={guests} 
-      guestsTitle={guestsTitle}
+      latestAddedGuests={latestAddedGuests} 
+      latestGuestsTitle={latestGuestsTitle}
     />).toJSON();
   expect(tree).toMatchSnapshot();
 });

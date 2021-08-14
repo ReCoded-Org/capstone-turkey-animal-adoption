@@ -1,37 +1,55 @@
-export let guestsTitle = {
+export let latestGuestsTitle = {
     title : "Latests Guests",
-    subTitle: "Home is behind, the world ahead and there are many paths to tread through shadows to the edge."
+    subTitle: "Meet Our Latest Friends 🐾"
   }
   
-export let guests = [
+export let latestAddedGuests = [
     {
       id: 4,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg",
-      buttonText : "View"
+      img: "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+      buttonText : "View",
+      petName: "Cookie",
+      petAge: "2 years",
+      petBreed: "Poodle",
     },
     {
       id: 5,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg",
-      buttonText : "View"
+      img: "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+      buttonText : "View",
+      petName: "Alex",
+      petAge: "5 years",
+      petBreed: "Terrier",
     },
     {
       id: 6,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg",
-      buttonText : "View"
+      img: "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+      buttonText : "View",
+      petName: "Sushi",
+      petAge: "1 years",
+      petBreed: "Maltese-Terrier",
     },
     {
       id: 7,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg",
-      buttonText : "View"
+      img: "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+      buttonText : "View",
+      petName: "Bambi",
+      petAge: "3 months",
+      petBreed: "Golden Retriever",
     },
     {
       id: 8,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg",
-      buttonText : "View"
+      img: "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+      buttonText : "View",
+      petName: "Noodle",
+      petAge: "2 years",
+      petBreed: "Pomeranian",
     },
     {
       id: 9,
-      img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg",
-      buttonText : "View"
+      img: "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+      buttonText : "View",
+      petName: "Princess",
+      petAge: "1 years",
+      petBreed: "Chihuahua",
     },
   ];

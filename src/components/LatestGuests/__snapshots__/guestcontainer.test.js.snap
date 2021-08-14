@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
         Latests Guests
       </h1>
       <h6>
-        Home is behind, the world ahead and there are many paths to tread through shadows to the edge.
+        Meet Our Latest Friends 🐾
       </h6>
       <div
         className="mt-5 items row"
@@ -23,12 +23,16 @@ exports[`renders correctly 1`] = `
           className="mb-5 guestItems col-lg-4"
           style={
             Object {
-              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+              "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
             }
           }
         >
           <button
-            className="viewButton"
+            className="btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
           >
             View
           </button>
@@ -37,12 +41,16 @@ exports[`renders correctly 1`] = `
           className="mb-5 guestItems col-lg-4"
           style={
             Object {
-              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+              "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
             }
           }
         >
           <button
-            className="viewButton"
+            className="btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
           >
             View
           </button>
@@ -51,12 +59,16 @@ exports[`renders correctly 1`] = `
           className="mb-5 guestItems col-lg-4"
           style={
             Object {
-              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+              "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
             }
           }
         >
           <button
-            className="viewButton"
+            className="btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
           >
             View
           </button>
@@ -65,12 +77,16 @@ exports[`renders correctly 1`] = `
           className="mb-5 guestItems col-lg-4"
           style={
             Object {
-              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+              "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
             }
           }
         >
           <button
-            className="viewButton"
+            className="btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
           >
             View
           </button>
@@ -79,12 +95,16 @@ exports[`renders correctly 1`] = `
           className="mb-5 guestItems col-lg-4"
           style={
             Object {
-              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+              "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
             }
           }
         >
           <button
-            className="viewButton"
+            className="btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
           >
             View
           </button>
@@ -93,18 +113,152 @@ exports[`renders correctly 1`] = `
           className="mb-5 guestItems col-lg-4"
           style={
             Object {
-              "backgroundImage": "url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg)",
+              "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
             }
           }
         >
           <button
-            className="viewButton"
+            className="btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
           >
             View
           </button>
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="carousel carousel slide"
+    onKeyDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <ol
+      className="carousel-indicators"
+    >
+      <li
+        className="active"
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+    </ol>
+    <div
+      className="carousel-inner"
+    >
+      <div
+        className="active carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+    </div>
+    <a
+      className="carousel-control-prev"
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      <span
+        aria-hidden="true"
+        className="carousel-control-prev-icon"
+      />
+      <span
+        className="sr-only"
+      >
+        Previous
+      </span>
+    </a>
+    <a
+      className="carousel-control-next"
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      <span
+        aria-hidden="true"
+        className="carousel-control-next-icon"
+      />
+      <span
+        className="sr-only"
+      >
+        Next
+      </span>
+    </a>
   </div>
 </div>
 `;
