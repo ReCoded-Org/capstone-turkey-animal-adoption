@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="containerForLeft container"
+  style={
+    Object {
+      "backgroundImage": "url(https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg)",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-8"
+    >
+      <h2>
+        Adopt Please
+      </h2>
+      <p>
+        We are non-profit organization
+      </p>
+      <a
+        href="/search"
+      >
+        <button
+          className="findMeButton"
+        >
+          <img
+            className="buttonLogo"
+            src="buttonlogo.png"
+          />
+          Find A Pet
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;
