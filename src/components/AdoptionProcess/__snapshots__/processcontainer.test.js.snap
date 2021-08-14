@@ -28,12 +28,12 @@ exports[`renders correctly 1`] = `
             Find Your Pet
           </p>
           <span>
-            Lorem Ipsum Lorem Ipsum Lorem
+            Search Easily
           </span>
            
           <br />
           <span>
-            Lorem Ipsum Lorem Ipsum Lorem
+            Find Your New Friend
           </span>
         </div>
         <div
@@ -48,12 +48,12 @@ exports[`renders correctly 1`] = `
             Know Your Pet
           </p>
           <span>
-            Lorem Ipsum Lorem Ipsum Lorem
+            Check Our Little Cuties
           </span>
            
           <br />
           <span>
-            Lorem Ipsum Lorem Ipsum Lorem
+            Get to Know Them
           </span>
         </div>
         <div
@@ -68,12 +68,12 @@ exports[`renders correctly 1`] = `
             Take Your Pet Home
           </p>
           <span>
-            Lorem Ipsum Lorem Ipsum Lorem
+            Fill Our Form
           </span>
            
           <br />
           <span>
-            Lorem Ipsum Lorem Ipsum Lorem
+            Take Your Friend Home
           </span>
         </div>
       </div>
