@@ -45,7 +45,7 @@ exports[`renders correctly 1`] = `
             src="https://i.pinimg.com/736x/5f/80/85/5f80854fd1475958717a19e345695942.jpg"
           />
           <p>
-            Know Your Pet
+            Find Your Pet
           </p>
           <span>
             Check Our Little Cuties
@@ -65,7 +65,7 @@ exports[`renders correctly 1`] = `
             src="https://i.pinimg.com/736x/2e/23/d3/2e23d3827c8293c27cea544a8acbcd59.jpg"
           />
           <p>
-            Take Your Pet Home
+            Find Your Pet
           </p>
           <span>
             Fill Our Form
