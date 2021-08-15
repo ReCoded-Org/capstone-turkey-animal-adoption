@@ -5,10 +5,7 @@
 .guestItems {
     background-position: center;
     background-size: cover;
-    height: 35vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    height: 37vh;
     border-radius: 7px;
 }
 
@@ -21,8 +18,8 @@
 }
 
 .modalImage {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 100%;
 }
 
@@ -31,22 +28,25 @@
 }
 
 /* to override the default styles and not to use important, i gave id */
-#viewButton, #closeButton {
-    margin-bottom: 2rem;
-    outline: none;
+#viewButton {
     border: none;
     background: #fff;
     color: #FF7777;
     font-weight: 600;
     padding: .5rem 2rem;
     border-radius: 2rem;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%,-50%);
 }
 
 #closeButton {
+    border: none;
+    border-radius: 2rem;
     background: #FF7777;
     color: #fff;
     width: 100%;
-    max-width: 150px;
+    max-width: 130px;
     margin: 0 auto 1rem auto;
 }
 
@@ -57,16 +57,16 @@
 
 #modalBody {
     text-align: center;
-    background: url("https://t3.ftcdn.net/jpg/00/84/55/66/360_F_84556601_W71hd1xmCxZUhsscyNlokY1an7Kqx6ZJ.jpg");
-    color: #FF7777;
+    background: url("https://t4.ftcdn.net/jpg/01/06/77/37/360_F_106773743_CdPrTCQabRIeXPjCZddr3qV1PGT34rn7.jpg");
+    color: #777777;
     font-weight: bold;
     font-family: cursive;
     padding: 2rem 1rem 1rem 0 !important;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 #modalFooter {
-    background: url("https://t3.ftcdn.net/jpg/00/84/55/66/360_F_84556601_W71hd1xmCxZUhsscyNlokY1an7Kqx6ZJ.jpg");
+    background: url("https://t4.ftcdn.net/jpg/01/06/77/37/360_F_106773743_CdPrTCQabRIeXPjCZddr3qV1PGT34rn7.jpg");
     border-top: none !important;
 }
 

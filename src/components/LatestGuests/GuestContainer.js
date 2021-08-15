@@ -2,7 +2,6 @@ import React from "react";
 import GuestItems from "./GuestItems";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import "./LatestGuests.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const GuestContainer = ({
   latestAddedGuests,
