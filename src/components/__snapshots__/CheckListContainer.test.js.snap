@@ -8,120 +8,103 @@ exports[`renders correctly 1`] = `
     className="py-5 row"
   >
     <div
-      className="checkList col-lg-4"
+      className="col-lg-4"
     >
       <div
-        className="checkListLogo"
+        className="checkList"
       >
-        <img
-          className="catLogo"
-          src="catLogo.png"
-        />
-      </div>
-      <h2>
-        yoyoyo
-      </h2>
-      <p
-        className="checkListText"
-      >
-        hello
-      </p>
-      <a
-        href="denemeLink"
-      >
-        <button
-          className="checkListButton"
+        <div
+          className="checkListLogo"
         >
-          Read More
-        </button>
-      </a>
+          <img
+            className="catLogo"
+            src="catLogo.png"
+          />
+        </div>
+        <h2>
+          Cat Adoption Checklist
+        </h2>
+        <p
+          className="checkListText"
+        >
+          Go to Checklist
+        </p>
+        <a
+          href="denemeLink"
+        >
+          <button
+            className="checkListButton"
+          >
+            Read More
+          </button>
+        </a>
+      </div>
     </div>
     <div
-      className="checkList col-lg-4"
+      className="col-lg-4"
     >
       <div
-        className="checkListLogo"
+        className="checkList"
       >
-        <img
-          className="catLogo"
-          src="catLogo.png"
-        />
-      </div>
-      <h2>
-        yoyoyo
-      </h2>
-      <p
-        className="checkListText"
-      >
-        hello
-      </p>
-      <a
-        href="ikiucdort"
-      >
-        <button
-          className="checkListButton"
+        <div
+          className="checkListLogo"
         >
-          Read More
-        </button>
-      </a>
+          <img
+            className="catLogo"
+            src="catLogo.png"
+          />
+        </div>
+        <h2>
+          Cat Adoption Checklist
+        </h2>
+        <p
+          className="checkListText"
+        >
+          Go to Checklist
+        </p>
+        <a
+          href="denemeLink"
+        >
+          <button
+            className="checkListButton"
+          >
+            Read More
+          </button>
+        </a>
+      </div>
     </div>
     <div
-      className="checkList col-lg-4"
+      className="col-lg-4"
     >
       <div
-        className="checkListLogo"
+        className="checkList"
       >
-        <img
-          className="catLogo"
-          src="catLogo.png"
-        />
-      </div>
-      <h2>
-        yoyoyo
-      </h2>
-      <p
-        className="checkListText"
-      >
-        hello
-      </p>
-      <a
-        href="ikiucdort"
-      >
-        <button
-          className="checkListButton"
+        <div
+          className="checkListLogo"
         >
-          Read More
-        </button>
-      </a>
-    </div>
-    <div
-      className="checkList col-lg-4"
-    >
-      <div
-        className="checkListLogo"
-      >
-        <img
-          className="catLogo"
-          src="catLogo.png"
-        />
-      </div>
-      <h2>
-        yoyoyo
-      </h2>
-      <p
-        className="checkListText"
-      >
-        hello
-      </p>
-      <a
-        href="ikiucdort"
-      >
-        <button
-          className="checkListButton"
+          <img
+            className="catLogo"
+            src="catLogo.png"
+          />
+        </div>
+        <h2>
+          Cat Adoption Checklist
+        </h2>
+        <p
+          className="checkListText"
         >
-          Read More
-        </button>
-      </a>
+          Go to Checklist
+        </p>
+        <a
+          href="denemeLink"
+        >
+          <button
+            className="checkListButton"
+          >
+            Read More
+          </button>
+        </a>
+      </div>
     </div>
   </div>
 </div>
