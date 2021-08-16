@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar renders correctly 1`] = `
+<nav
+  className="navbar navbar-expand-lg navbar-light"
+>
+  <a
+    className="navbar-brand"
+    exact="true"
+    href="/"
+  >
+    <img
+      alt="Furry Friend"
+      className="logoHeader"
+      height="50"
+      src="logo.png"
+    />
+  </a>
+  <button
+    aria-controls="basic-navbar-nav"
+    aria-label="Toggle navigation"
+    className="navbar-toggler collapsed"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    aria-expanded={null}
+    className="navbar-collapse collapse"
+    id="basic-navbar-nav"
+  >
+    <div
+      className="mr-auto navbar-nav"
+      onKeyDown={[Function]}
+    >
+      <a
+        className="nav-link"
+        data-rb-event-key="/about"
+        href="/about"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        About
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="/completed"
+        href="/completed"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Blog
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="/completed"
+        href="/completed"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Contact
+      </a>
+    </div>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      type="button"
+    >
+      SignUp
+    </button>
+    <select
+      className="w-auto language form-control"
+    >
+      <option
+        value="English"
+      >
+        English
+      </option>
+      <option
+        value="Arabic"
+      >
+        Arabic
+      </option>
+      <option
+        value="Turkish"
+      >
+        Turkish
+      </option>
+    </select>
+  </div>
+</nav>
+`;

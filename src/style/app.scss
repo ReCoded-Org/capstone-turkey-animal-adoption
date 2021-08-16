@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "./variable.scss";
+@import "~bootstrap/scss/bootstrap";
+body {
+  font-family: "Roboto", Courier, monospace;
+}
+.btn-primary {
+  color: #fff;
+}
+.navbar-toggler {
+  border-radius: 5px;
+}
