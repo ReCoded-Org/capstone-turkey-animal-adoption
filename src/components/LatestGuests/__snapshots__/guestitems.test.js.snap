@@ -2,15 +2,18 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="mb-5 guestItems col-lg-4"
-  style={
-    Object {
-      "backgroundImage": "url(undefined)",
-    }
-  }
+  className="mb-5 col-lg-4"
 >
+  <div
+    className="guestItems"
+    style={
+      Object {
+        "backgroundImage": "url(undefined)",
+      }
+    }
+  />
   <button
-    className="btn btn-primary"
+    className="shadow-none btn btn-primary"
     disabled={false}
     id="viewButton"
     onClick={[Function]}
