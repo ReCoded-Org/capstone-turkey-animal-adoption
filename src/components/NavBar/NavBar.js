@@ -1,14 +1,11 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
-import { Form } from "react-bootstrap";
+import { Navbar, Nav, Button, Form } from "react-bootstrap";
 import logo from "../../images/logo.png";
-import "./NavBar.scss";
+import "./NavBar.css";
 
 function NavBar() {
   return (
-    <Navbar variant="light" expand="lg">
+    <Navbar variant="light" expand="lg" className="bgLight">
       <Navbar.Brand href="/" exact="true">
         <img src={logo} height="50" alt="Furry Friend" className="logoHeader" />
       </Navbar.Brand>
@@ -20,7 +17,6 @@ function NavBar() {
           <Nav.Link href="/completed">Contact</Nav.Link>
         </Nav>
         <Button>SignUp</Button>
-
         <Form.Control as="select" className="w-auto language">
           <option value="English">English</option>
           <option value="Arabic">Arabic</option>

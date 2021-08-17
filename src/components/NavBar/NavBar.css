@@ -1,0 +1,32 @@
+.nav-link {
+  color: #ff7777 !important;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: auto 10px;
+}
+
+.bgLight {
+  background-color: #fff !important;
+}
+
+.language {
+  border-radius: 20px !important;
+  padding: 0.375rem 1.2rem !important;
+  border: 1px solid #ff7777 !important;
+  color: #777777;
+  margin: 10px 0;
+}
+
+.logoHeader {
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 992px) {
+  .language {
+    margin: 0 50px 0 10px;
+  }
+
+  .logoHeader {
+    margin-left: 50px;
+  }
+}
