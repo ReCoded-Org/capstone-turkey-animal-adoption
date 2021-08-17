@@ -4,18 +4,25 @@ exports[`NavBar renders correctly 1`] = `
 <nav
   className="bgLight navbar navbar-expand-lg navbar-light"
 >
-  <a
+  <span
     className="navbar-brand"
-    exact="true"
-    href="/"
   >
-    <img
-      alt="Furry Friend"
-      className="logoHeader"
-      height="50"
-      src="logo.png"
-    />
-  </a>
+    <a
+      aria-current="page"
+      className="active"
+      excat={true}
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <img
+        alt="Furry Friend"
+        className="logoHeader"
+        height="50"
+        src="logo.png"
+      />
+    </a>
+  </span>
   <button
     aria-controls="basic-navbar-nav"
     aria-label="Toggle navigation"
@@ -37,29 +44,26 @@ exports[`NavBar renders correctly 1`] = `
       onKeyDown={[Function]}
     >
       <a
+        aria-current={null}
         className="nav-link"
-        data-rb-event-key="/about"
         href="/about"
         onClick={[Function]}
-        onKeyDown={[Function]}
       >
         About
       </a>
       <a
+        aria-current={null}
         className="nav-link"
-        data-rb-event-key="/completed"
-        href="/completed"
+        href="/blog"
         onClick={[Function]}
-        onKeyDown={[Function]}
       >
         Blog
       </a>
       <a
+        aria-current={null}
         className="nav-link"
-        data-rb-event-key="/completed"
-        href="/completed"
+        href="/contact"
         onClick={[Function]}
-        onKeyDown={[Function]}
       >
         Contact
       </a>

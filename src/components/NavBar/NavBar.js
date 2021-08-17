@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Button, Form } from "react-bootstrap";
 import logo from "../../images/logo.png";
 import "./NavBar.css";
@@ -6,15 +7,23 @@ import "./NavBar.css";
 function NavBar() {
   return (
     <Navbar variant="light" expand="lg" className="bgLight">
-      <Navbar.Brand href="/" exact="true">
-        <img src={logo} height="50" alt="Furry Friend" className="logoHeader" />
+      <Navbar.Brand>
+        <NavLink to="/" excat>
+          <img src={logo} height="50" alt="Furry Friend" className="logoHeader" />
+        </NavLink>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link href="/completed">Blog</Nav.Link>
-          <Nav.Link href="/completed">Contact</Nav.Link>
+          <NavLink to="/about" className="nav-link">
+            About
+          </NavLink>
+          <NavLink to="/blog" className="nav-link">
+            Blog
+          </NavLink>
+          <NavLink to="/contact" className="nav-link">
+            Contact
+          </NavLink>
         </Nav>
         <Button>SignUp</Button>
         <Form.Control as="select" className="w-auto language">
