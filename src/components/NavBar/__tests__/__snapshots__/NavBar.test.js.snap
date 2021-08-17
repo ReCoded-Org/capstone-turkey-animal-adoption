@@ -44,7 +44,7 @@ exports[`NavBar renders correctly 1`] = `
     >
       <a
         aria-current={null}
-        className="nav-link"
+        className="nav-link navlink"
         href="/about"
         onClick={[Function]}
       >
@@ -52,7 +52,7 @@ exports[`NavBar renders correctly 1`] = `
       </a>
       <a
         aria-current={null}
-        className="nav-link"
+        className="nav-link navlink"
         href="/blog"
         onClick={[Function]}
       >
@@ -60,7 +60,7 @@ exports[`NavBar renders correctly 1`] = `
       </a>
       <a
         aria-current={null}
-        className="nav-link"
+        className="nav-link navlink"
         href="/contact"
         onClick={[Function]}
       >
