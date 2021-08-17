@@ -9,7 +9,12 @@ function NavBar() {
     <Navbar variant="light" expand="lg" className="bgLight">
       <Navbar.Brand>
         <NavLink to="/" excat>
-          <img src={logo} height="50" alt="Furry Friend" className="logoHeader" />
+          <img
+            src={logo}
+            height="50"
+            alt="Furry Friend"
+            className="logoHeader"
+          />
         </NavLink>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
