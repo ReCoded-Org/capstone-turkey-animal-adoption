@@ -2,7 +2,7 @@
 
 exports[`NavBar renders correctly 1`] = `
 <nav
-  className="navbar navbar-expand-lg navbar-light"
+  className="bgLight navbar navbar-expand-lg navbar-light"
 >
   <a
     className="navbar-brand"
