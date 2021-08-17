@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <Navbar variant="light" expand="lg" className="bgLight">
       <Navbar.Brand>
-        <NavLink to="/" excat>
+        <NavLink to="/" exact>
           <img
             src={logo}
             height="50"
