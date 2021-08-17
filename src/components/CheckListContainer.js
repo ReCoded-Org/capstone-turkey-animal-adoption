@@ -8,12 +8,12 @@ const ChecklistContainer = ({ data }) => {
   return (
     <Container>
       <Row className="py-5">
-        {data.map((info, index) => (
+        {data.map((info) => (
           <CheckList
             text={info.text}
             title={info.title}
             link={info.link}
-            key={index}
+            id={info.id}
           />
         ))}
       </Row>

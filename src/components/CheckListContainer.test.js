@@ -20,7 +20,7 @@ const data = [
   },
 ];
 
-it("renders correctly", () => {
+it("checklist container renders correctly", () => {
   const tree = renderer.create(<ChecklistContainer data={data} />).toJSON();
   expect(tree).toMatchSnapshot();
 });

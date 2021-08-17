@@ -8,7 +8,7 @@ const data = {
   link: "denemeLink",
 };
 
-it("renders correctly", () => {
+it("checlist renders correctly", () => {
   const tree = renderer
     .create(<CheckList text={data.text} title={data.title} link={data.link} />)
     .toJSON();
