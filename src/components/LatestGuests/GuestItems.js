@@ -5,8 +5,7 @@ import "./LatestGuests.css";
 const GuestItems = ({ img, buttonText, petName, petAge, petBreed, id }) => {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleToggle = () => setShow(!show);
 
   const background = {
     backgroundImage: `url(${img})`,
@@ -20,13 +19,13 @@ const GuestItems = ({ img, buttonText, petName, petAge, petBreed, id }) => {
           className="shadow-none"
           id="viewButton"
           variant="primary"
-          onClick={handleShow}
+          onClick={() => handleToggle()}
         >
           {buttonText}
         </Button>
       </Col>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={() => handleToggle()} className="modal-open">
         <Modal.Header closeButton id="modalHeader">
           <Modal.Title>
             <img src={img} className="modalImage" alt="modalImage" />
@@ -42,7 +41,7 @@ const GuestItems = ({ img, buttonText, petName, petAge, petBreed, id }) => {
             className="shadow-none"
             id="closeButton"
             variant="secondary"
-            onClick={handleClose}
+            onClick={() => handleToggle()}
           >
             Close
           </Button>

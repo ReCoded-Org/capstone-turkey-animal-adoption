@@ -1,6 +1,6 @@
 export let latestAddedGuests = {
   latestGuestsTitle: {
-    title: "Latests Guests",
+    title: "Latest Guests",
     subTitle: "Meet Our Latest Friends 🐾",
   },
   latestGuestsItems: [

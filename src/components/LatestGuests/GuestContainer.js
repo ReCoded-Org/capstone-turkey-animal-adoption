@@ -32,7 +32,7 @@ const GuestContainer = ({ latestAddedGuests }) => {
       <Carousel style={{ display: "none" }} className="carousel">
         {latestAddedGuests &&
           latestAddedGuests.latestGuestsItems.map((guest) => (
-            <Carousel.Item>
+            <Carousel.Item key={guest.id}>
               <img className="d-block w-100" src={guest.img} alt="slideImage" />
             </Carousel.Item>
           ))}

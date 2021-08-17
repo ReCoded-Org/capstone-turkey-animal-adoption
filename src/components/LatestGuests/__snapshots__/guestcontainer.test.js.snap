@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
       className="col-sm-12"
     >
       <h1>
-        Latests Guests
+        Latest Guests
       </h1>
       <h6>
         Meet Our Latest Friends 🐾
