@@ -10,7 +10,6 @@ exports[`NavBar renders correctly 1`] = `
     <a
       aria-current="page"
       className="active"
-      excat={true}
       href="/"
       onClick={[Function]}
       style={Object {}}
