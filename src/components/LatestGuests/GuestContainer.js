@@ -28,7 +28,6 @@ const GuestContainer = ({ latestAddedGuests }) => {
           )}
         </Col>
       </Row>
-
       <Carousel style={{ display: "none" }} className="carousel">
         {latestAddedGuests &&
           latestAddedGuests.latestGuestsItems.map((guest) => (

@@ -1,5 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders Guest Items correctly 1`] = `
+<div
+  className="mb-5 col-lg-4"
+>
+  <div
+    className="guestItems"
+    style={
+      Object {
+        "backgroundImage": "url(undefined)",
+      }
+    }
+  />
+  <button
+    className="shadow-none btn btn-primary"
+    disabled={false}
+    id="viewButton"
+    onClick={[Function]}
+    type="button"
+  />
+</div>
+`;
+
 exports[`renders correctly 1`] = `
 <div
   className="mb-5 col-lg-4"
