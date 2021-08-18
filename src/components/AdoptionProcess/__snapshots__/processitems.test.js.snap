@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="mb-5 col-lg-4"
+>
+  <img
+    alt="img"
+    className="mb-3"
+  />
+  <p />
+  <span />
+   
+  <br />
+  <span />
+</div>
+`;

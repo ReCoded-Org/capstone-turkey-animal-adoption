@@ -1,0 +1,47 @@
+.containerForLeft {
+  background-position: center;
+  background-size: cover;
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.containerForRight {
+  background-position: center;
+  background-size: cover;
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.findMeButton {
+  width: 100%;
+  max-width: 200px;
+  background: #ff7777;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0;
+}
+
+.container h2 {
+  color: #ff3e3e;
+}
+
+.container p {
+  color: #777777;
+}
+
+.buttonLogo {
+  width: 100%;
+  max-width: 50px;
+}
+
+.row {
+  align-content: flex-start;
+}

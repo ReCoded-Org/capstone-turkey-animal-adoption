@@ -65,8 +65,11 @@
         "eslint-plugin-jsx-a11y": "^6.3.1",
         "eslint-plugin-react": "^7.21.5",
         "eslint-plugin-react-hooks": "^4.1.2",
-        "jest": "^24.9.0",
         "prettier": "^2.0.5",
         "pretty-quick": "^2.0.1"
-    }
+    },
+    "main": "index.js",
+    "repository": "https://github.com/ReCoded-Org/capstone-turkey-animal-adoption.git",
+    "author": "yazjimanar <m.gmail.com>",
+    "license": "MIT"
 }

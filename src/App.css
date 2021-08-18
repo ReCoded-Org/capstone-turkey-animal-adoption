@@ -53,4 +53,30 @@
 .footer-copyright{
   text-align: left;
   font-size: 14px;
+footer{
+  background-color:  #31393C;
+  color: white;
+}
+h3{
+  color: hsl(0, 100%, 73%);
+  text-align: left;
+
+}
+a{
+  color: white;
+}
+h4{
+  color: #FF7777;
+  text-align: left;
+}
+
+.dogImage{
+width: 30;
+height: 20;
+border-radius: 5px;
+}
+
+li{
+
+  text-align: left;
 }
