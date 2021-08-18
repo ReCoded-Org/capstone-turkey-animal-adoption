@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="adoptionContainer py-5 row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <h1>
+        Pet Adoption Process
+      </h1>
+      <div
+        className="mt-5 items row"
+      >
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <img
+            alt="img"
+            className="mb-3"
+            src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+          />
+          <p>
+            Find Your Pet
+          </p>
+          <span>
+            Search Easily
+          </span>
+           
+          <br />
+          <span>
+            Find Your New Friend
+          </span>
+        </div>
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <img
+            alt="img"
+            className="mb-3"
+            src="https://i.pinimg.com/736x/5f/80/85/5f80854fd1475958717a19e345695942.jpg"
+          />
+          <p>
+            Find Your Pet
+          </p>
+          <span>
+            Check Our Little Cuties
+          </span>
+           
+          <br />
+          <span>
+            Get to Know Them
+          </span>
+        </div>
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <img
+            alt="img"
+            className="mb-3"
+            src="https://i.pinimg.com/736x/2e/23/d3/2e23d3827c8293c27cea544a8acbcd59.jpg"
+          />
+          <p>
+            Find Your Pet
+          </p>
+          <span>
+            Fill Our Form
+          </span>
+           
+          <br />
+          <span>
+            Take Your Friend Home
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
