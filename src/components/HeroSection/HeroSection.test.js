@@ -3,8 +3,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 
 const data = {
-  img:
-    "https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg",
+  img: "https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg",
   title: "Adopt Please",
   text: "We are non-profit organization",
   side: "left",
