@@ -1,0 +1,31 @@
+.searchContainer h1 {
+    color: #ff3e3e;
+}
+
+.adoptButton, 
+.adoptButton:hover {
+    background: #ff7777;
+    border: 1px solid #fff;
+} 
+
+#modalBody {
+    background: #ff7777; 
+    color: #fff;
+}
+
+#cardText {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstDiv {
+    text-align: start;
+}
+
+.secondDiv {
+    text-align: end;
+}
+
+.pawIcon {
+    margin-right: .5rem;
+}
