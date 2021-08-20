@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./logo.png";
 import dog from "./Bg.png";
 
+// footer component start here 👌
 const Footer = () => {
   return (
     <footer className="text-center text-lg-start mt-4 pb-3">
