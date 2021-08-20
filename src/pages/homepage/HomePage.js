@@ -1,7 +1,9 @@
 import React from "react";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import AdoptionProcess from "../../components/AdoptionProcess/ProcessContainer";
+import LatestGuests from "../../components/LatestGuests/GuestContainer";
 import {adoptionProcess} from "../../components/AdoptionProcess/data";
+import {latestAddedGuests} from "../../components/LatestGuests/data";
 import milkdog from "../../images/milkdog.png"
 
 const dataOfHeroSection = {
@@ -23,6 +25,7 @@ function Homepage() {
         side={dataOfHeroSection.side}
       />
       <AdoptionProcess adoptionProcess={adoptionProcess} />
+      <LatestGuests latestAddedGuests={latestAddedGuests} />
     </div>
 
   )
