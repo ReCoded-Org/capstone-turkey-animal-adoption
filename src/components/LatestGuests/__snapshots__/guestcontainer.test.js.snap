@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Guest Container correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="guestsContainer py-5 row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <h1>
+        Latest Guests
+      </h1>
+      <h6>
+        Meet Our Latest Friends 🐾
+      </h6>
+      <div
+        className="mt-5 items row"
+      >
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <div
+            className="guestItems"
+            style={
+              Object {
+                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+              }
+            }
+          />
+          <button
+            className="shadow-none btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
+          >
+            View
+          </button>
+        </div>
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <div
+            className="guestItems"
+            style={
+              Object {
+                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+              }
+            }
+          />
+          <button
+            className="shadow-none btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
+          >
+            View
+          </button>
+        </div>
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <div
+            className="guestItems"
+            style={
+              Object {
+                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+              }
+            }
+          />
+          <button
+            className="shadow-none btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
+          >
+            View
+          </button>
+        </div>
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <div
+            className="guestItems"
+            style={
+              Object {
+                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+              }
+            }
+          />
+          <button
+            className="shadow-none btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
+          >
+            View
+          </button>
+        </div>
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <div
+            className="guestItems"
+            style={
+              Object {
+                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+              }
+            }
+          />
+          <button
+            className="shadow-none btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
+          >
+            View
+          </button>
+        </div>
+        <div
+          className="mb-5 col-lg-4"
+        >
+          <div
+            className="guestItems"
+            style={
+              Object {
+                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+              }
+            }
+          />
+          <button
+            className="shadow-none btn btn-primary"
+            disabled={false}
+            id="viewButton"
+            onClick={[Function]}
+            type="button"
+          >
+            View
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="carousel carousel slide"
+    onKeyDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <ol
+      className="carousel-indicators"
+    >
+      <li
+        className="active"
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+      <li
+        onClick={[Function]}
+      />
+    </ol>
+    <div
+      className="carousel-inner"
+    >
+      <div
+        className="active carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+      <div
+        className="carousel-item"
+      >
+        <img
+          alt="slideImage"
+          className="d-block w-100"
+          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+        />
+      </div>
+    </div>
+    <a
+      className="carousel-control-prev"
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      <span
+        aria-hidden="true"
+        className="carousel-control-prev-icon"
+      />
+      <span
+        className="sr-only"
+      >
+        Previous
+      </span>
+    </a>
+    <a
+      className="carousel-control-next"
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      <span
+        aria-hidden="true"
+        className="carousel-control-next-icon"
+      />
+      <span
+        className="sr-only"
+      >
+        Next
+      </span>
+    </a>
+  </div>
+</div>
+`;
