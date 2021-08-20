@@ -1,75 +1,97 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  FaPinterestP,
-  FaInstagram,
   FaFacebookF,
   FaTwitter,
+  FaPinterestP,
+  FaInstagram,
+  FaLinkedin,
 } from "react-icons/fa";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./logo.png";
-
-// import { RiTwitterFill } from "react-icons/fa";
+import dog from "./Bg.png";
 
 const Footer = () => {
   return (
-    <footer className="page-footer font-small  pt-2 pb-4">
-      <div className="container-fluid text-center text-md-left row">
-        <div className="col-md-3 mb-md-0 mb-3 container pt-4 ">
-          <div className="row pt-3">
-            <div className="col-md-6 ">
-              <img src={logo} alt="myLogo" width="100px" height="80px" />
+    <footer className="text-center text-lg-start mt-4 pb-3">
+      <div className="container p-2">
+        <div className="row">
+          <div className="col">
+            <div className="d-flex align-items-center pb-4 pt-4">
+              <div className="p-2">
+                <img src={logo} alt="my logo" width="160" height="120" />
+              </div>
+              <div className="p-2">
+                <h3>Furry</h3>
+                <h3>Friends</h3>
+              </div>
             </div>
-            <div className="col-md-6 align-self-center  ">
-              <h2 className="text-uppercase headersColor ">Furry Friends</h2>
+            <div className="pt-4 text-white">
+              Copyright © All rights reserved for Re:Coded
             </div>
           </div>
 
-          <div className="footer-copyright pt-5">
-            Copyright © WeDot Wireframe KitAll rights reserved
+          <div className="col pl-5">
+            <h4 className="pl-5">PRODUCTS</h4>
+            <ul className="list-group pl-5">
+              <li className="list-unstyled text-white">Features </li>
+              <li className="list-unstyled text-white">Personal License </li>
+              <li className="list-unstyled text-white">Personal License </li>
+              <li className="list-unstyled text-white">Pricing Options </li>
+              <li className="list-unstyled text-white">Personal License</li>
+            </ul>
           </div>
-        </div>
-        <hr className="clearfix w-100 d-md-none pb-3 " />
-        <div className="col-md-3 mb-md-0 mb-3 pt-2 mr-4">
-          <h6 className="text-uppercase headersColor">PRODUCTS</h6>
-          <ul className="list-unstyled ulJustify">
-            <li href="#">Features</li>
-            <li href="#">Personal License</li>
-            <li href="#">Personal License</li>
-            <li href="#">Pricing Options</li>
-            <li href="#">Personal License</li>
-          </ul>
-        </div>
-        <div className="col-md-3 mb-md-0 mb-3 pt-2 mr-4">
-          <h6 className="text-uppercase headersColor">LATEST POSTS</h6>
-          <ul className="list-unstyled ulJustify">
-            <li href="#">
-              Lawyaw uses AI to help lawyers draft documents faster
-            </li>
 
-            <li href="#">
-              Going against the grain, AngelPad kills its demo day
-            </li>
-          </ul>
-          <div className="d-flex justify-content-center pt-4">
-            <div className="m-2">
-              <FaPinterestP />
-            </div>
-            <div className="m-2">
-              <FaInstagram />
-            </div>
-            <div className="m-2">
-              <FaFacebookF />
-            </div>
-            <div className="m-2">
-              <FaTwitter />
-            </div>
+          <div className="col">
+            <h4>LATEST POSTS</h4>
+            <ul className="list-group pb-2 ">
+              <div className=" d-flex align-items-center">
+                <img
+                  src={dog}
+                  alt="dog"
+                  width="80"
+                  height="60"
+                  className="m-1"
+                />
+                <li className="list-unstyled text-white ">
+                  Lawyaw uses AI to help lawyers draft documents faster
+                </li>
+              </div>
+              <div className="d-flex align-items-center pt-2">
+                <img
+                  src={dog}
+                  alt="dog"
+                  width="80"
+                  height="60"
+                  className="m-1"
+                />
+                <li className="list-unstyled text-white">
+                  Going against the grain, AngelPad kills its demo day
+                </li>
+              </div>
+            </ul>
 
-            {/* <AiFillTwitterCircle /> */}
+            <div className="d-sm-flex justify-content-sm-center pt-2">
+              <div className="p-2">
+                <FaFacebookF />
+              </div>
+              <div className="p-2">
+                <FaTwitter />
+              </div>
+              <div className="p-2">
+                <FaPinterestP />
+              </div>
+              <div className="p-2 ">
+                <FaInstagram />
+              </div>
+              <div className="p-2">
+                <FaLinkedin />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </footer>
   );
 };
+
 export default Footer;
