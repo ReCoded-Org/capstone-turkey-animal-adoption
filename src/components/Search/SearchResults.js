@@ -4,7 +4,7 @@ import "./Search.css";
 import { BsGeoAlt } from "react-icons/bs";
 import { FaPaw } from "react-icons/fa";
 
-const SearchResults = ({ img, id }) => {
+const SearchResults = ({ img, id, location, age, breed, gender }) => {
 
     return (
         <>
@@ -15,15 +15,16 @@ const SearchResults = ({ img, id }) => {
                     <Card.Body id="modalBody">
                         <Card.Text id="cardText">
                             <div className="firstDiv">
-                                <p>Pet Name</p>
+                                <p>{breed}</p>
                                 <Button variant="primary" className="adoptButton">
                                     <FaPaw className="pawIcon"/>
                                     Adopt
                                 </Button>
                             </div>
                             <div className="secondDiv">
-                                <p>Breed</p>
-                                <BsGeoAlt size={25}/>
+                                <p>{gender},{age}</p>
+                                <p>{location}</p>
+                                {/* <BsGeoAlt size={25}/> */}
                             </div>
                         </Card.Text>
                     </Card.Body>

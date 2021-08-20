@@ -1,3 +1,7 @@
+.searchContainer {
+    justify-content: center;
+}
+
 .searchContainer h1 {
     color: #ff3e3e;
 }
@@ -28,4 +32,25 @@
 
 .pawIcon {
     margin-right: .5rem;
+}
+
+.searchForm {
+    margin-top: 2rem;
+}
+
+.searchForm input {
+    margin-right: 1rem;
+    border: 2px solid #FF7777;
+    border-radius: 30px;
+    padding: .3rem .7rem;
+}
+
+.searchForm button {
+    background: #fff;
+    border: none;
+    outline: none;
+}
+
+.searchIcon {
+    color: #ff7777;
 }
