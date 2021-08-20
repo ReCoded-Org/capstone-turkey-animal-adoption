@@ -12,6 +12,7 @@ function App() {
       <Route path="/" component={NavBar} />
       <Route exact path="/" component={Homepage} />
     </Router>
+    
   );
 }
 

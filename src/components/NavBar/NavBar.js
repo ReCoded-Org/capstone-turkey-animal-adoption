@@ -1,11 +1,32 @@
 import React from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Button, Form } from "react-bootstrap";
+import SignUpModal from "../SignUpModal/SignUpModal";
 import logo from "../../images/logo.png";
 import "./NavBar.css";
 
+
 function NavBar() {
+
+  const [show, setShow] = useState(false);
+  
+  const openModal = () => setShow(!show)
+    
+  // const renderModal = () => { 
+  //   if(show === "none") setShow("block")
+  //   else setShow("none")
+
+  // }    
+
+      
+    
+  
+  
+  
+  
   return (
+    <div>
     <Navbar variant="light" expand="lg" className="bgLight">
       <Navbar.Brand>
         <NavLink to="/" exact>
@@ -30,7 +51,7 @@ function NavBar() {
             Contact
           </NavLink>
         </Nav>
-        <Button>SignUp</Button>
+        <Button onClick={openModal}>SignUp</Button>
         <Form.Control as="select" className="w-auto language">
           <option value="English">English</option>
           <option value="Arabic">Arabic</option>
@@ -38,6 +59,8 @@ function NavBar() {
         </Form.Control>
       </Navbar.Collapse>
     </Navbar>
+    <SignUpModal show={show} onHide={openModal}/>
+    </div>
   );
 }
 
