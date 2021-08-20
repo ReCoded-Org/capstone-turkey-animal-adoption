@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="col">
             <div className="d-flex align-items-center pb-4 pt-4">
               <div className="p-2">
-                <img src={logo} alt="my logo" width="160" height="120" />
+                <img src={logo} alt="my logo" width="140" height="120" />
               </div>
               <div className="p-2">
                 <h3>Furry</h3>
