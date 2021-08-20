@@ -1,5 +1,5 @@
 import React from "react";
-import catLogo from "../checklistLogo/catLogo.png";
+import catLogo from "../../checklistLogo/catLogo.png";
 import "./CheckList.css";
 import { Col } from "react-bootstrap";
 

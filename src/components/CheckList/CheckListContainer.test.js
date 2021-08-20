@@ -7,16 +7,19 @@ const data = [
     text: "Go to Checklist",
     title: "Cat Adoption Checklist",
     link: "denemeLink",
+    id: "id1",
   },
   {
     text: "Go to Checklist",
     title: "Cat Adoption Checklist",
     link: "denemeLink",
+    id: "id2",
   },
   {
     text: "Go to Checklist",
     title: "Cat Adoption Checklist",
     link: "denemeLink",
+    id: "id3",
   },
 ];
 

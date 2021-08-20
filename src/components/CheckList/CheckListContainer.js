@@ -13,7 +13,7 @@ const ChecklistContainer = ({ data }) => {
             text={info.text}
             title={info.title}
             link={info.link}
-            id={info.id}
+            key={info.id}
           />
         ))}
       </Row>
