@@ -1,7 +1,9 @@
 import React from "react";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import AdoptionProcess from "../../components/AdoptionProcess/ProcessContainer";
-import {adoptionProcess} from "../../components/AdoptionProcess/data";
+import LatestGuests from "../../components/LatestGuests/GuestContainer";
+import {adoptionProcess} from "./teamdata";
+import {latestAddedGuests} from "./worksdata";
 import aboutUsDog from "../../images/aboutUsDog.png"
 
 const dataOfHeroSection = {
@@ -11,7 +13,7 @@ const dataOfHeroSection = {
   side: "right",
 };
 
-function AboutUs () {
+const AboutUs = () => {
 
   return(
     
@@ -22,6 +24,7 @@ function AboutUs () {
         text={dataOfHeroSection.text}
         side={dataOfHeroSection.side}
       />
+      <LatestGuests latestAddedGuests={latestAddedGuests} />
       <AdoptionProcess adoptionProcess={adoptionProcess} />
     </div>
 
