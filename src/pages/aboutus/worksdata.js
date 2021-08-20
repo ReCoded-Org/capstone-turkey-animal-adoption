@@ -1,62 +1,64 @@
+import poodle from "../../images/poodle.jpg";
+import terrier from "../../images/terrier.jpg";
+import rottweiler from "../../images/rottweiler.jpg";
+import golden from "../../images/golden.jpg";
+import cat1 from "../../images/cat1.jpeg";
+import cat2 from "../../images/cat2.jpg";
+
+
 export let latestAddedGuests = {
     latestGuestsTitle: {
-      title: "Latest Works",
-      subTitle: "Check Our Latest Works 🐾",
+      title: "Latest Adoptions",
+      subTitle: "Check Our Latest Adopted Friends 🐾",
     },
     latestGuestsItems: [
       {
         id: 4,
-        img:
-          "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+        img: `${poodle}`,
         buttonText: "View",
-        petName: "",
-        petAge: "",
-        petBreed: "",
+        petName: "Alex. I am adopted last week. And I am so happy with my new family",
+        petAge: "2 years",
+        petBreed: "Poddle",
       },
       {
         id: 5,
-        img:
-          "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+        img: `${terrier}`,
         buttonText: "View",
-        petName: "Alex",
+        petName: "Carol. I am adopted last week. I now have a new loving family",
         petAge: "5 years",
         petBreed: "Terrier",
       },
       {
         id: 6,
-        img:
-          "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+        img: `${rottweiler}`,
         buttonText: "View",
-        petName: "Sushi",
+        petName: "Sushi. I am adopted 2 weeks ago. My new family are the best",
         petAge: "1 years",
-        petBreed: "Maltese-Terrier",
+        petBreed: "Rottweiler",
       },
       {
         id: 7,
-        img:
-          "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+        img: `${golden}`,
         buttonText: "View",
-        petName: "Bambi",
+        petName: "Bambi. I am adopted 3 weeks ago. And I am so happy with my new family. I play games all the time with them",
         petAge: "3 months",
         petBreed: "Golden Retriever",
       },
       {
         id: 8,
-        img:
-          "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+        img: `${cat1}`,
         buttonText: "View",
-        petName: "Noodle",
+        petName: "Noodle. I am adopted 5 days ago from a shelter. And I am so happy with my new family. They have the best food",
         petAge: "2 years",
-        petBreed: "Pomeranian",
+        petBreed: "Tabby Cat",
       },
       {
         id: 9,
-        img:
-          "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+        img: `${cat2}`,
         buttonText: "View",
-        petName: "Princess",
+        petName: "Princess. I am adopted from a shelter last week. My new family cares me a lot",
         petAge: "1 years",
-        petBreed: "Chihuahua",
+        petBreed: "Tabby Cat",
       },
     ],
   };

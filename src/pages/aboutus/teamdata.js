@@ -1,8 +1,9 @@
 import React from "react";
 import ayse from "../../images/ayse.jfif";
-import rahaf from "../../images/rahaf.png";
+import rahaf from "../../images/rahaf.jpg";
 import manar from "../../images/manar.jfif";
 import halit from "../../images/halit.jfif";
+import mustafa from "../../images/mustafa.png";
 import { FaGithub } from "react-icons/fa";
 
 
@@ -27,8 +28,8 @@ export let adoptionProcess = {
       },
       {
         id: 3,
-        img: `${rahaf}`,
-        text: "Şükrü Mustafa Güldağ",
+        img: `${mustafa}`,
+        text: "Mustafa Şükrü Güldağ",
         firstDescription: "FrontEnd Engineer",
         secondDescription: <a href="https://github.com/mustafaguldag" target="_blank">
             <FaGithub size={30} style={{color: "#777777"}}/></a>,
