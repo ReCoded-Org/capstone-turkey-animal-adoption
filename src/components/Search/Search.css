@@ -67,3 +67,32 @@
 .searchForm option {
     color: #777777;
 }
+
+.adoptionForm input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px solid #ff7777;
+}
+
+.searchForm input:focus,
+.searchForm select:focus,
+.adoptionForm input:focus {
+    outline: none;
+}
+
+.adoptionFormModalBody h4 {
+    color: #777777;
+}
+
+#contained-modal-title-vcenter {
+    color: #ff5555;
+}
+
+.modalFormBtn,
+.modalFormBtn:hover,
+.modalFormBtn:focus {
+    background: #ff7777;
+    border: 1px solid #fff;
+}

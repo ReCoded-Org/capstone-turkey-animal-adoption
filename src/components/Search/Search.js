@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }  from "react";
 import SearchResults from "./SearchResults";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
@@ -6,7 +6,7 @@ import "./Search.css";
 
 const Search = ({ searchGuests }) => {
 
-  const [search, setSearch] = React.useState({
+  const [search, setSearch] = useState({
     location: "",
     age: "",
     breed: "",
@@ -22,7 +22,6 @@ const Search = ({ searchGuests }) => {
   }
 
   const submitHandle = e => {
-    // console.log(searchGuests.guestsResults)
     e.preventDefault()
       const searchItem = searchGuests.guestsResults.filter(item => {
         return (
@@ -67,9 +66,19 @@ const Search = ({ searchGuests }) => {
         <h1>{searchGuests.searchGuestsTitle.title}</h1>
         <Col sm={12}>
         <form onSubmit={submitHandle} className="searchForm">
-          <input type="text" name="location" value={search.location} onChange={changeHandle} placeholder="Location"/>
+          <select name="location" onChange={changeHandle} value={search.location}>
+            <option value="Select Location">Select Location</option>
+            {searchGuests.locationCities.map(city => <option>{city}</option>)}
+          </select>
+          {/* <select name="age" onChange={changeHandle} value={search.age}>
+            <option value="Select Age">Select Age</option>
+            {searchGuests.searchAge.map(age => <option>{age}</option>)}
+          </select> */}
           <input type="text" name="age" value={search.age} onChange={changeHandle} placeholder="Age"/>
-          <input type="text" name="breed" value={search.breed} onChange={changeHandle} placeholder="Breed" />
+          <select name="breed" onChange={changeHandle} value={search.breed}>
+            <option value="Select Breed">Select Breed</option>
+            {searchGuests.searchBreed.map(breed => <option>{breed}</option>)}
+          </select>
           <select name="gender" onChange={changeHandle} value={search.gender}>
             <option value="Select Gender">Select Gender</option>
             <option value="Female">Female</option>
@@ -91,6 +100,7 @@ const Search = ({ searchGuests }) => {
                 age={result.age}
                 breed={result.breed}
                 gender={result.gender}
+                name={result.name}
               />
               )
             }) : <LoadingPage />}

@@ -11,6 +11,7 @@ export let searchGuests = {
         age: "2",
         breed: "Poodle",
         gender: "Female",
+        name: "Sushi",
       },
       {
         id: 2,
@@ -20,6 +21,7 @@ export let searchGuests = {
         age: "1",
         breed: "Terrier",
         gender: "Male",
+        name: "Sushi",
       },
       {
         id: 3,
@@ -29,6 +31,26 @@ export let searchGuests = {
         age: "2",
         breed: "Poodle",
         gender: "Female",
+        name: "Sushi",
       },
     ],
+    locationCities : [
+      "Istanbul",
+      "Ankara",
+      "Izmir"
+    ],
+    searchBreed : [
+      "Poodle",
+      "Terrier",
+      "Rottweiler",
+      "Golden Retriever",
+      "Cat",
+      "Tobby cat",
+      "Scottish"
+    ],
+    searchAge : [
+      "0 - 1",
+      "1 - 3",
+      "3 - 5"
+    ]
   };
