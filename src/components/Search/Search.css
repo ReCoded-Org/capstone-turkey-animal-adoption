@@ -96,3 +96,9 @@
     background: #ff7777;
     border: 1px solid #fff;
 }
+
+.errorMessage {
+    color: #3d3dfd;
+    font-weight: bold;
+    font-style: italic;
+}
