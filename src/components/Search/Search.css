@@ -38,11 +38,13 @@
     margin-top: 2rem;
 }
 
-.searchForm input {
+.searchForm input, 
+.searchForm select {
     margin-right: 1rem;
     border: 2px solid #FF7777;
     border-radius: 30px;
     padding: .3rem .7rem;
+    margin-bottom: 1rem;
 }
 
 .searchForm button {
@@ -53,4 +55,15 @@
 
 .searchIcon {
     color: #ff7777;
+}
+
+.searchCatLogo {
+    max-width: 630px;
+}
+
+.loadPage h4,
+.loadPage h6,
+.searchForm select,
+.searchForm option {
+    color: #777777;
 }

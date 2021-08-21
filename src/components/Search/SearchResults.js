@@ -5,6 +5,9 @@ import { BsGeoAlt } from "react-icons/bs";
 import { FaPaw } from "react-icons/fa";
 
 const SearchResults = ({ img, id, location, age, breed, gender }) => {
+    const [show, setShow] = useState(false);
+
+    const handleToggle = () => setShow(!show);
 
     return (
         <>
@@ -16,20 +19,41 @@ const SearchResults = ({ img, id, location, age, breed, gender }) => {
                         <Card.Text id="cardText">
                             <div className="firstDiv">
                                 <p>{breed}</p>
-                                <Button variant="primary" className="adoptButton">
+                                <Button variant="primary" className="adoptButton" onClick={() => handleToggle()}>
                                     <FaPaw className="pawIcon"/>
                                     Adopt
                                 </Button>
                             </div>
                             <div className="secondDiv">
-                                <p>{gender},{age}</p>
-                                <p>{location}</p>
+                                <p>{gender}, {age}</p>
+                                <p className="mt-4"><BsGeoAlt size={25}/> {location}</p>
                                 {/* <BsGeoAlt size={25}/> */}
                             </div>
                         </Card.Text>
                     </Card.Body>
                 </Card>
             </Col>
+            <Modal show={show} onHide={() => handleToggle()} className="modal-open">
+        <Modal.Header closeButton id="modalHeader">
+          <Modal.Title>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body id="modalBody">
+          <p>My Name is</p>
+          <p>I am old</p>
+          <p>I am a</p>
+        </Modal.Body>
+        <Modal.Footer id="modalFooter">
+          <Button
+            className="shadow-none"
+            id="closeButton"
+            variant="secondary"
+            onClick={() => handleToggle()}
+          >
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
         </>
     );
 };

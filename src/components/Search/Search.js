@@ -24,33 +24,43 @@ const Search = ({ searchGuests }) => {
   const submitHandle = e => {
     // console.log(searchGuests.guestsResults)
     e.preventDefault()
-    const searchItem = searchGuests.guestsResults.filter(item => {
-      return (
-        item.location
-          .toLowerCase()
-          .includes(
-            search.location.toLowerCase()
+      const searchItem = searchGuests.guestsResults.filter(item => {
+        return (
+          item.location
+            .toLowerCase()
+            .includes(
+              search.location.toLowerCase()
+            ) &&
+          item.age
+            .toLowerCase()
+            .includes(
+              search.age.toLowerCase()
+            ) &&
+          item.breed
+            .toLowerCase()
+            .includes(
+              search.breed.toLowerCase()
           ) &&
-        item.age
-          .toLowerCase()
-          .includes(
-            search.age.toLowerCase()
-          ) &&
-        item.breed
-          .toLowerCase()
-          .includes(
-            search.breed.toLowerCase()
-        ) &&
-        item.gender
-          .toLowerCase()
-          .includes(
-            search.gender.toLowerCase()
+          item.gender
+            .toLowerCase()
+            .includes(
+              search.gender.toLowerCase()
+          )
         )
-      )
-    })
-    // console.log(searchItem)
-    return setSearchresults(searchItem)
+      })
+      return setSearchresults(searchItem)
   }
+
+  const LoadingPage = () => {
+    return (
+      <Col sm={12} className="loadPage">
+        <h4>Start Searching Now and Discover New Friends</h4>
+        <h6>They are waiting for their new home</h6>
+        <img src="https://timesofindia.indiatimes.com/photo/67586673.cms" className="w-100 searchCatLogo"/>
+      </Col>
+    );
+  };
+
   return (
     <Container>
       <Row className="searchContainer py-5">
@@ -60,7 +70,11 @@ const Search = ({ searchGuests }) => {
           <input type="text" name="location" value={search.location} onChange={changeHandle} placeholder="Location"/>
           <input type="text" name="age" value={search.age} onChange={changeHandle} placeholder="Age"/>
           <input type="text" name="breed" value={search.breed} onChange={changeHandle} placeholder="Breed" />
-          <input type="text" name="gender" value={search.gender} onChange={changeHandle} placeholder="Gender" />
+          <select name="gender" onChange={changeHandle} value={search.gender}>
+            <option value="Select Gender">Select Gender</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+          </select>
           <button type="submit">
             <FaSearch size={27} className="searchIcon" />
           </button>
@@ -68,7 +82,7 @@ const Search = ({ searchGuests }) => {
         </Col>
         <Col sm={12}>
           <Row className="mt-5 items">
-            {searchResults.map(result => {
+            {searchResults.length > 0 ? searchResults.map(result => {
               return (
                 <SearchResults
                 key={result.id}
@@ -79,28 +93,7 @@ const Search = ({ searchGuests }) => {
                 gender={result.gender}
               />
               )
-            })}
-            
-            {/* {searchGuests.guestsResults.filter((item) =>
-              {
-                if(search === "") {
-                return item
-                } else if (item.location.includes(search) && item.age.includes(search) && item.breed.includes(search) && item.gender.includes(search)) {
-                  return item
-                }
-              }
-            ).map((result) => {
-              return (
-                <SearchResults
-                key={result.id}
-                img={result.img}
-                petLocation={result.location}
-                petAge={result.age}
-                petBreed={result.breed}
-                petGender={result.gender}
-              />
-              )
-              })} */}
+            }) : <LoadingPage />}
           </Row>
         </Col>
       </Row>
