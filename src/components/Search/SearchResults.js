@@ -5,7 +5,6 @@ import { BsGeoAlt } from "react-icons/bs";
 import { FaPaw } from "react-icons/fa";
 import AdoptionFormModal from "./AdoptionFormModal"
 
-
 const SearchResults = ({ img, id, location, age, breed, gender, name }) => {
 
   const [modalShow, setModalShow] = useState(false);

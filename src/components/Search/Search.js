@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SearchResults from "./SearchResults";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 import "./Search.css";
 import { useFormik } from 'formik';
@@ -8,7 +8,7 @@ import { useFormik } from 'formik';
 const Search = ({ searchGuests }) => {
 
   const [searchResults, setSearchresults] = React.useState([])
-
+  
   const formik = useFormik({
     initialValues: {
       location: "",
@@ -17,6 +17,16 @@ const Search = ({ searchGuests }) => {
       gender: "",
     },
     onSubmit: values => {
+      const checkAge = age => {
+        switch(values.age.toLowerCase()) {
+          case "<3":
+            return Number(age) < 3;
+          case ">3":
+            return Number(age) >= 3;
+          default:
+            return true;
+        }
+      };
       const searchItem = searchGuests.guestsResults.filter(item => {
         return (
           item.location
@@ -24,11 +34,7 @@ const Search = ({ searchGuests }) => {
             .includes(
               values.location.toLowerCase()
             ) &&
-          item.age
-            .toLowerCase()
-            .includes(
-              values.age.toLowerCase()
-            ) &&
+          checkAge(item.age) &&
           item.breed
             .toLowerCase()
             .includes(
@@ -69,12 +75,10 @@ const Search = ({ searchGuests }) => {
             </select>
 
             <label htmlFor="age"></label>
-            <input
-              id="age"
-              type="text"
-              placeholder="age"
-              {...formik.getFieldProps('age')}
-            />
+            <select id="age" name="age" value={formik.values.age} {...formik.getFieldProps('age')}>
+              <option value="Select Age">Select Age</option>
+              {searchGuests.searchAge.map(age => <option>{age}</option>)}
+            </select>
 
             <label htmlFor="breed"></label>
             <select id="breed" name="breed" value={formik.values.breed} {...formik.getFieldProps('breed')}>

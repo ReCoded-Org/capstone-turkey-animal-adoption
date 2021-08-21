@@ -12,16 +12,6 @@
     border: 1px solid #fff;
 } 
 
-#modalBody {
-    background: #ff7777; 
-    color: #fff;
-}
-
-#cardText {
-    display: flex;
-    justify-content: space-between;
-}
-
 .firstDiv {
     text-align: start;
 }
@@ -86,10 +76,6 @@
     color: #777777;
 }
 
-#contained-modal-title-vcenter {
-    color: #ff5555;
-}
-
 .modalFormBtn,
 .modalFormBtn:hover,
 .modalFormBtn:focus {
@@ -102,3 +88,21 @@
     font-weight: bold;
     font-style: italic;
 }
+
+/* Bootstrap Id */
+#contained-modal-title-vcenter {
+    color: #ff5555;
+}
+/* Bootstrap Id */
+
+/* For Overriding */
+#modalBody {
+    background: #ff7777; 
+    color: #fff;
+}
+
+#cardText {
+    display: flex;
+    justify-content: space-between;
+}
+
