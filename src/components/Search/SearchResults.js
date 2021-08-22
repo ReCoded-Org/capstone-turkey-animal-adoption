@@ -15,7 +15,7 @@ const SearchResults = ({ img, id, location, age, breed, gender, name }) => {
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={img} />
                     <Card.Body id="modalBody">
-                        <Card.Text id="cardText">
+                        <div id="cardText">
                             <div className="firstDiv">
                                 <p>{breed}</p>
                                 <p>{name}</p>
@@ -28,7 +28,7 @@ const SearchResults = ({ img, id, location, age, breed, gender, name }) => {
                                 <p>{gender}, {age}</p>
                                 <p className="mt-4"><BsGeoAlt size={25}/> {location}</p>
                             </div>
-                        </Card.Text>
+                        </div>
                     </Card.Body>
                 </Card>
             </Col>

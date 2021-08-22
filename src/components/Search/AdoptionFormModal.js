@@ -57,7 +57,9 @@ const AdoptionFormModal = (props) => {
     },
     validate,
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
+      alert("Your Form is Submitted");
+      console.log(JSON.stringify(values, null, 2));
     },
   });
 
@@ -67,6 +69,7 @@ const AdoptionFormModal = (props) => {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      animation={false}
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">

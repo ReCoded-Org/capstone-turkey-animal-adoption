@@ -8,6 +8,7 @@ import { useFormik } from 'formik';
 const Search = ({ searchGuests }) => {
 
   const [searchResults, setSearchresults] = React.useState([])
+  const [error, setError] = React.useState('')
   
   const formik = useFormik({
     initialValues: {
@@ -47,6 +48,11 @@ const Search = ({ searchGuests }) => {
             )
         )
       })
+      // if(searchItem) {
+      //   return setSearchresults(searchItem)
+      // } else {
+      //   return setError("No Items Were Found");
+      // }
       return setSearchresults(searchItem)
       // return JSON.stringify(values, null, 2);
     },
@@ -87,10 +93,9 @@ const Search = ({ searchGuests }) => {
             </select>
 
             <label htmlFor="gender"></label>
-            <select name="gender" value={formik.values.gender} {...formik.getFieldProps('gender')}>
+            <select id="gender" name="gender" value={formik.values.gender} {...formik.getFieldProps('gender')}>
               <option value="Select Gender">Select Gender</option>
-              <option value="Female">Female</option>
-              <option value="Male">Male</option>
+              {searchGuests.searchGender.map(gender => <option>{gender}</option>)}
             </select>
 
             <button type="submit">
