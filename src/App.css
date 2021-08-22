@@ -16,21 +16,46 @@ body {
   background-color: #fc5d5d;
   border-color: #fc5d5d;
 }
-.page-footer{
 
-  background-color: #31393C  ;
+.page-footer {
+  background-color: #31393c;
   color: white;
 }
 
-.headersColor{
-  color: #FF7777  ;
+.headersColor {
+  color: #ff7777;
   text-align: left;
 }
 
-.ulJustify{
+.ulJustify {
   text-align: left;
 }
-.footer-copyright{
+.footer-copyright {
   text-align: left;
   font-size: 14px;
+}
+footer {
+  background-color: #31393c;
+  color: white;
+}
+h3 {
+  color: hsl(0, 100%, 73%);
+  text-align: left;
+}
+a {
+  color: white;
+}
+h4 {
+  color: #ff7777;
+  text-align: left;
+}
+
+.dogImage {
+  width: 30;
+  height: 20;
+  border-radius: 5px;
+}
+
+li {
+  text-align: left;
 }
