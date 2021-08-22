@@ -15,7 +15,7 @@ function NavBar() {
             <img
               src={logo}
               height="50"
-              alt="Furry Friend"
+              alt="Our Furry Friend"
               className="logoHeader"
             />
           </NavLink>
