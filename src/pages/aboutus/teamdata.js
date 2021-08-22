@@ -6,7 +6,6 @@ import halit from "../../images/halit.jfif";
 import mustafa from "../../images/mustafa.png";
 import { FaGithub } from "react-icons/fa";
 
-
 export let adoptionProcess = {
     adoptionProcessTitle: "Meet Our Great Team",
     adoptionProcessItems: [
