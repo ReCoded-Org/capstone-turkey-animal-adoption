@@ -7,8 +7,8 @@ import { useFormik } from 'formik';
 
 const Search = ({ searchGuests }) => {
 
-  const [searchResults, setSearchresults] = React.useState([])
-  const [error, setError] = React.useState('')
+  const [searchResults, setSearchresults] = React.useState(searchGuests.guestsResults)
+  // const [error, setError] = React.useState('')
   
   const formik = useFormik({
     initialValues: {
@@ -31,21 +31,14 @@ const Search = ({ searchGuests }) => {
       const searchItem = searchGuests.guestsResults.filter(item => {
         return (
           item.location
-            .toLowerCase()
-            .includes(
-              values.location.toLowerCase()
-            ) &&
+            .toLowerCase() == values.location.toLowerCase()
+             &&
           checkAge(item.age) &&
           item.breed
-            .toLowerCase()
-            .includes(
-              values.breed.toLowerCase()
-            ) &&
+            .toLowerCase() == values.breed.toLowerCase()
+             &&
           item.gender
-            .toLowerCase()
-            .includes(
-              values.gender.toLowerCase()
-            )
+            .toLowerCase() == values.gender.toLowerCase()
         )
       })
       // if(searchItem) {
@@ -61,8 +54,8 @@ const Search = ({ searchGuests }) => {
   const LoadingPage = () => {
     return (
       <Col sm={12} className="loadPage">
-        <h4>Start Searching Now and Discover New Friends</h4>
-        <h6>They are waiting for their new home</h6>
+        <h4>No Items Were Found Matching Your Criteria</h4>
+        {/* <h6>They are waiting for their new home</h6> */}
         <img src="https://timesofindia.indiatimes.com/photo/67586673.cms" className="w-100 searchCatLogo" />
       </Col>
     );
