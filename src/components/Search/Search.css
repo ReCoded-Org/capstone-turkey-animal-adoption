@@ -1,108 +1,112 @@
 .searchContainer {
-    justify-content: center;
+  justify-content: center;
 }
 
 .searchContainer h1 {
-    color: #ff3e3e;
+  color: #ff3e3e;
 }
 
-.adoptButton, 
+.adoptButton,
 .adoptButton:hover {
-    background: #ff7777;
-    border: 1px solid #fff;
-} 
+  background: #ff7777;
+  border: 1px solid #fff;
+}
 
 .firstDiv {
-    text-align: start;
+  text-align: start;
 }
 
 .secondDiv {
-    text-align: end;
+  text-align: end;
 }
 
 .pawIcon {
-    margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .searchForm {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
-.searchForm input, 
+.searchForm input,
 .searchForm select {
-    margin-right: 1rem;
-    border: 2px solid #FF7777;
-    border-radius: 30px;
-    padding: .3rem .7rem;
-    margin-bottom: 1rem;
+  margin-right: 1rem;
+  border: 2px solid #ff7777;
+  border-radius: 30px;
+  padding: 0.3rem 0.7rem;
+  margin-bottom: 1rem;
 }
 
 .searchForm button {
-    background: #fff;
-    border: none;
-    outline: none;
+  background: #fff;
+  border: none;
+  outline: none;
 }
 
 .searchIcon {
-    color: #ff7777;
+  color: #ff7777;
 }
 
 .searchCatLogo {
-    max-width: 630px;
+  max-width: 630px;
 }
 
 .loadPage h4,
 .loadPage h6,
 .searchForm select,
 .searchForm option {
-    color: #777777;
+  color: #777777;
 }
 
 .adoptionForm input {
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: .5rem;
-    border-radius: 10px;
-    border: 2px solid #ff7777;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid #ff7777;
 }
 
 .searchForm input:focus,
 .searchForm select:focus,
 .adoptionForm input:focus {
-    outline: none;
+  outline: none;
 }
 
 .adoptionFormModalBody h4 {
-    color: #777777;
+  color: #777777;
 }
 
 .modalFormBtn,
 .modalFormBtn:hover,
 .modalFormBtn:focus {
-    background: #ff7777;
-    border: 1px solid #fff;
+  background: #ff7777;
+  border: 1px solid #fff;
 }
 
 .errorMessage {
-    color: #3d3dfd;
-    font-weight: bold;
-    font-style: italic;
+  color: #3d3dfd !important;
+  font-weight: bold !important;
+  font-style: italic !important;
+}
+
+.cardCol {
+  display: flex;
+  justify-content: center;
 }
 
 /* Bootstrap Id */
 #contained-modal-title-vcenter {
-    color: #ff5555;
+  color: #ff5555;
 }
 /* Bootstrap Id */
 
 /* For Overriding */
 #modalBody {
-    background: #ff7777; 
-    color: #fff;
+  background: #ff7777;
+  color: #fff;
 }
 
 #cardText {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-

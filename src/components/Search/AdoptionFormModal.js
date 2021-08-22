@@ -1,68 +1,10 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
 import "./Search.css";
-import { useFormik } from 'formik';
-
-const validate = values => {
-  const errors = {};
-
-  if (!values.adoptionFirstName) {
-    errors.adoptionFirstName = 'Required';
-  } else if (values.adoptionFirstName.length > 15) {
-    errors.adoptionFirstName = 'Must be 15 characters or less';
-  }
-
-  if (!values.adoptionLastName) {
-    errors.adoptionLastName = 'Required';
-  } else if (values.adoptionLastName.length > 20) {
-    errors.adoptionLastName = 'Must be 20 characters or less';
-  }
-
-  if (!values.adoptionEmail) {
-    errors.adoptionEmail = 'Required';
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.adoptionEmail)) {
-    errors.adoptionEmail = 'Invalid email address';
-  }
-
-  if (!values.adoptionPetName) {
-    errors.adoptionPetName = 'Required';
-  } else if (values.adoptionPetName.length > 15) {
-    errors.adoptionPetName = 'Must be 15 characters or less';
-  }
-
-  if (!values.adoptionPetBreed) {
-    errors.adoptionPetBreed = 'Required';
-  } else if (values.adoptionPetBreed.length > 15) {
-    errors.adoptionPetBreed = 'Must be 15 characters or less';
-  }
-
-  if (!values.adoptionCity) {
-    errors.adoptionCity = 'Required';
-  } else if (values.adoptionCity.length > 15) {
-    errors.adoptionCity = 'Must be 15 characters or less';
-  }
-
-  return errors;
-};
+import * as Yup from "yup";
+import { Formik, Field, Form, ErrorMessage } from "formik";
 
 const AdoptionFormModal = (props) => {
-  const formik = useFormik({
-    initialValues: {
-      adoptionFirstName: '',
-      adoptionLastName: '',
-      adoptionEmail: '',
-      adoptionPetName: '',
-      adoptionPetBreed: '',
-      adoptionCity: '',
-    },
-    validate,
-    onSubmit: values => {
-      // alert(JSON.stringify(values, null, 2));
-      alert("Your Form is Submitted");
-      console.log(JSON.stringify(values, null, 2));
-    },
-  });
-
   return (
     <Modal
       {...props}
@@ -78,81 +20,102 @@ const AdoptionFormModal = (props) => {
       </Modal.Header>
       <Modal.Body className="adoptionFormModalBody">
         <h4 className="mb-4">Fill Our Form for Adoption Process</h4>
-        <form onSubmit={formik.handleSubmit} className="adoptionForm">
-          {formik.touched.adoptionFirstName && formik.errors.adoptionFirstName ? (
-            <div className="errorMessage">{formik.errors.adoptionFirstName}</div>
-          ) : null}
-          <label htmlFor="adoptionFirstName"></label>
-          <input
-            id="adoptionFirstName"
-            type="text"
-            placeholder="Your First Name"
-            {...formik.getFieldProps('adoptionFirstName')}
-          />
+        <Formik
+          initialValues={{
+            firstName: "",
+            lastName: "",
+            email: "",
+            petName: "",
+            petBreed: "",
+            userCity: "",
+          }}
+          validationSchema={Yup.object({
+            firstName: Yup.string()
+              .max(15, "Must be 15 characters or less")
+              .required("Required"),
+            lastName: Yup.string()
+              .max(20, "Must be 20 characters or less")
+              .required("Required"),
+            email: Yup.string()
+              .email("Invalid email address")
+              .required("Required"),
+            petName: Yup.string()
+              .max(15, "Must be 15 characters or less")
+              .required("Required"),
+            petBreed: Yup.string()
+              .max(15, "Must be 15 characters or less")
+              .required("Required"),
+            userCity: Yup.string()
+              .max(15, "Must be 15 characters or less")
+              .required("Required"),
+          })}
+          onSubmit={(values, { setSubmitting }) => {
+            setTimeout(() => {
+              alert("Your Form is Submitted");
+              setSubmitting(false);
+            }, 400);
+            return JSON.stringify(values, null, 2);
+          }}
+        >
+          <Form className="adoptionForm">
+            <div className="errorMessage">
+              <ErrorMessage name="firstName" />
+            </div>
+            <label htmlFor="firstName"></label>
+            <Field name="firstName" type="text" placeholder="Your First Name" />
 
-          {formik.touched.adoptionLastName && formik.errors.adoptionLastName ? (
-            <div className="errorMessage">{formik.errors.adoptionLastName}</div>
-          ) : null}
-          <label htmlFor="adoptionLastName"></label>
-          <input
-            id="adoptionLastName"
-            type="text"
-            placeholder="Your Last Name"
-            {...formik.getFieldProps('adoptionLastName')}
-          />
+            <div className="errorMessage">
+              <ErrorMessage name="lastName" />
+            </div>
+            <label htmlFor="lastName"></label>
+            <Field name="lastName" type="text" placeholder="Your Last Name" />
 
-          {formik.touched.adoptionEmail && formik.errors.adoptionEmail ? (
-            <div className="errorMessage">{formik.errors.adoptionEmail}</div>
-          ) : null}
-          <label htmlFor="adoptionEmail"></label>
-          <input
-            id="adoptionEmail"
-            type="email"
-            placeholder="Your Email Address"
-            {...formik.getFieldProps('adoptionEmail')}
-          />
+            <div className="errorMessage">
+              <ErrorMessage name="email" />
+            </div>
+            <label htmlFor="email"></label>
+            <Field name="email" type="email" placeholder="Your Email Address" />
 
-          {formik.touched.adoptionPetName && formik.errors.adoptionPetName ? (
-            <div className="errorMessage">{formik.errors.adoptionPetName}</div>
-          ) : null}
-          <label htmlFor="adoptionPetName"></label>
-          <input
-            id="adoptionPetName"
-            type="text"
-            placeholder="The Name of The Pet You are Adopting"
-            {...formik.getFieldProps('adoptionPetName')}
-          />
+            <div className="errorMessage">
+              <ErrorMessage name="petName" />
+            </div>
+            <label htmlFor="petName"></label>
+            <Field
+              name="petName"
+              type="text"
+              placeholder="The Name of the Pet You are Adopting"
+            />
 
-          {formik.touched.adoptionPetBreed && formik.errors.adoptionPetBreed ? (
-            <div className="errorMessage">{formik.errors.adoptionPetBreed}</div>
-          ) : null}
-          <label htmlFor="adoptionPetBreed"></label>
-          <input
-            id="adoptionPetBreed"
-            type="text"
-            placeholder="The Breed of The Pet You are Adopting"
-            {...formik.getFieldProps('adoptionPetBreed')}
-          />
+            <div className="errorMessage">
+              <ErrorMessage name="petBreed" />
+            </div>
+            <label htmlFor="petBreed"></label>
+            <Field
+              name="petBreed"
+              type="text"
+              placeholder="The Breed of the Pet You are Adopting"
+            />
 
-          {formik.touched.adoptionCity && formik.errors.adoptionCity ? (
-            <div className="errorMessage">{formik.errors.adoptionCity}</div>
-          ) : null}
-          <label htmlFor="adoptionCity"></label>
-          <input
-            id="adoptionCity"
-            type="text"
-            placeholder="Your City"
-            {...formik.getFieldProps('adoptionCity')}
-          />
+            <div className="errorMessage">
+              {" "}
+              <ErrorMessage name="userCity" />
+            </div>
+            <label htmlFor="userCity"></label>
+            <Field name="userCity" type="text" placeholder="Your City" />
 
-          <Button type="submit" className="modalFormBtn shadow-none">Submit</Button>
-        </form>
+            <Button type="submit" className="modalFormBtn shadow-none">
+              Submit
+            </Button>
+          </Form>
+        </Formik>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide} className="modalFormBtn shadow-none">Close</Button>
+        <Button onClick={props.onHide} className="modalFormBtn shadow-none">
+          Close
+        </Button>
       </Modal.Footer>
     </Modal>
   );
-}
+};
 
-export default AdoptionFormModal
+export default AdoptionFormModal;
