@@ -20,7 +20,7 @@ function Login({ show, hideFn }) {
                 <h1>Login Form</h1>
                 <ImGoogle3 size={27} className="mr-2 mb-4" />
                 <FaFacebook size={27} className="mb-4" />
-                <p class="note mb-4">Or use your account to Login </p>
+                <p className="note mb-4">Or use your account to Login </p>
                 <Formik
                   initialValues={{ email: "", password: "" }}
                   validationSchema={Yup.object({
@@ -38,7 +38,7 @@ function Login({ show, hideFn }) {
                     }, 400);
                   }}
                 >
-                  <Form class="login">
+                  <Form className="login">
                     <p className="error mb-1">
                       <ErrorMessage name="email" />
                     </p>
@@ -57,7 +57,7 @@ function Login({ show, hideFn }) {
                       className="form-control  mb-5"
                       placeholder="password"
                     />
-                    <button type="submit" class="btn btn-primary ">
+                    <button type="submit" className="btn btn-primary ">
                       <FaPaw className="pawIcon" />
                       Submit
                     </button>
