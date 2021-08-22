@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Button, Form } from "react-bootstrap";
 import logo from "../../images/logo.png";
-import Login from "../Login/Login.js";
+import Login from "../Login/Login";
 import "./NavBar.css";
 
 function NavBar() {
