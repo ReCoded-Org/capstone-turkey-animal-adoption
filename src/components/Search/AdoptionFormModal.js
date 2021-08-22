@@ -97,7 +97,6 @@ const AdoptionFormModal = (props) => {
             />
 
             <div className="errorMessage">
-              {" "}
               <ErrorMessage name="userCity" />
             </div>
             <label htmlFor="userCity"></label>
