@@ -32,7 +32,11 @@ const GuestContainer = ({ latestAddedGuests }) => {
         {latestAddedGuests &&
           latestAddedGuests.latestGuestsItems.map((guest) => (
             <Carousel.Item key={guest.id}>
-              <img className="d-block w-100 sliderImg" src={guest.img} alt="slideImage" />
+              <img
+                className="d-block w-100 sliderImg"
+                src={guest.img}
+                alt="slideImage"
+              />
             </Carousel.Item>
           ))}
       </Carousel>

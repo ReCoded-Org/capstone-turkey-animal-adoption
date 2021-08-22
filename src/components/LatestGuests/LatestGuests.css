@@ -97,7 +97,7 @@ For mobile
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .sliderImg {
     height: 400px;
   }
