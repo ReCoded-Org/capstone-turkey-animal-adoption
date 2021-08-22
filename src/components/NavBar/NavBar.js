@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Button, Form } from "react-bootstrap";
 import logo from "../../images/logo.png";
-import Login from "../Login/Login";
+import Login from "../Login/Login.js";
 import "./NavBar.css";
 
 function NavBar() {
@@ -15,7 +15,7 @@ function NavBar() {
             <img
               src={logo}
               height="50"
-              alt="Our Furry Friend"
+              alt="Furry Friend"
               className="logoHeader"
             />
           </NavLink>
