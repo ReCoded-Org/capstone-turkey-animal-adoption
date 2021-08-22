@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
+import PersonalDetails from "./components/PersonalDetails/PersonalDetails";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" component={NavBar} />
       <Route exact path="/" component={Homepage} />
       <Route path="/" component={Footer} />
+      <Route path="/" component={PersonalDetails} />
     </Router>
   );
 }
