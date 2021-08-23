@@ -20,7 +20,9 @@ function SignUpModal({ show, hideFn }) {
                 <h1>Create Account</h1>
                 <ImGoogle3 size={27} className="mr-2 mb-4" />
                 <FaFacebook size={27} className="mb-4" />
-                <p className="note mb-4">Or use your email to create new account </p>
+                <p className="note mb-4">
+                  Or use your email to create new account{" "}
+                </p>
                 <Formik
                   initialValues={{ email: "", password: "" }}
                   validationSchema={Yup.object({
@@ -38,8 +40,8 @@ function SignUpModal({ show, hideFn }) {
                     }, 400);
                   }}
                 >
-                  <Form className="login">
-                  <Field
+                  <Form className="signUpForms">
+                    <Field
                       name="name"
                       type="text"
                       className="form-control  mb-3"
