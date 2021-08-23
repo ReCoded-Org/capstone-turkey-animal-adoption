@@ -1,169 +1,81 @@
-import React, { useState } from "react";
-import { Formik, Field, Form } from "formik";
-import { Modal, Button, Col, Container, Row } from "react-bootstrap";
+import React from "react";
+import { Modal, Col, Row, Container } from "react-bootstrap";
 import "./SignUpModal.css";
-import blackCat from "../../images/catSignUpModal.png";
-import { useFormik } from 'formik';
+import { FaFacebook, FaPaw } from "react-icons/fa";
+import { ImGoogle3 } from "react-icons/im";
+import { MdClose } from "react-icons/md";
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
-function SignUpModal(props) {
-  
-  const validate = values => {
-    const errors = {};
-  
-    if (!values.firstName) {
-      errors.firstName = 'Required';
-    } else if (values.firstName.length > 15) {
-      errors.firstName = 'Must be 15 characters or less';
-    }
-  
-    if (!values.lastName) {
-      errors.lastName = 'Required';
-    } else if (values.lastName.length > 20) {
-      errors.lastName = 'Must be 20 characters or less';
-    }
-  
-    if (!values.email) {
-      errors.email = 'Required';
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-      errors.email = 'Invalid email address';
-    }
-  
-    return errors;
-  };
-
-
-
-  const formik = useFormik({
-    initialValues: {
-      firstName: '',
-      password: '',
-      email: '',
-    },
-    validate,
-    onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
-
+function SignUpModal({ show, hideFn }) {
   return (
-    // <Modal
-    //   id="modalSignUp"
-    //   {...props}
-    //   size="lg"
-    //   aria-labelledby="contained-modal-title-vcenter"
-    //   centered
-    // >
-
-    //   <Modal.Body>
-    //     <img className="catSignUpModal" src={blackCat} alt="CatLogo" />
-    //   </Modal.Body>
-
-    //   <Modal.Header closeButton>
-    //     <Modal.Title id="contained-modal-title-vcenter">
-    //       Create Account
-    //     </Modal.Title>
-    //     <form onSubmit={formik.handleSubmit}>
-    //       {formik.touched.firstName && formik.errors.firstName ? (
-    //         <div className="errorMessage">{formik.errors.firstName}</div>
-    //       ) : null}
-    //       <label htmlFor="firstName"></label>
-    //       <input
-    //         id="firstName"
-    //         type="text"
-    //         placeholder="Your First Name"
-    //         {...formik.getFieldProps('firstName')}
-    //       />
-
-    //       {/* {formik.touched.password && formik.errors.password ? (
-    //         <div className="errorMessage">{formik.errors.password}</div>
-    //       ) : null}
-    //       <label htmlFor="password"></label>
-    //       <input
-    //         id="password"
-    //         type="password"
-    //         placeholder="password"
-    //         {...formik.getFieldProps('password')}
-    //       /> */}
-
-    //       {formik.touched.email && formik.errors.email ? (
-    //         <div className="errorMessage">{formik.errors.email}</div>
-    //       ) : null}
-    //       <label htmlFor="email"></label>
-    //       <input
-    //         id="email"
-    //         type="email"
-    //         placeholder="Your Email Address"
-    //         {...formik.getFieldProps('email')}
-    //       />
-
-    //       <Button type="submit" className="modalFormBtn shadow-none">Submit</Button>
-    //     </form>
-
-    //   </Modal.Header>
-
-    //   {/* <Modal.Footer>
-    //       <Button onClick={props.onHide}>Close</Button>
-    //     </Modal.Footer> */}
-    // </Modal>
-    <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Sign Up Form
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body className="show-grid">
+    <Modal show={show} animation={false} size="lg" centered>
+      <Modal.Body className="modalBody">
+        <MdClose size={27} className="close" onClick={() => hideFn(false)} />
         <Container>
           <Row>
-            <Col xs={12} md={6}>
-            <img className="catSignUpModal" src={blackCat} alt="CatLogo" />
-            </Col>
-            <Col xs={12} md={6}>
-                 <form onSubmit={formik.handleSubmit}>
-           {formik.touched.firstName && formik.errors.firstName ? (
-            <div className="errorMessage">{formik.errors.firstName}</div>
-          ) : null}
-          <label htmlFor="firstName"></label>
-          <input
-            id="firstName"
-            type="text"
-            placeholder="Your First Name"
-            {...formik.getFieldProps('firstName')}
-          />
-
-          {/* {formik.touched.password && formik.errors.password ? (
-            <div className="errorMessage">{formik.errors.password}</div>
-          ) : null}
-          <label htmlFor="password"></label>
-          <input
-            id="password"
-            type="password"
-            placeholder="password"
-            {...formik.getFieldProps('password')}
-          /> */}
-
-          {formik.touched.email && formik.errors.email ? (
-            <div className="errorMessage">{formik.errors.email}</div>
-          ) : null}
-          <label htmlFor="email"></label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Your Email Address"
-            {...formik.getFieldProps('email')}
-          />
-
-          <Button type="submit" className="modalFormBtn shadow-none">Submit</Button>
-        </form>
+            <Col lg={6} className="bgCat"></Col>
+            <Col lg={6} className="bgContent">
+              <div align="center" className="innerContent">
+                <h1>Create Account</h1>
+                <ImGoogle3 size={27} className="mr-2 mb-4" />
+                <FaFacebook size={27} className="mb-4" />
+                <p className="note mb-4">Or use your email to create new account </p>
+                <Formik
+                  initialValues={{ email: "", password: "" }}
+                  validationSchema={Yup.object({
+                    password: Yup.string()
+                      .min(6, "Must be 6 characters or more")
+                      .required("Password is a Required Field"),
+                    email: Yup.string()
+                      .email("Invalid email address")
+                      .required("Email is a Required Field"),
+                  })}
+                  onSubmit={(values, { setSubmitting }) => {
+                    setTimeout(() => {
+                      alert(JSON.stringify(values, null, 2));
+                      setSubmitting(false);
+                    }, 400);
+                  }}
+                >
+                  <Form className="login">
+                  <Field
+                      name="name"
+                      type="text"
+                      className="form-control  mb-3"
+                      placeholder="Your Name"
+                    />
+                    <p className="error mb-1">
+                      <ErrorMessage name="email" />
+                    </p>
+                    <Field
+                      name="email"
+                      type="email"
+                      className="form-control mb-4"
+                      placeholder="Your Email"
+                    />
+                    <p className="error mb-1">
+                      <ErrorMessage name="password" />
+                    </p>
+                    <Field
+                      name="password"
+                      type="password"
+                      className="form-control  mb-5"
+                      placeholder="Your Password"
+                    />
+                    <button type="submit" className="btn btn-primary ">
+                      <FaPaw className="pawIcon" />
+                      Submit
+                    </button>
+                  </Form>
+                </Formik>
+              </div>
             </Col>
           </Row>
-
         </Container>
       </Modal.Body>
-      
     </Modal>
-
   );
 }
-
 
 export default SignUpModal;

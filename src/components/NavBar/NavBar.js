@@ -5,13 +5,12 @@ import { Navbar, Nav, Button, Form } from "react-bootstrap";
 import SignUpModal from "../SignUpModal/SignUpModal";
 import logo from "../../images/logo.png";
 import "./NavBar.css";
-import "../SignUpModal/SignUpModal.css";
 
 
 function NavBar() {
 
   const [modalShow, setModalShow] = useState(false);
-
+  
   return (
     <div>
     <Navbar variant="light" expand="lg" className="bgLight">
@@ -38,7 +37,7 @@ function NavBar() {
             Contact
           </NavLink>
         </Nav>
-        <Button onClick={() => setModalShow(true)}>SignUp</Button>
+        <Button onClick={() => setModalShow(true)} className="ml-2">SignUp</Button>
         <Form.Control as="select" className="w-auto language">
           <option value="English">English</option>
           <option value="Arabic">Arabic</option>
@@ -46,8 +45,7 @@ function NavBar() {
         </Form.Control>
       </Navbar.Collapse>
     </Navbar>
-    <SignUpModal show={modalShow}
-        onHide={() => setModalShow(false)}/>
+    <SignUpModal show={modalShow} hideFn={setModalShow}/>
     </div>
   );
 }
