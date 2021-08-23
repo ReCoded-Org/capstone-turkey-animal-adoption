@@ -2,8 +2,8 @@ import React from "react";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import AdoptionProcess from "../../components/AdoptionProcess/ProcessContainer";
 import LatestGuests from "../../components/LatestGuests/GuestContainer";
-import { adoptionProcess } from "./teamdata";
-import { latestAddedGuests } from "./worksdata";
+import { adoptionProcess } from "../../data/teamdata";
+import { latestAddedGuests } from "../../data/worksdata";
 import aboutUsDog from "../../images/aboutUsDog.jpg";
 
 const dataOfHeroSection = {

@@ -1,9 +1,9 @@
-import poodle from "../../images/poodle.jpg";
-import terrier from "../../images/terrier.jpg";
-import rottweiler from "../../images/rottweiler.jpg";
-import golden from "../../images/golden.jpg";
-import cat1 from "../../images/cat1.jpeg";
-import cat2 from "../../images/cat2.jpg";
+import poodle from "../images/poodle.jpg";
+import terrier from "../images/terrier.jpg";
+import rottweiler from "../images/rottweiler.jpg";
+import golden from "../images/golden.jpg";
+import cat1 from "../images/cat1.jpeg";
+import cat2 from "../images/cat2.jpg";
 
 export let latestAddedGuests = {
   latestGuestsTitle: {

@@ -1,9 +1,9 @@
 import React from "react";
-import ayse from "../../images/ayse.jfif";
-import rahaf from "../../images/rahaf.jpg";
-import manar from "../../images/manar.jfif";
-import halit from "../../images/halit.jfif";
-import mustafa from "../../images/mustafa.png";
+import ayse from "../images/ayse.jfif";
+import rahaf from "../images/rahaf.jpg";
+import manar from "../images/manar.jfif";
+import halit from "../images/halit.jfif";
+import mustafa from "../images/mustafa.png";
 import { FaGithub } from "react-icons/fa";
 
 export let adoptionProcess = {
