@@ -22,6 +22,7 @@
 
 .pawIcon {
   margin-right: 0.5rem;
+  transform: rotate(-20deg);
 }
 
 .searchForm {
@@ -84,9 +85,9 @@
 }
 
 .errorMessage {
-  color: #3d3dfd !important;
-  font-weight: bold !important;
-  font-style: italic !important;
+  color: #3d3dfd;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .cardCol {
