@@ -1,98 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavBar renders correctly 1`] = `
-<nav
-  className="bgLight navbar navbar-expand-lg navbar-light"
->
-  <span
-    className="navbar-brand"
-  >
-    <a
-      aria-current="page"
-      className="active"
-      href="/"
-      onClick={[Function]}
-      style={Object {}}
-    >
-      <img
-        alt="Furry Friend"
-        className="logoHeader"
-        height="50"
-        src="logo.png"
-      />
-    </a>
-  </span>
-  <button
-    aria-controls="basic-navbar-nav"
-    aria-label="Toggle navigation"
-    className="navbar-toggler collapsed"
-    onClick={[Function]}
-    type="button"
+<div>
+  <nav
+    className="bgLight navbar navbar-expand-lg navbar-light"
   >
     <span
-      className="navbar-toggler-icon"
-    />
-  </button>
-  <div
-    aria-expanded={null}
-    className="navbar-collapse collapse"
-    id="basic-navbar-nav"
-  >
-    <div
-      className="mr-auto navbar-nav"
-      onKeyDown={[Function]}
+      className="navbar-brand"
     >
       <a
-        aria-current={null}
-        className="nav-link navLink"
-        href="/about"
+        aria-current="page"
+        className="active"
+        href="/"
         onClick={[Function]}
+        style={Object {}}
       >
-        About
+        <img
+          alt="Furry Friend"
+          className="logoHeader"
+          height="50"
+          src="logo.png"
+        />
       </a>
-      <a
-        aria-current={null}
-        className="nav-link navLink"
-        href="/blog"
-        onClick={[Function]}
-      >
-        Blog
-      </a>
-      <a
-        aria-current={null}
-        className="nav-link navLink"
-        href="/contact"
-        onClick={[Function]}
-      >
-        Contact
-      </a>
-    </div>
+    </span>
     <button
-      className="btn btn-primary"
-      disabled={false}
+      aria-controls="basic-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
       type="button"
     >
-      SignUp
+      <span
+        className="navbar-toggler-icon"
+      />
     </button>
-    <select
-      className="w-auto language form-control"
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="basic-navbar-nav"
     >
-      <option
-        value="English"
+      <div
+        className="mr-auto navbar-nav"
+        onKeyDown={[Function]}
       >
-        English
-      </option>
-      <option
-        value="Arabic"
+        <a
+          aria-current={null}
+          className="nav-link navLink"
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+        <a
+          aria-current={null}
+          className="nav-link navLink"
+          href="/blog"
+          onClick={[Function]}
+        >
+          Blog
+        </a>
+        <a
+          aria-current={null}
+          className="nav-link navLink"
+          href="/contact"
+          onClick={[Function]}
+        >
+          Contact
+        </a>
+      </div>
+      <button
+        className="ml-2 btn btn-primary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
       >
-        Arabic
-      </option>
-      <option
-        value="Turkish"
+        SignUp
+      </button>
+      <select
+        className="w-auto language form-control"
       >
-        Turkish
-      </option>
-    </select>
-  </div>
-</nav>
+        <option
+          value="English"
+        >
+          English
+        </option>
+        <option
+          value="Arabic"
+        >
+          Arabic
+        </option>
+        <option
+          value="Turkish"
+        >
+          Turkish
+        </option>
+      </select>
+    </div>
+  </nav>
+</div>
 `;
