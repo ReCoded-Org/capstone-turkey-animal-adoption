@@ -15,7 +15,7 @@ exports[`NavBar renders correctly 1`] = `
       style={Object {}}
     >
       <img
-        alt="Furry Friend"
+        alt="our Furry Friend"
         className="logoHeader"
         height="50"
         src="logo.png"
