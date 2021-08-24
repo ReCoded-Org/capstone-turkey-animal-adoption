@@ -4,6 +4,27 @@ import "./Search.css";
 import * as Yup from "yup";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 
+const searchModalValidation = {
+  firstName: Yup.string()
+    .max(15, "Must be 15 characters or less")
+    .required("Required"),
+  lastName: Yup.string()
+    .max(20, "Must be 20 characters or less")
+    .required("Required"),
+  email: Yup.string()
+    .email("Invalid email address")
+    .required("Required"),
+  petName: Yup.string()
+    .max(15, "Must be 15 characters or less")
+    .required("Required"),
+  petBreed: Yup.string()
+    .max(15, "Must be 15 characters or less")
+    .required("Required"),
+  userCity: Yup.string()
+    .max(15, "Must be 15 characters or less")
+    .required("Required"),
+}
+
 const AdoptionFormModal = (props) => {
   return (
     <Modal
@@ -29,26 +50,7 @@ const AdoptionFormModal = (props) => {
             petBreed: "",
             userCity: "",
           }}
-          validationSchema={Yup.object({
-            firstName: Yup.string()
-              .max(15, "Must be 15 characters or less")
-              .required("Required"),
-            lastName: Yup.string()
-              .max(20, "Must be 20 characters or less")
-              .required("Required"),
-            email: Yup.string()
-              .email("Invalid email address")
-              .required("Required"),
-            petName: Yup.string()
-              .max(15, "Must be 15 characters or less")
-              .required("Required"),
-            petBreed: Yup.string()
-              .max(15, "Must be 15 characters or less")
-              .required("Required"),
-            userCity: Yup.string()
-              .max(15, "Must be 15 characters or less")
-              .required("Required"),
-          })}
+          validationSchema={Yup.object(searchModalValidation)}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
               alert("Your Form is Submitted");
@@ -63,19 +65,16 @@ const AdoptionFormModal = (props) => {
             </div>
             <label htmlFor="firstName"></label>
             <Field name="firstName" type="text" placeholder="Your First Name" />
-
             <div className="errorMessage">
               <ErrorMessage name="lastName" />
             </div>
             <label htmlFor="lastName"></label>
             <Field name="lastName" type="text" placeholder="Your Last Name" />
-
             <div className="errorMessage">
               <ErrorMessage name="email" />
             </div>
             <label htmlFor="email"></label>
             <Field name="email" type="email" placeholder="Your Email Address" />
-
             <div className="errorMessage">
               <ErrorMessage name="petName" />
             </div>
@@ -85,7 +84,6 @@ const AdoptionFormModal = (props) => {
               type="text"
               placeholder="The Name of the Pet You are Adopting"
             />
-
             <div className="errorMessage">
               <ErrorMessage name="petBreed" />
             </div>
@@ -95,13 +93,11 @@ const AdoptionFormModal = (props) => {
               type="text"
               placeholder="The Breed of the Pet You are Adopting"
             />
-
             <div className="errorMessage">
               <ErrorMessage name="userCity" />
             </div>
             <label htmlFor="userCity"></label>
             <Field name="userCity" type="text" placeholder="Your City" />
-
             <Button type="submit" className="modalFormBtn shadow-none">
               Submit
             </Button>

@@ -73,7 +73,6 @@ const Search = ({ searchGuests }) => {
                 <option>{city}</option>
               ))}
             </select>
-
             <label htmlFor="age"></label>
             <select
               id="age"
@@ -86,7 +85,6 @@ const Search = ({ searchGuests }) => {
                 <option>{age}</option>
               ))}
             </select>
-
             <label htmlFor="breed"></label>
             <select
               id="breed"
@@ -99,7 +97,6 @@ const Search = ({ searchGuests }) => {
                 <option>{breed}</option>
               ))}
             </select>
-
             <label htmlFor="gender"></label>
             <select
               id="gender"
@@ -112,7 +109,6 @@ const Search = ({ searchGuests }) => {
                 <option>{gender}</option>
               ))}
             </select>
-
             <button type="submit">
               <FaSearch size={27} className="searchIcon" />
             </button>
