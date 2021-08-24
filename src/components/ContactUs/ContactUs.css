@@ -1,3 +1,7 @@
+.contactUs h1 {
+    color: #FF5555;
+}
+
 .contactUs input,
 .contactUs textarea {
     width: 100%;
@@ -6,6 +10,12 @@
     padding: .5rem;
     border-radius: 5px;
     resize: none;
+    color: #ff7777;
+}
+
+.contactUs input::placeholder,
+.contactUs textarea::placeholder {
+    color: #ff7777; 
 }
 
 .contactUs input:focus,
@@ -22,18 +32,33 @@
     padding: 3rem 5rem !important;
 }
 
+.contactUsForm {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px 1px #e2e1e1, -15px 15px 15px #e2e1e1;
+}
+
 .contactBtn {
     border-radius: 10px !important;
     padding-left: 3rem !important;
     padding-right: 3rem !important;
 }
 
-@media screen and (max-width:767px) {
-    .map {
-        width: 90% !important;
+.errorMsg {
+    color: #3d3dfd;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+@media screen and (max-width:1024px) {
+    .contactRow {
+        margin-top: 3rem;
     }
+}
+
+@media screen and (max-width:768px) {
     .contactUs {
-        margin-top: 27rem;
         padding: 3rem 1rem !important;
     }
 }
