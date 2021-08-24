@@ -1,23 +1,23 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Button, Form } from "react-bootstrap";
-import SignUpModal from "../SignUpModal/SignUpModal";
 import logo from "../../images/logo.png";
+import Login from "../Login/Login";
 import "./NavBar.css";
+import SignUpModal from "../SignUpModal/SignUpModal";
 
 function NavBar() {
-  const [modalShow, setModalShow] = useState(false);
-
+  const [showLogin, setShowLogin] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
   return (
-    <div>
+    <>
       <Navbar variant="light" expand="lg" className="bgLight">
         <Navbar.Brand>
           <NavLink to="/" exact>
             <img
               src={logo}
               height="50"
-              alt="Furry Friend"
+              alt="our Furry Friend"
               className="logoHeader"
             />
           </NavLink>
@@ -35,8 +35,9 @@ function NavBar() {
               Contact
             </NavLink>
           </Nav>
-          <Button onClick={() => setModalShow(true)} className="ml-2">
-            SignUp
+          <Button onClick={() => setOpenModal(true)}>SignUp</Button>
+          <Button onClick={() => setShowLogin(true)} className="ml-2">
+            login
           </Button>
           <Form.Control as="select" className="w-auto language">
             <option value="English">English</option>
@@ -45,8 +46,9 @@ function NavBar() {
           </Form.Control>
         </Navbar.Collapse>
       </Navbar>
-      <SignUpModal show={modalShow} hideFn={setModalShow} />
-    </div>
+      <SignUpModal show={openModal} hideFn={setOpenModal} />
+      <Login show={showLogin} hideFn={setShowLogin} />
+    </>
   );
 }
 

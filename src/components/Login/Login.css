@@ -13,8 +13,7 @@
 .bgCat {
   background-color: #ff7777;
   border-radius: 0.2rem 0.2rem 0 0;
-  background: url(../../images/catSignUpModal.png) #ff7777 no-repeat center
-    bottom;
+  background: url(../../images/cat.png) #ff7777 no-repeat center bottom;
   background-size: contain;
   min-height: 200px;
 }
@@ -41,19 +40,19 @@
   margin-top: 5px;
 }
 
-.signUpForms input {
+.login input {
   max-width: 300px;
   border: 1px solid #eaeaea;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   font-size: 14px;
 }
 
-.signUpForms input::placeholder {
+.login input::placeholder {
   font-size: 13px;
   color: rgba(17, 17, 17, 0.48);
 }
 
-.signUpForms .error {
+.login .error {
   font-size: 13px;
   color: #ff7777;
 }
@@ -68,10 +67,6 @@
   transform: rotate(-20deg);
   margin-right: 7px;
   margin-top: -4px;
-}
-
-.close {
-  display: block !important;
 }
 
 @media screen and (min-width: 992px) {
