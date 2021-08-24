@@ -15,7 +15,7 @@ exports[`NavBar renders correctly 1`] = `
       style={Object {}}
     >
       <img
-        alt="Furry Friend"
+        alt="our Furry Friend"
         className="logoHeader"
         height="50"
         src="logo.png"
@@ -73,6 +73,14 @@ exports[`NavBar renders correctly 1`] = `
       type="button"
     >
       SignUp
+    </button>
+    <button
+      className="ml-2 btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      login
     </button>
     <select
       className="w-auto language form-control"

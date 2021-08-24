@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checklist container renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="py-5 row"
+  >
+    <div
+      className="col-lg-4"
+    >
+      <div
+        className="checkList"
+      >
+        <div
+          className="checkListLogo"
+        >
+          <img
+            className="catLogo"
+            src="catLogo.png"
+          />
+        </div>
+        <h2>
+          Cat Adoption Checklist
+        </h2>
+        <p
+          className="checkListText"
+        >
+          Go to Checklist
+        </p>
+        <a
+          href="denemeLink"
+        >
+          <button
+            className="checkListButton"
+          >
+            Read More
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="col-lg-4"
+    >
+      <div
+        className="checkList"
+      >
+        <div
+          className="checkListLogo"
+        >
+          <img
+            className="catLogo"
+            src="catLogo.png"
+          />
+        </div>
+        <h2>
+          Cat Adoption Checklist
+        </h2>
+        <p
+          className="checkListText"
+        >
+          Go to Checklist
+        </p>
+        <a
+          href="denemeLink"
+        >
+          <button
+            className="checkListButton"
+          >
+            Read More
+          </button>
+        </a>
+      </div>
+    </div>
+    <div
+      className="col-lg-4"
+    >
+      <div
+        className="checkList"
+      >
+        <div
+          className="checkListLogo"
+        >
+          <img
+            className="catLogo"
+            src="catLogo.png"
+          />
+        </div>
+        <h2>
+          Cat Adoption Checklist
+        </h2>
+        <p
+          className="checkListText"
+        >
+          Go to Checklist
+        </p>
+        <a
+          href="denemeLink"
+        >
+          <button
+            className="checkListButton"
+          >
+            Read More
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
