@@ -1,0 +1,39 @@
+.contactUs input,
+.contactUs textarea {
+    width: 100%;
+    border: 1px solid #FF5555;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contactUs input:focus,
+.contactUs textarea:focus {
+    outline: none;
+}
+
+.contactUs textarea {
+    height: 100px;
+}
+
+.contactUs {
+    text-align: left;
+    padding: 3rem 5rem !important;
+}
+
+.contactBtn {
+    border-radius: 10px !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
+
+@media screen and (max-width:767px) {
+    .map {
+        width: 90% !important;
+    }
+    .contactUs {
+        margin-top: 27rem;
+        padding: 3rem 1rem !important;
+    }
+}
