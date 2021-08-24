@@ -11,9 +11,7 @@ const searchModalValidation = {
   lastName: Yup.string()
     .max(20, "Must be 20 characters or less")
     .required("Required"),
-  email: Yup.string()
-    .email("Invalid email address")
-    .required("Required"),
+  email: Yup.string().email("Invalid email address").required("Required"),
   petName: Yup.string()
     .max(15, "Must be 15 characters or less")
     .required("Required"),
@@ -23,7 +21,7 @@ const searchModalValidation = {
   userCity: Yup.string()
     .max(15, "Must be 15 characters or less")
     .required("Required"),
-}
+};
 
 const AdoptionFormModal = (props) => {
   return (
