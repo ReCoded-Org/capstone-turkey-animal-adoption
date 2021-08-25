@@ -1,12 +1,33 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { Navbar, Nav, Button, Form } from "react-bootstrap";
+import { useSelector } from "react-redux";
+import { NavLink, useHistory } from "react-router-dom";
+import { Navbar, Nav, Button, Form, Dropdown } from "react-bootstrap";
 import logo from "../../images/logo.png";
 import Login from "../Login/Login";
 import "./NavBar.css";
+import { useDispatch } from "react-redux";
+import { logout } from "../../helpers/auth";
+import { LOG_OUT } from "../../store/actions/actionConst";
 
 function NavBar() {
+  const user = useSelector(state => state.user);
   const [showLogin, setShowLogin] = useState(false);
+  const dispatch = useDispatch();
+  let history = useHistory();
+
+  const logoutAuth = () => {
+    try {
+      logout();
+      dispatch({ type: LOG_OUT });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const goToProfile = () => {
+    history.push("/profile");
+  };
+
   return (
     <>
       <Navbar variant="light" expand="lg" className="bgLight">
@@ -33,15 +54,31 @@ function NavBar() {
               Contact
             </NavLink>
           </Nav>
-          <Button>SignUp</Button>
-          <Button onClick={() => setShowLogin(true)} className="ml-2">
-            login
-          </Button>
+          {!user && (
+            <div>
+              <Button>SignUp</Button>
+              <Button onClick={() => setShowLogin(true)} className="ml-2">
+                login
+              </Button>
+            </div>
+          )}
+
           <Form.Control as="select" className="w-auto language">
             <option value="English">English</option>
             <option value="Arabic">Arabic</option>
             <option value="Turkish">Turkish</option>
           </Form.Control>
+          {user && (
+            <Dropdown>
+              <Dropdown.Toggle id="dropdown-basic" className="language">
+                {user.name}
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item onClick={goToProfile}>Profile</Dropdown.Item>
+                <Dropdown.Item onClick={logoutAuth}>Logout</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          )}
         </Navbar.Collapse>
       </Navbar>
       <Login show={showLogin} hideFn={setShowLogin} />
