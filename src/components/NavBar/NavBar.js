@@ -9,6 +9,7 @@ import SignUpModal from "../SignUpModal/SignUpModal";
 function NavBar() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
+
   return (
     <>
       <Navbar variant="light" expand="lg" className="bgLight">
