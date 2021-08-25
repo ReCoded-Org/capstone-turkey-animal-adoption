@@ -1,4 +1,4 @@
-.items {
+.carouselItems {
   justify-content: space-around;
 }
 
@@ -21,6 +21,10 @@
   width: 120px;
   height: 120px;
   border-radius: 100%;
+}
+
+.sliderImg {
+  height: 750px;
 }
 
 .close {
@@ -73,10 +77,6 @@
 /* Carousel CSS, those classes are coming from bootstrap data, not showing in html. 
 So it is not possible to give additional classes or ids. Since they have inline 
 styles from backside, i have to use important to override the default css */
-.carousel-indicators {
-  bottom: -50px !important;
-}
-
 .carousel-indicators li {
   width: 10px !important;
   height: 10px !important;
@@ -92,7 +92,13 @@ For mobile
   .carousel {
     display: block !important;
   }
-  .items {
+  .carouselItems {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sliderImg {
+    height: 400px;
   }
 }

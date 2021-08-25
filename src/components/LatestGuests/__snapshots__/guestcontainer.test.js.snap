@@ -17,7 +17,7 @@ exports[`renders Guest Container correctly 1`] = `
         Meet Our Latest Friends 🐾
       </h6>
       <div
-        className="mt-5 items row"
+        className="mt-5 carouselItems row"
       >
         <div
           className="mb-5 col-lg-4"
@@ -193,7 +193,7 @@ exports[`renders Guest Container correctly 1`] = `
       >
         <img
           alt="slideImage"
-          className="d-block w-100"
+          className="d-block w-100 sliderImg"
           src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
         />
       </div>
@@ -202,7 +202,7 @@ exports[`renders Guest Container correctly 1`] = `
       >
         <img
           alt="slideImage"
-          className="d-block w-100"
+          className="d-block w-100 sliderImg"
           src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
         />
       </div>
@@ -211,7 +211,7 @@ exports[`renders Guest Container correctly 1`] = `
       >
         <img
           alt="slideImage"
-          className="d-block w-100"
+          className="d-block w-100 sliderImg"
           src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
         />
       </div>
@@ -220,7 +220,7 @@ exports[`renders Guest Container correctly 1`] = `
       >
         <img
           alt="slideImage"
-          className="d-block w-100"
+          className="d-block w-100 sliderImg"
           src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
         />
       </div>
@@ -229,7 +229,7 @@ exports[`renders Guest Container correctly 1`] = `
       >
         <img
           alt="slideImage"
-          className="d-block w-100"
+          className="d-block w-100 sliderImg"
           src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
         />
       </div>
@@ -238,7 +238,7 @@ exports[`renders Guest Container correctly 1`] = `
       >
         <img
           alt="slideImage"
-          className="d-block w-100"
+          className="d-block w-100 sliderImg"
           src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
         />
       </div>
