@@ -4,6 +4,7 @@ import AboutUs from "./pages/aboutus/AboutUs";
 import Homepage from "./pages/homepage/HomePage";
 import NavBar from "./components/NavBar/NavBar";
 import ResourcesPage from "./pages/resourcespage/ResourcesPage";
+import SearchPage from "./pages/searchpage/SearchPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,7 +15,8 @@ function App() {
       <Route path="/" component={NavBar} />
       <Route exact path="/" component={Homepage} />
       <Route path="/resources" component={ResourcesPage} />
-      <Route exact path="/about" component={AboutUs} />
+      <Route path="/about" component={AboutUs} />
+      <Route path="/search" component={SearchPage} />
     </Router>
   );
 }
