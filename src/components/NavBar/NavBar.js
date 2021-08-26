@@ -32,6 +32,9 @@ function NavBar() {
             <NavLink to="/contact" className="nav-link navLink">
               Contact
             </NavLink>
+            <NavLink to="/resources" className="nav-link navLink">
+              Resources
+            </NavLink>
           </Nav>
           <Button>SignUp</Button>
           <Button onClick={() => setShowLogin(true)} className="ml-2">
