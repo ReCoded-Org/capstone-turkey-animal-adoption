@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import AboutUs from "./pages/aboutus/AboutUs";
 import Homepage from "./pages/homepage/HomePage";
 import NavBar from "./components/NavBar/NavBar";
 import ResourcesPage from "./pages/resourcespage/ResourcesPage";
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" component={NavBar} />
       <Route exact path="/" component={Homepage} />
       <Route path="/resources" component={ResourcesPage} />
+      <Route exact path="/about" component={AboutUs} />
     </Router>
   );
 }
