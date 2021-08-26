@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ContactUs Component correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="contactRow row"
+  >
+    <div
+      className="col-lg-6"
+    >
+      <div />
+      <div>
+        Loading...
+      </div>
+    </div>
+    <div
+      className="contactUs col-lg-6"
+    >
+      <h1>
+        Get In Touch
+      </h1>
+      <p>
+        Contact Us On the Social Media 
+        <br />
+        Or Send Us a Message
+      </p>
+      <div
+        className="mb-5"
+      >
+        <img
+          alt="vkLogo"
+          className="mr-2"
+          src="Vk.png"
+        />
+        <img
+          alt="pinterestLogo"
+          className="mr-2"
+          src="Pinterest.png"
+        />
+        <img
+          alt="intagramLogo"
+          className="mr-2"
+          src="Instagram.png"
+        />
+        <img
+          alt="twitterLogo"
+          className="mr-2"
+          src="Twitter.png"
+        />
+        <img
+          alt="facebookLogo"
+          src="Facebook.png"
+        />
+      </div>
+      <form
+        className="contactUsForm"
+        onSubmit={[Function]}
+      >
+        <label
+          htmlFor="email"
+        />
+        <input
+          id="email"
+          name="email"
+          onChange={[Function]}
+          placeholder="Email"
+          type="email"
+          value=""
+        />
+        <label
+          htmlFor="message"
+        />
+        <textarea
+          col="50"
+          id="message"
+          name="message"
+          onChange={[Function]}
+          placeholder="Message"
+          row="50"
+          value=""
+        />
+        <button
+          className="contactBtn shadow-none btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
