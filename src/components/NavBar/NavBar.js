@@ -8,6 +8,7 @@ import "./NavBar.css";
 import { useDispatch } from "react-redux";
 import { logout } from "../../helpers/auth";
 import { LOG_OUT } from "../../store/actions/actionConst";
+import SignUpModal from "../SignUpModal/SignUpModal";
 
 function NavBar() {
   const user = useSelector(state => state.user);
@@ -26,6 +27,7 @@ function NavBar() {
   const goToProfile = () => {
     history.push("/profile");
   };
+  const [showSignUp, setShowSignUp] = useState(false);
 
   return (
     <>
@@ -52,6 +54,9 @@ function NavBar() {
             <NavLink to="/contact" className="nav-link navLink">
               Contact
             </NavLink>
+            <NavLink to="/resources" className="nav-link navLink">
+              Resources
+            </NavLink>
           </Nav>
           {!user && (
             <div>
@@ -61,6 +66,10 @@ function NavBar() {
               </Button>
             </div>
           )}
+          <Button onClick={() => setShowSignUp(true)}>SignUp</Button>
+          <Button onClick={() => setShowLogin(true)} className="ml-2">
+            login
+          </Button>
           <Form.Control as="select" className="w-auto language">
             <option value="English">English</option>
             <option value="Arabic">Arabic</option>
@@ -79,6 +88,7 @@ function NavBar() {
           )}
         </Navbar.Collapse>
       </Navbar>
+      <SignUpModal show={showSignUp} hideFn={setShowSignUp} />
       <Login show={showLogin} hideFn={setShowLogin} />
     </>
   );

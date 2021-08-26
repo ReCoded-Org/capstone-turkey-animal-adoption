@@ -12,7 +12,7 @@ const Checklist = ({ text, title, link }) => {
         </div>
         <h2>{title}</h2>
         <p className="checkListText">{text}</p>
-        <a href={link}>
+        <a href={link} target="_blank">
           <button className="checkListButton">Read More</button>
         </a>
       </div>

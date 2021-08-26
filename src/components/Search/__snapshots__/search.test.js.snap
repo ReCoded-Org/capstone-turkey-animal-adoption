@@ -1,0 +1,767 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Search correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="searchContainer py-5 row"
+  >
+    <h1>
+      Adopt Your New Pet
+    </h1>
+    <div
+      className="col-sm-12"
+    >
+      <form
+        className="searchForm"
+        onSubmit={[Function]}
+      >
+        <label
+          htmlFor="location"
+        />
+        <select
+          id="location"
+          name="location"
+          onBlur={[Function]}
+          onChange={[Function]}
+          value=""
+        >
+          <option
+            value="Select Location"
+          >
+            Select Location
+          </option>
+          <option>
+            Istanbul
+          </option>
+          <option>
+            Ankara
+          </option>
+          <option>
+            Izmir
+          </option>
+          <option>
+            Canakkale
+          </option>
+          <option>
+            Antalya
+          </option>
+          <option>
+            Alanya
+          </option>
+          <option>
+            Muğla
+          </option>
+          <option>
+            Mersin
+          </option>
+        </select>
+        <label
+          htmlFor="age"
+        />
+        <select
+          id="age"
+          name="age"
+          onBlur={[Function]}
+          onChange={[Function]}
+          value=""
+        >
+          <option
+            value="Select Age"
+          >
+            Select Age
+          </option>
+          <option>
+            &lt;3
+          </option>
+          <option>
+            &gt;3
+          </option>
+          <option>
+            All
+          </option>
+        </select>
+        <label
+          htmlFor="breed"
+        />
+        <select
+          id="breed"
+          name="breed"
+          onBlur={[Function]}
+          onChange={[Function]}
+          value=""
+        >
+          <option
+            value="Select Breed"
+          >
+            Select Breed
+          </option>
+          <option>
+            Poodle
+          </option>
+          <option>
+            Terrier
+          </option>
+          <option>
+            Rottweiler
+          </option>
+          <option>
+            Golden Retriever
+          </option>
+          <option>
+            Cat
+          </option>
+          <option>
+            Tobby cat
+          </option>
+          <option>
+            Scottish
+          </option>
+        </select>
+        <label
+          htmlFor="gender"
+        />
+        <select
+          id="gender"
+          name="gender"
+          onBlur={[Function]}
+          onChange={[Function]}
+          value=""
+        >
+          <option
+            value="Select Gender"
+          >
+            Select Gender
+          </option>
+          <option>
+            Female
+          </option>
+          <option>
+            Male
+          </option>
+        </select>
+        <button
+          type="submit"
+        >
+          <svg
+            className="searchIcon"
+            fill="currentColor"
+            height={27}
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 512 512"
+            width={27}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-sm-12"
+    >
+      <div
+        className="mt-5 items row"
+      >
+        <div
+          className="mb-5 cardCol col-lg-4"
+        >
+          <div
+            className="card"
+            style={
+              Object {
+                "width": "18rem",
+              }
+            }
+          >
+            <img
+              className="card-img-top"
+              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+            />
+            <div
+              className="card-body"
+              id="modalBody"
+            >
+              <div
+                id="cardText"
+              >
+                <div
+                  className="firstDiv"
+                >
+                  <p>
+                    Poodle
+                  </p>
+                  <p>
+                    Sushi
+                  </p>
+                  <button
+                    className="adoptButton shadow-none btn btn-primary"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <svg
+                      className="pawIcon"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
+                      />
+                    </svg>
+                    Adopt
+                  </button>
+                </div>
+                <div
+                  className="secondDiv"
+                >
+                  <p>
+                    Female
+                    , 
+                    5
+                  </p>
+                  <p
+                    className="mt-4"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height={25}
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 16 16"
+                      width={25}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                     
+                    Istanbul
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="mb-5 cardCol col-lg-4"
+        >
+          <div
+            className="card"
+            style={
+              Object {
+                "width": "18rem",
+              }
+            }
+          >
+            <img
+              className="card-img-top"
+              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+            />
+            <div
+              className="card-body"
+              id="modalBody"
+            >
+              <div
+                id="cardText"
+              >
+                <div
+                  className="firstDiv"
+                >
+                  <p>
+                    Terrier
+                  </p>
+                  <p>
+                    Sushi
+                  </p>
+                  <button
+                    className="adoptButton shadow-none btn btn-primary"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <svg
+                      className="pawIcon"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
+                      />
+                    </svg>
+                    Adopt
+                  </button>
+                </div>
+                <div
+                  className="secondDiv"
+                >
+                  <p>
+                    Male
+                    , 
+                    1
+                  </p>
+                  <p
+                    className="mt-4"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height={25}
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 16 16"
+                      width={25}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                     
+                    Istanbul
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="mb-5 cardCol col-lg-4"
+        >
+          <div
+            className="card"
+            style={
+              Object {
+                "width": "18rem",
+              }
+            }
+          >
+            <img
+              className="card-img-top"
+              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+            />
+            <div
+              className="card-body"
+              id="modalBody"
+            >
+              <div
+                id="cardText"
+              >
+                <div
+                  className="firstDiv"
+                >
+                  <p>
+                    Poodle
+                  </p>
+                  <p>
+                    Sushi
+                  </p>
+                  <button
+                    className="adoptButton shadow-none btn btn-primary"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <svg
+                      className="pawIcon"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
+                      />
+                    </svg>
+                    Adopt
+                  </button>
+                </div>
+                <div
+                  className="secondDiv"
+                >
+                  <p>
+                    Female
+                    , 
+                    2
+                  </p>
+                  <p
+                    className="mt-4"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height={25}
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 16 16"
+                      width={25}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                     
+                    Istanbul
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="mb-5 cardCol col-lg-4"
+        >
+          <div
+            className="card"
+            style={
+              Object {
+                "width": "18rem",
+              }
+            }
+          >
+            <img
+              className="card-img-top"
+              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+            />
+            <div
+              className="card-body"
+              id="modalBody"
+            >
+              <div
+                id="cardText"
+              >
+                <div
+                  className="firstDiv"
+                >
+                  <p>
+                    Poodle
+                  </p>
+                  <p>
+                    Sushi
+                  </p>
+                  <button
+                    className="adoptButton shadow-none btn btn-primary"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <svg
+                      className="pawIcon"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
+                      />
+                    </svg>
+                    Adopt
+                  </button>
+                </div>
+                <div
+                  className="secondDiv"
+                >
+                  <p>
+                    Female
+                    , 
+                    5
+                  </p>
+                  <p
+                    className="mt-4"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height={25}
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 16 16"
+                      width={25}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                     
+                    Istanbul
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="mb-5 cardCol col-lg-4"
+        >
+          <div
+            className="card"
+            style={
+              Object {
+                "width": "18rem",
+              }
+            }
+          >
+            <img
+              className="card-img-top"
+              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+            />
+            <div
+              className="card-body"
+              id="modalBody"
+            >
+              <div
+                id="cardText"
+              >
+                <div
+                  className="firstDiv"
+                >
+                  <p>
+                    Rottweiler
+                  </p>
+                  <p>
+                    Sushi
+                  </p>
+                  <button
+                    className="adoptButton shadow-none btn btn-primary"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <svg
+                      className="pawIcon"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
+                      />
+                    </svg>
+                    Adopt
+                  </button>
+                </div>
+                <div
+                  className="secondDiv"
+                >
+                  <p>
+                    Male
+                    , 
+                    2
+                  </p>
+                  <p
+                    className="mt-4"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height={25}
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 16 16"
+                      width={25}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                     
+                    Izmir
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="mb-5 cardCol col-lg-4"
+        >
+          <div
+            className="card"
+            style={
+              Object {
+                "width": "18rem",
+              }
+            }
+          >
+            <img
+              className="card-img-top"
+              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+            />
+            <div
+              className="card-body"
+              id="modalBody"
+            >
+              <div
+                id="cardText"
+              >
+                <div
+                  className="firstDiv"
+                >
+                  <p>
+                    Poodle
+                  </p>
+                  <p>
+                    Sushi
+                  </p>
+                  <button
+                    className="adoptButton shadow-none btn btn-primary"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <svg
+                      className="pawIcon"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
+                      />
+                    </svg>
+                    Adopt
+                  </button>
+                </div>
+                <div
+                  className="secondDiv"
+                >
+                  <p>
+                    Male
+                    , 
+                    4
+                  </p>
+                  <p
+                    className="mt-4"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height={25}
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 16 16"
+                      width={25}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                     
+                    Istanbul
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
