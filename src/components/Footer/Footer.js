@@ -42,7 +42,7 @@ const Footer = () => {
               Lawyaw uses AI to help lawyers draft documents faster
             </li>
             <li href="#">
-              Going against the grain AngelPad kills its demo day
+              Going against the grain, AngelPad kills its demo day
             </li>
           </ul>
           <div className="d-flex justify-content-center pt-4">
