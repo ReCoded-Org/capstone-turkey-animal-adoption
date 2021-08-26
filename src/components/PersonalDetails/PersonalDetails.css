@@ -1,0 +1,25 @@
+.newColor {
+  color: "#FF5555";
+}
+
+h4 {
+  color: "#FF5555";
+}
+p {
+  color: "#777777";
+}
+h3 {
+  color: "#FF5555";
+}
+.inputStyle {
+  width: 350;
+  border: 0.5px solid;
+  color: #ff5555;
+}
+.button {
+  background: "#00008B";
+  color: "white";
+  width: 200;
+  height: 40;
+  border-radius: "40px";
+}
