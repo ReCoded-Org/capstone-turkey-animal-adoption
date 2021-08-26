@@ -1,40 +1,40 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import "./ContactUs.css"
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
-import Vk from "../../images/Vk.png"
-import Pinterest from "../../images/Pinterest.png"
-import Instagram from "../../images/Instagram.png"
-import Twitter from "../../images/Twitter.png"
-import Facebook from "../../images/Facebook.png"
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import "./ContactUs.css";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import Vk from "../../images/Vk.png";
+import Pinterest from "../../images/Pinterest.png";
+import Instagram from "../../images/Instagram.png";
+import Twitter from "../../images/Twitter.png";
+import Facebook from "../../images/Facebook.png";
 
 const containerStyle = {
-  width: '100%',
-  height: '600px'
+  width: "100%",
+  height: "600px",
 };
 
 const center = {
   lat: -3.745,
-  lng: -38.523
+  lng: -38.523,
 };
 
 const contactValidation = {
-  email: Yup.string().email('Invalid email address').required('Required'),
+  email: Yup.string().email("Invalid email address").required("Required"),
   message: Yup.string()
-    .min(5, 'Must be at least 5 characters')
-    .required('Required'),
-}
+    .min(5, "Must be at least 5 characters")
+    .required("Required"),
+};
 
 const ContactUs = () => {
   const formik = useFormik({
     initialValues: {
-      email: '',
-      message: '',
+      email: "",
+      message: "",
     },
     validationSchema: Yup.object(contactValidation),
-    onSubmit: values => {
+    onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
   });
@@ -43,9 +43,7 @@ const ContactUs = () => {
     <Container>
       <Row className="contactRow">
         <Col lg={6}>
-          <LoadScript
-            googleMapsApiKey="AIzaSyBEwGghzBic4ZMnL1fEOAfGTQbAait9FhQ"
-          >
+          <LoadScript googleMapsApiKey="AIzaSyBEwGghzBic4ZMnL1fEOAfGTQbAait9FhQ">
             <GoogleMap
               mapContainerStyle={containerStyle}
               center={center}
@@ -95,7 +93,9 @@ const ContactUs = () => {
               onChange={formik.handleChange}
               value={formik.values.message}
             />
-            <Button className="contactBtn shadow-none" type="submit">Send</Button>
+            <Button className="contactBtn shadow-none" type="submit">
+              Send
+            </Button>
           </form>
         </Col>
       </Row>
@@ -103,4 +103,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs
+export default ContactUs;
