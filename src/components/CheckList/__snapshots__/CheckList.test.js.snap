@@ -25,6 +25,7 @@ exports[`checlist renders correctly 1`] = `
     </p>
     <a
       href="denemeLink"
+      target="_blank"
     >
       <button
         className="checkListButton"

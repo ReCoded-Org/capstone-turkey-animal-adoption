@@ -4,9 +4,12 @@ import { Navbar, Nav, Button, Form } from "react-bootstrap";
 import logo from "../../images/logo.png";
 import Login from "../Login/Login";
 import "./NavBar.css";
+import SignUpModal from "../SignUpModal/SignUpModal";
 
 function NavBar() {
   const [showLogin, setShowLogin] = useState(false);
+  const [showSignUp, setShowSignUp] = useState(false);
+
   return (
     <>
       <Navbar variant="light" expand="lg" className="bgLight">
@@ -32,8 +35,11 @@ function NavBar() {
             <NavLink to="/contact" className="nav-link navLink">
               Contact
             </NavLink>
+            <NavLink to="/resources" className="nav-link navLink">
+              Resources
+            </NavLink>
           </Nav>
-          <Button>SignUp</Button>
+          <Button onClick={() => setShowSignUp(true)}>SignUp</Button>
           <Button onClick={() => setShowLogin(true)} className="ml-2">
             login
           </Button>
@@ -44,6 +50,7 @@ function NavBar() {
           </Form.Control>
         </Navbar.Collapse>
       </Navbar>
+      <SignUpModal show={showSignUp} hideFn={setShowSignUp} />
       <Login show={showLogin} hideFn={setShowLogin} />
     </>
   );

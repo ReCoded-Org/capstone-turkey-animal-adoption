@@ -66,10 +66,19 @@ exports[`NavBar renders correctly 1`] = `
       >
         Contact
       </a>
+      <a
+        aria-current={null}
+        className="nav-link navLink"
+        href="/resources"
+        onClick={[Function]}
+      >
+        Resources
+      </a>
     </div>
     <button
       className="btn btn-primary"
       disabled={false}
+      onClick={[Function]}
       type="button"
     >
       SignUp

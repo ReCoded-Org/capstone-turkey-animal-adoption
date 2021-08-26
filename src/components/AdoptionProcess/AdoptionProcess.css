@@ -7,6 +7,10 @@
   padding: 1rem;
 }
 
+.items {
+  justify-content: space-around;
+}
+
 .adoptionContainer img {
   width: 100%;
   max-width: 170px;
