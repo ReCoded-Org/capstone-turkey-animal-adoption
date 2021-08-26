@@ -18,7 +18,7 @@ function SignUpModal({ show, hideFn }) {
   const [errorMsg, setErrorMsg] = useState(false);
   const dispatch = useDispatch();
 
-  const signWithSocial = async social => {
+  const signWithSocial = async (social) => {
     let fnCall = null;
     if (social === "google") fnCall = signInWithGoogle;
     else if (social === "facebook") fnCall = signInWithFacebook;

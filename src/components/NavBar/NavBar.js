@@ -11,7 +11,7 @@ import { LOG_OUT } from "../../store/actions/actionConst";
 import SignUpModal from "../SignUpModal/SignUpModal";
 
 function NavBar() {
-  const user = useSelector(state => state.user);
+  const user = useSelector((state) => state.user);
   const [showLogin, setShowLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
 
