@@ -1,0 +1,49 @@
+.articleContianer {
+    text-align: left;
+}
+
+.blogContianer {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.authorImg {
+    max-width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 2rem;
+}
+
+/* for override purposes */
+#articleTitle {
+    margin-top: 2rem;
+    color: #FF5555;
+}
+
+#publishedDate {
+    color: #96E8F0;
+    font-weight: bold;
+}
+
+#blogCol {
+    padding: 3rem 7rem;
+}
+
+#authorName {
+    color: #FF5555;
+    font-weight: bold;
+}
+
+@media screen and (max-width:767px) {
+    .blog{
+        margin-top: 2rem;
+    }
+    #blogCol {
+        padding: 3rem 1rem;
+    }
+}
