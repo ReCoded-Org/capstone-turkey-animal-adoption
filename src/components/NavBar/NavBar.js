@@ -23,7 +23,6 @@ function NavBar() {
       console.log(error);
     }
   };
-
   const goToProfile = () => {
     history.push("/profile");
   };
@@ -62,7 +61,6 @@ function NavBar() {
               </Button>
             </div>
           )}
-
           <Form.Control as="select" className="w-auto language">
             <option value="English">English</option>
             <option value="Arabic">Arabic</option>

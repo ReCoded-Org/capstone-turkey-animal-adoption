@@ -81,7 +81,6 @@ const signInWithEmailAndPassword = async ({ email, password }) => {
 
 const logout = () => {
   try {
-    console.log("fds");
     auth.signOut();
   } catch (err) {
     alert(err.message);
