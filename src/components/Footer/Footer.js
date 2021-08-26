@@ -21,7 +21,6 @@ const Footer = () => {
               <h2 className="text-uppercase headersColor ">Furry Friends</h2>
             </div>
           </div>
-
           <div className="footer-copyright pt-5">
             Copyright © WeDot Wireframe KitAll rights reserved
           </div>
@@ -42,7 +41,6 @@ const Footer = () => {
             <li href="#">
               Lawyaw uses AI to help lawyers draft documents faster
             </li>
-
             <li href="#">
               Going against the grain, AngelPad kills its demo day
             </li>
@@ -60,8 +58,6 @@ const Footer = () => {
             <div className="m-2">
               <FaTwitter />
             </div>
-
-            {/* <AiFillTwitterCircle /> */}
           </div>
         </div>
       </div>
