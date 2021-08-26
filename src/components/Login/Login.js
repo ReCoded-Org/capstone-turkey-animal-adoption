@@ -17,6 +17,7 @@ import {
 function Login({ show, hideFn }) {
   const [errorMsg, setErrorMsg] = useState(false);
   const dispatch = useDispatch();
+
   const signWithSocial = async social => {
     let fnCall = null;
     if (social === "google") fnCall = signInWithGoogle;
@@ -35,9 +36,7 @@ function Login({ show, hideFn }) {
 
   const signIn = async (data, setSubmitting) => {
     const result = await signInWithEmailAndPassword(data);
-    console.log(result);
     if (result.error) {
-      console.log(result.error);
       if (result.error.customError) setErrorMsg(result.error.customError);
       else setErrorMsg("Something went wrong");
       setSubmitting(false);

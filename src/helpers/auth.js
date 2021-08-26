@@ -44,21 +44,22 @@ const signInWithFacebook = async () => {
     return { error };
   }
 };
-const registerWithEmailAndPassword = async () => {
+const registerWithEmailAndPassword = async ({ email, password, name }) => {
   try {
-    /*const res = await auth.createUserWithEmailAndPassword(
-      "test@test.com",
-      "123456"
-    );*/
-    /*const user = res.user;
-      await db.collection("users").add({
-        uid: user.uid,
-        name,
-        authProvider: "local",
-        email,
-      });*/
-  } catch (err) {
-    alert(err.message);
+    const res = await auth.createUserWithEmailAndPassword(email, password);
+    const user = res.user;
+    const data = {
+      uid: user.uid,
+      name,
+      email,
+    };
+    await db.collection("profile").add(data);
+    return data;
+  } catch (error) {
+    if (CUSTOM_ERROR[error.code]) {
+      return { error: { ...error, customError: CUSTOM_ERROR[error.code] } };
+    }
+    return { error };
   }
 };
 

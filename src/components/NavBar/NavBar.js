@@ -13,6 +13,8 @@ import SignUpModal from "../SignUpModal/SignUpModal";
 function NavBar() {
   const user = useSelector(state => state.user);
   const [showLogin, setShowLogin] = useState(false);
+  const [showSignUp, setShowSignUp] = useState(false);
+
   const dispatch = useDispatch();
   let history = useHistory();
 
@@ -27,7 +29,6 @@ function NavBar() {
   const goToProfile = () => {
     history.push("/profile");
   };
-  const [showSignUp, setShowSignUp] = useState(false);
 
   return (
     <>
@@ -60,16 +61,12 @@ function NavBar() {
           </Nav>
           {!user && (
             <div>
-              <Button>SignUp</Button>
+              <Button onClick={() => setShowSignUp(true)}>SignUp</Button>
               <Button onClick={() => setShowLogin(true)} className="ml-2">
                 login
               </Button>
             </div>
           )}
-          <Button onClick={() => setShowSignUp(true)}>SignUp</Button>
-          <Button onClick={() => setShowLogin(true)} className="ml-2">
-            login
-          </Button>
           <Form.Control as="select" className="w-auto language">
             <option value="English">English</option>
             <option value="Arabic">Arabic</option>
