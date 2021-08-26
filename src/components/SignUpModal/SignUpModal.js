@@ -35,7 +35,6 @@ function SignUpModal({ show, hideFn }) {
   };
 
   const signUp = async (data, setSubmitting) => {
-    console.log(data);
     const result = await registerWithEmailAndPassword(data);
     if (result.error) {
       if (result.error.customError) setErrorMsg(result.error.customError);
