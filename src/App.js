@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/NavBar";
 import ResourcesPage from "./pages/resourcespage/ResourcesPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
