@@ -15,8 +15,8 @@ function App() {
       <Route path="/" component={NavBar} />
       <Route exact path="/" component={Homepage} />
       <Route path="/resources" component={ResourcesPage} />
-      <Route path="/about" component={AboutUs} />
-      <Route path="/search" component={SearchPage} />
+      <Route exact path="/about" component={AboutUs} />
+      <Route exact path="/search" component={SearchPage} />
     </Router>
   );
 }
