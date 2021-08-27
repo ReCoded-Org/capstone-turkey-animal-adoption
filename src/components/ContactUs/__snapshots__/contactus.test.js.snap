@@ -10,10 +10,19 @@ exports[`renders ContactUs Component correctly 1`] = `
     <div
       className="col-lg-6"
     >
-      <div />
-      <div>
-        Loading...
-      </div>
+      <iframe
+        allowfullscreen=""
+        className=" w-100"
+        height="570"
+        loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.6196045518172!2d12.481084264745448!3d41.9010372719587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6053278340d5%3A0xf676f1e1cc02bbb6!2zVHJldmkgw4dlxZ9tZXNp!5e0!3m2!1str!2str!4v1630085669743!5m2!1str!2str"
+        style={
+          Object {
+            "border": "0",
+          }
+        }
+        title="map"
+      />
     </div>
     <div
       className="contactUs col-lg-6"

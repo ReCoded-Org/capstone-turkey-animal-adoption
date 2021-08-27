@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import "./ContactUs.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -9,16 +8,6 @@ import Pinterest from "../../images/Pinterest.png";
 import Instagram from "../../images/Instagram.png";
 import Twitter from "../../images/Twitter.png";
 import Facebook from "../../images/Facebook.png";
-
-const containerStyle = {
-  width: "100%",
-  height: "600px",
-};
-
-const center = {
-  lat: -3.745,
-  lng: -38.523,
-};
 
 const contactValidation = {
   email: Yup.string().email("Invalid email address").required("Required"),
@@ -43,16 +32,15 @@ const ContactUs = () => {
     <Container>
       <Row className="contactRow">
         <Col lg={6}>
-          <LoadScript googleMapsApiKey="AIzaSyBEwGghzBic4ZMnL1fEOAfGTQbAait9FhQ">
-            <GoogleMap
-              mapContainerStyle={containerStyle}
-              center={center}
-              zoom={10}
-            >
-              <Marker position={{ lat: -3.745, lng: -38.523 }} />
-              <></>
-            </GoogleMap>
-          </LoadScript>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.6196045518172!2d12.481084264745448!3d41.9010372719587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6053278340d5%3A0xf676f1e1cc02bbb6!2zVHJldmkgw4dlxZ9tZXNp!5e0!3m2!1str!2str!4v1630085669743!5m2!1str!2str"
+            height="570"
+            style={{ border: "0" }}
+            title="map"
+            className=" w-100"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </Col>
         <Col lg={6} className="contactUs">
           <h1>Get In Touch</h1>
