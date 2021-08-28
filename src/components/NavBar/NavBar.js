@@ -12,7 +12,7 @@ import SignUpModal from "../SignUpModal/SignUpModal";
 import { db, app } from "../../firebase";
 
 function NavBar() {
-  const user = useSelector(state => state.user);
+  const user = useSelector((state) => state.user);
   const [showLogin, setShowLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -33,19 +33,19 @@ function NavBar() {
   };
 
   useEffect(() => {
-    app.auth().onAuthStateChanged(user => {
+    app.auth().onAuthStateChanged((user) => {
       if (user) {
         db.collection("profile")
           .where("uid", "==", user.uid)
           .limit(1)
           .get()
-          .then(querySnapshot => {
-            querySnapshot.forEach(doc => {
+          .then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
               dispatch({ type: SIGN_IN, payload: doc.data() });
               setLoading(true);
             });
           })
-          .catch(error => {
+          .catch((error) => {
             console.log("Error getting cached document:", error);
           });
       } else {
