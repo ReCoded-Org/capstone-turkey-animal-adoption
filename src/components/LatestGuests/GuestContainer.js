@@ -12,7 +12,7 @@ const GuestContainer = ({ latestAddedGuests }) => {
             <>
               <h1>{latestAddedGuests.latestGuestsTitle.title}</h1>
               <h6>{latestAddedGuests.latestGuestsTitle.subTitle}</h6>
-              <Row className="mt-5 items">
+              <Row className="mt-5 carouselItems">
                 {latestAddedGuests.latestGuestsItems.map((guest) => (
                   <GuestItems
                     key={guest.id}
@@ -32,7 +32,11 @@ const GuestContainer = ({ latestAddedGuests }) => {
         {latestAddedGuests &&
           latestAddedGuests.latestGuestsItems.map((guest) => (
             <Carousel.Item key={guest.id}>
-              <img className="d-block w-100" src={guest.img} alt="slideImage" />
+              <img
+                className="d-block w-100 sliderImg"
+                src={guest.img}
+                alt="slideImage"
+              />
             </Carousel.Item>
           ))}
       </Carousel>

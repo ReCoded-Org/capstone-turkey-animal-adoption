@@ -1,0 +1,113 @@
+.searchContainer {
+  justify-content: center;
+}
+
+.searchContainer h1 {
+  color: #ff3e3e;
+}
+
+.adoptButton,
+.adoptButton:hover {
+  background: #ff7777;
+  border: 1px solid #fff;
+}
+
+.firstDiv {
+  text-align: start;
+}
+
+.secondDiv {
+  text-align: end;
+}
+
+.pawIcon {
+  margin-right: 0.5rem;
+  transform: rotate(-20deg);
+}
+
+.searchForm {
+  margin-top: 2rem;
+}
+
+.searchForm input,
+.searchForm select {
+  margin-right: 1rem;
+  border: 2px solid #ff7777;
+  border-radius: 30px;
+  padding: 0.3rem 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.searchForm button {
+  background: #fff;
+  border: none;
+  outline: none;
+}
+
+.searchIcon {
+  color: #ff7777;
+}
+
+.searchCatLogo {
+  max-width: 630px;
+}
+
+.loadPage h4,
+.loadPage h6,
+.searchForm select,
+.searchForm option {
+  color: #777777;
+}
+
+.adoptionForm input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid #ff7777;
+}
+
+.searchForm input:focus,
+.searchForm select:focus,
+.adoptionForm input:focus {
+  outline: none;
+}
+
+.adoptionFormModalBody h4 {
+  color: #777777;
+}
+
+.modalFormBtn,
+.modalFormBtn:hover,
+.modalFormBtn:focus {
+  background: #ff7777;
+  border: 1px solid #fff;
+}
+
+.errorMessage {
+  color: #3d3dfd;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.cardCol {
+  display: flex;
+  justify-content: center;
+}
+
+/* Bootstrap Id */
+#contained-modal-title-vcenter {
+  color: #ff5555;
+}
+/* Bootstrap Id */
+
+/* For Overriding */
+#modalBody {
+  background: #ff7777;
+  color: #fff;
+}
+
+#cardText {
+  display: flex;
+  justify-content: space-between;
+}
