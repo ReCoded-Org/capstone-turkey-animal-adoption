@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./ContactUs.css";
 import { useFormik } from "formik";
@@ -8,9 +8,10 @@ import Pinterest from "../../images/Pinterest.png";
 import Instagram from "../../images/Instagram.png";
 import Twitter from "../../images/Twitter.png";
 import Facebook from "../../images/Facebook.png";
+import * as emailjs from "emailjs-com";
 
 const contactValidation = {
-  email: Yup.string().email("Invalid email address").required("Required"),
+  from_email: Yup.string().email("Invalid email address").required("Required"),
   message: Yup.string()
     .min(5, "Must be at least 5 characters")
     .required("Required"),
@@ -19,12 +20,22 @@ const contactValidation = {
 const ContactUs = () => {
   const formik = useFormik({
     initialValues: {
-      email: "",
+      from_email: "",
       message: "",
+      to_email: "aysebasar91@gmail.com",
     },
     validationSchema: Yup.object(contactValidation),
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      emailjs
+        .send(
+          "service_71s2u1k",
+          "template_vhach26",
+          values,
+          "user_wB9r1kTnY69BGCuL7Bw3U"
+        )
+        .then((result) => {
+          return result.text;
+        });
     },
   });
 
@@ -38,7 +49,7 @@ const ContactUs = () => {
             style={{ border: "0" }}
             title="map"
             className=" w-100"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
           ></iframe>
         </Col>
@@ -56,17 +67,17 @@ const ContactUs = () => {
             <img src={Facebook} alt="facebookLogo" />
           </div>
           <form onSubmit={formik.handleSubmit} className="contactUsForm">
-            {formik.touched.email && formik.errors.email ? (
-              <div className="errorMsg">{formik.errors.email}</div>
+            {formik.touched.from_email && formik.errors.from_email ? (
+              <div className="errorMsg">{formik.errors.from_email}</div>
             ) : null}
-            <label htmlFor="email"></label>
+            <label htmlFor="from_email"></label>
             <input
-              id="email"
-              name="email"
+              id="from_email"
+              name="from_email"
               type="email"
               placeholder="Email"
               onChange={formik.handleChange}
-              value={formik.values.email}
+              value={formik.values.from_email}
             />
             {formik.touched.message && formik.errors.message ? (
               <div className="errorMsg">{formik.errors.message}</div>

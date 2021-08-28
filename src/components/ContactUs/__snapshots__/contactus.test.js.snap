@@ -11,7 +11,7 @@ exports[`renders ContactUs Component correctly 1`] = `
       className="col-lg-6"
     >
       <iframe
-        allowfullscreen=""
+        allowFullScreen=""
         className=" w-100"
         height="570"
         loading="lazy"
@@ -68,11 +68,11 @@ exports[`renders ContactUs Component correctly 1`] = `
         onSubmit={[Function]}
       >
         <label
-          htmlFor="email"
+          htmlFor="from_email"
         />
         <input
-          id="email"
-          name="email"
+          id="from_email"
+          name="from_email"
           onChange={[Function]}
           placeholder="Email"
           type="email"
