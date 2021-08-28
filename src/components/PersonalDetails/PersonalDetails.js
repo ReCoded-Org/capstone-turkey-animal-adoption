@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Person from "./person.png";
+import "./PersonalDetails.css";
 
 const PersonalDetails = () => {
   return (

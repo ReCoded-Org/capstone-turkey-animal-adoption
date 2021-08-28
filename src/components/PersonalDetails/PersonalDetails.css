@@ -1,15 +1,15 @@
 .newColor {
-  color: "#FF5555";
+  color: #ff5555;
 }
 
 h4 {
-  color: "#FF5555";
+  color: #ff5555;
 }
 p {
-  color: "#777777";
+  color: #777777;
 }
 h3 {
-  color: "#FF5555";
+  color: #ff5555;
 }
 .inputStyle {
   width: 350;
@@ -17,9 +17,9 @@ h3 {
   color: #ff5555;
 }
 .button {
-  background: "#00008B";
-  color: "white";
-  width: 200;
-  height: 40;
+  background: #00008b;
+  color: white;
+  width: 200px;
+  height: 40px;
   border-radius: "40px";
 }
