@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { NavLink, useHistory } from "react-router-dom";
 import { Navbar, Nav, Button, Form, Dropdown } from "react-bootstrap";
@@ -6,21 +6,23 @@ import logo from "../../images/logo.png";
 import Login from "../Login/Login";
 import "./NavBar.css";
 import { useDispatch } from "react-redux";
-import { logout } from "../../helpers/auth";
-import { LOG_OUT } from "../../store/actions/actionConst";
+import { logout, checkLogined } from "../../helpers/auth";
+import { LOG_OUT, SIGN_IN } from "../../store/actions/actionConst";
 import SignUpModal from "../SignUpModal/SignUpModal";
+import { db, app } from "../../firebase";
 
 function NavBar() {
   const user = useSelector((state) => state.user);
   const [showLogin, setShowLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const dispatch = useDispatch();
   let history = useHistory();
 
-  const logoutAuth = () => {
+  const logoutAuth = async () => {
     try {
-      logout();
+      await logout();
       dispatch({ type: LOG_OUT });
     } catch (error) {
       console.log(error);
@@ -29,6 +31,29 @@ function NavBar() {
   const goToProfile = () => {
     history.push("/profile");
   };
+
+  useEffect(() => {
+    app.auth().onAuthStateChanged((user) => {
+      if (user) {
+        db.collection("profile")
+          .where("uid", "==", user.uid)
+          .limit(1)
+          .get()
+          .then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+              dispatch({ type: SIGN_IN, payload: doc.data() });
+              setLoading(true);
+            });
+          })
+          .catch((error) => {
+            console.log("Error getting cached document:", error);
+          });
+      } else {
+        dispatch({ type: LOG_OUT });
+        setLoading(true);
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -59,7 +84,7 @@ function NavBar() {
               Resources
             </NavLink>
           </Nav>
-          {!user && (
+          {!user && loading && (
             <div>
               <Button onClick={() => setShowSignUp(true)}>SignUp</Button>
               <Button onClick={() => setShowLogin(true)} className="ml-2">
@@ -85,8 +110,8 @@ function NavBar() {
           )}
         </Navbar.Collapse>
       </Navbar>
-      <SignUpModal show={showSignUp} hideFn={setShowSignUp} />
-      <Login show={showLogin} hideFn={setShowLogin} />
+      <SignUpModal show={showSignUp} hideModule={setShowSignUp} />
+      <Login show={showLogin} hideModule={setShowLogin} />
     </>
   );
 }

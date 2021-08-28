@@ -67,11 +67,7 @@ const signInWithEmailAndPassword = async ({ email, password }) => {
   try {
     const res = await auth.signInWithEmailAndPassword(email, password);
     const user = res.user;
-    const profile = await db
-      .collection("profile")
-      .where("uid", "==", user.uid)
-      .get();
-    return profile.docs;
+    return user;
   } catch (error) {
     if (CUSTOM_ERROR[error.code]) {
       return { error: { ...error, customError: CUSTOM_ERROR[error.code] } };
@@ -80,12 +76,36 @@ const signInWithEmailAndPassword = async ({ email, password }) => {
   }
 };
 
-const logout = () => {
+const logout = async () => {
   try {
-    auth.signOut();
+    await auth.signOut();
   } catch (err) {
     alert(err.message);
   }
+};
+
+const checkLogined = () => {
+  auth().onAuthStateChanged(function (user) {
+    if (user) {
+      const profile = db
+        .collection("profile")
+        .where("uid", "==", user.uid)
+        .get();
+      return profile.docs;
+    } else {
+      return false;
+    }
+  });
+  // const user = await auth.onAuthStateChanged();
+  // if (user) {
+  //   const profile = await db
+  //     .collection("profile")
+  //     .where("uid", "==", user.uid)
+  //     .get();
+  //   return profile.docs;
+  // } else {
+  //   return false;
+  // }
 };
 
 export {
@@ -94,4 +114,5 @@ export {
   registerWithEmailAndPassword,
   signInWithEmailAndPassword,
   logout,
+  checkLogined,
 };

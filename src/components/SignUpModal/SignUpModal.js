@@ -14,14 +14,17 @@ import {
   registerWithEmailAndPassword,
 } from "../../helpers/auth";
 
-function SignUpModal({ show, hideFn }) {
+function SignUpModal({ show, showModal }) {
   const [errorMsg, setErrorMsg] = useState(false);
   const dispatch = useDispatch();
 
   const signWithSocial = async (social) => {
     let fnCall = null;
-    if (social === "google") fnCall = signInWithGoogle;
-    else if (social === "facebook") fnCall = signInWithFacebook;
+    if (social === "google") {
+      fnCall = signInWithGoogle;
+    } else if (social === "facebook") {
+      fnCall = signInWithFacebook;
+    }
     if (fnCall) {
       const result = await fnCall();
       if (result.error) {
@@ -29,7 +32,7 @@ function SignUpModal({ show, hideFn }) {
       } else {
         setErrorMsg(false);
         dispatch({ type: SIGN_IN, payload: result });
-        hideFn(false);
+        showModal(false);
       }
     }
   };
@@ -37,14 +40,17 @@ function SignUpModal({ show, hideFn }) {
   const signUp = async (data, setSubmitting) => {
     const result = await registerWithEmailAndPassword(data);
     if (result.error) {
-      if (result.error.customError) setErrorMsg(result.error.customError);
-      else setErrorMsg("Something went wrong");
+      if (result.error.customError) {
+        setErrorMsg(result.error.customError);
+      } else {
+        setErrorMsg("Something went wrong");
+      }
       setSubmitting(false);
     } else {
       setSubmitting(false);
       setErrorMsg(false);
       dispatch({ type: SIGN_IN, payload: result });
-      hideFn(false);
+      showModal(false);
     }
   };
 
@@ -56,7 +62,7 @@ function SignUpModal({ show, hideFn }) {
           className="close"
           onClick={() => {
             setErrorMsg(false);
-            hideFn(false);
+            showModal(false);
           }}
         />
         <Container>
