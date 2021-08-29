@@ -13,14 +13,15 @@ const SearchResults = ({ img, id, location, age, breed, gender, name }) => {
       <Col lg={4} className="mb-5 cardCol">
         <Card style={{ width: "18rem" }}>
           <Card.Img variant="top" src={img} />
-          <Card.Body id="modalBody">
+          <Card.Body id="modalBodySearch">
             <div id="cardText">
               <div className="firstDiv">
                 <p>{breed}</p>
                 <p>{name}</p>
                 <Button
                   variant="primary"
-                  className="adoptButton shadow-none"
+                  className="shadow-none"
+                  id="adoptButton"
                   onClick={() => setModalShow(true)}
                 >
                   <FaPaw className="pawIcon" />
