@@ -14,26 +14,19 @@ import {
   registerWithEmailAndPassword,
 } from "../../helpers/auth";
 
-function SignUpModal({ show, showModal }) {
+function SignUpModal({ show, isModalShown }) {
   const [errorMsg, setErrorMsg] = useState(false);
   const dispatch = useDispatch();
 
   const signWithSocial = async (social) => {
-    let fnCall = null;
-    if (social === "google") {
-      fnCall = signInWithGoogle;
-    } else if (social === "facebook") {
-      fnCall = signInWithFacebook;
-    }
-    if (fnCall) {
-      const result = await fnCall();
-      if (result.error) {
-        setErrorMsg("Something went wrong");
-      } else {
-        setErrorMsg(false);
-        dispatch({ type: SIGN_IN, payload: result });
-        showModal(false);
-      }
+    let fnCall = social === "facebook" ? signInWithFacebook : signInWithGoogle;
+    const result = await fnCall();
+    if (result.error) {
+      setErrorMsg("Something went wrong");
+    } else {
+      setErrorMsg(false);
+      dispatch({ type: SIGN_IN, payload: result });
+      isModalShown(false);
     }
   };
 
@@ -50,7 +43,7 @@ function SignUpModal({ show, showModal }) {
       setSubmitting(false);
       setErrorMsg(false);
       dispatch({ type: SIGN_IN, payload: result });
-      showModal(false);
+      isModalShown(false);
     }
   };
 
@@ -62,7 +55,7 @@ function SignUpModal({ show, showModal }) {
           className="close"
           onClick={() => {
             setErrorMsg(false);
-            showModal(false);
+            isModalShown(false);
           }}
         />
         <Container>

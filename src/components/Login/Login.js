@@ -14,26 +14,19 @@ import {
   signInWithEmailAndPassword,
 } from "../../helpers/auth";
 
-function Login({ show, showModal }) {
+function Login({ show, isModalShown }) {
   const [errorMsg, setErrorMsg] = useState(false);
   const dispatch = useDispatch();
 
   const signWithSocial = async (social) => {
-    let fnCall = null;
-    if (social === "google") {
-      fnCall = signInWithGoogle;
-    } else if (social === "facebook") {
-      fnCall = signInWithFacebook;
-    }
-    if (fnCall) {
-      const result = await fnCall();
-      if (result.error) {
-        setErrorMsg("Something went wrong");
-      } else {
-        setErrorMsg(false);
-        dispatch({ type: SIGN_IN, payload: result });
-        showModal(false);
-      }
+    let fnCall = social === "facebook" ? signInWithFacebook : signInWithGoogle;
+    const result = await fnCall();
+    if (result.error) {
+      setErrorMsg("Something went wrong");
+    } else {
+      setErrorMsg(false);
+      dispatch({ type: SIGN_IN, payload: result });
+      isModalShown(false);
     }
   };
 
@@ -50,14 +43,18 @@ function Login({ show, showModal }) {
       setSubmitting(false);
       setErrorMsg(false);
       dispatch({ type: SIGN_IN, payload: result });
-      showModal(false);
+      isModalShown(false);
     }
   };
 
   return (
     <Modal show={show} animation={false} size="lg" centered>
       <Modal.Body className="modalBody">
-        <MdClose size={27} className="close" onClick={() => showModal(false)} />
+        <MdClose
+          size={27}
+          className="close"
+          onClick={() => isModalShown(false)}
+        />
         <Container>
           <Row>
             <Col lg={6} className="bgCat"></Col>

@@ -13,8 +13,8 @@ import { db, app } from "../../firebase";
 
 function NavBar() {
   const user = useSelector((state) => state.user);
-  const [showLogin, setShowLogin] = useState(false);
-  const [showSignUp, setShowSignUp] = useState(false);
+  const [LoginShown, isLoginShown] = useState(false);
+  const [signupShown, isSignupShown] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const dispatch = useDispatch();
@@ -86,8 +86,8 @@ function NavBar() {
           </Nav>
           {!user && loading && (
             <div>
-              <Button onClick={() => setShowSignUp(true)}>SignUp</Button>
-              <Button onClick={() => setShowLogin(true)} className="ml-2">
+              <Button onClick={() => isSignupShown(true)}>SignUp</Button>
+              <Button onClick={() => isLoginShown(true)} className="ml-2">
                 login
               </Button>
             </div>
@@ -110,8 +110,8 @@ function NavBar() {
           )}
         </Navbar.Collapse>
       </Navbar>
-      <SignUpModal show={showSignUp} showModal={setShowSignUp} />
-      <Login show={showLogin} showModal={setShowLogin} />
+      <SignUpModal show={signupShown} isModalShown={isSignupShown} />
+      <Login show={LoginShown} isModalShown={isLoginShown} />
     </>
   );
 }
