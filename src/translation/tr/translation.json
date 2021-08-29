@@ -1,0 +1,58 @@
+{
+    "navbar": {
+        "headers": {
+          "header0": "Hakkımızda",
+          "header1": "Blog",
+          "header2": "İletişim",
+          "header3": "Kaynaklar"
+        },
+        "button": {
+          "button0" : "Kayıt Ol",
+          "button1" : "Giriş Yap"
+        },
+        "languages": {
+          "lang0": "İngilizce",
+          "lang1": "Türkçe"
+          
+        }
+      },
+      "heroSectionHome" : {
+        "title": "Sahiplenelim",
+        "text": "Evlat edinmek isteyen insanlara yardım etmek isteyen kar amacı gütmeyen bir kuruluşuz",
+        "button": "Dost Bul"
+      },
+      "heroSectionAbout" : {
+        "title": "Biz Kimiz",
+        "text": "Şu anda benim gibi hayvanlar yavru barınaklarında, araştırma laboratuvarlarında ve fabrika çiftliklerinde acı çekiyor. Bizi korumak için mücadeleye katılın",
+        "button": "Dost Bul"
+      },
+      "heroSectionResources" : {
+        "title": "Sahiplenelim",
+        "text": "Evlat edinmek isteyen insanlara yardım etmek isteyen kar amacı gütmeyen bir kuruluşuz",
+        "button": "Dost Bul"
+      },
+      "petAdoption": {
+        "title": "Sahiplenme Aşaması"
+        
+      },
+      "latestGuest": {
+        "title": "Son Misafirlerimiz",
+        "text": "Son Gelen Dostlarımızla Tanış🐾",
+        "button0": "Göster",
+        "button1": "Kapat"
+        
+      },
+      "latestAdoption": {
+        "title": "Evlat Edililen Dostlarımız",
+        "text": "Yakında evlat edinilen dostlarımıza bak🐾",
+        "button0": "Göster",
+        "button1": "Kapat"
+      },
+      "team": {
+        "title": "Takımımızla Tanış",
+        "job": "Ön yüz Geliştirici"
+      },
+      "checklist": {
+        "title0":""
+      }
+}

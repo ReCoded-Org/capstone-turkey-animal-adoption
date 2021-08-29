@@ -5,10 +5,22 @@ import logo from "../../images/logo.png";
 import Login from "../Login/Login";
 import "./NavBar.css";
 import SignUpModal from "../SignUpModal/SignUpModal";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 function NavBar() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
+  //const [t , i18n] = useTranslation("navbar");
+  const { t } = useTranslation();
+
+
+
+
+  // const handleLanguageChange = (lang) => {
+  //   i18next.changeLanguage(lang);
+  // };
+
 
   return (
     <>
@@ -27,7 +39,7 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <NavLink to="/about" className="nav-link navLink">
-              About
+            {t("navbar.headers.header0")}
             </NavLink>
             <NavLink to="/blog" className="nav-link navLink">
               Blog
@@ -44,9 +56,13 @@ function NavBar() {
             login
           </Button>
           <Form.Control as="select" className="w-auto language">
-            <option value="English">English</option>
+            <option onClick={() => {
+                i18next.changeLanguage("en");
+              }} value="English">English</option>
             <option value="Arabic">Arabic</option>
-            <option value="Turkish">Turkish</option>
+            <option onClick={() => {
+                i18next.changeLanguage("tr");
+              }} value="Turkish">Turkish</option>
           </Form.Control>
         </Navbar.Collapse>
       </Navbar>

@@ -1,0 +1,58 @@
+{
+    "navbar": {
+        "headers": {
+          "header0": "About",
+          "header1": "Blog",
+          "header2": "Contact",
+          "header3": "Resources"
+        },
+        "button": {
+          "button0" : "Sign Up",
+          "button1" : "Login"
+        },
+        "languages": {
+          "lang0": "English",
+          "lang1": "Turkish"
+          
+        }
+      },
+    "heroSectionHome" : {
+      "title": "Adopt Please",
+      "text": "We are non-profit organization who wants to help people who wants to adopt",
+      "button": "Find A Pet"
+    },
+    "heroSectionAbout" : {
+      "title": "Who We Are",
+      "text": "Right now, animals like me are suffering in puppy mills, research labs and factory farms. Join the fight to protect us",
+      "button": "Find A Pet"
+    },
+    "heroSectionResources" : {
+      "title": "Adopt Please",
+      "text": "We are non-profit organization who wants to help people who wants to adopt",
+      "button": "Find A Pet"
+    },
+    "petAdoption": {
+      "title": "Pet Adoption Process"
+      
+    },
+    "latestGuest": {
+      "title": "Latest Guests",
+      "text": "Meet Our Latest Friends🐾",
+      "button0": "View",
+      "button1": "Close"
+      
+    },
+    "latestAdoption": {
+      "title": "Latest Adoptions",
+      "text": "Check Our Latest Adopted Friends 🐾",
+      "button0": "View",
+      "button1": "Close"
+    },
+    "team": {
+      "title": "Meet Our Great Team",
+      "job": "FrontEnd Engineer"
+    },
+    "checklist": {
+      "title0":""
+    }
+}
