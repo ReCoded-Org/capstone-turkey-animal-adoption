@@ -23,3 +23,12 @@ h3 {
   height: 40px;
   border-radius: "40px";
 }
+.mainContainer {
+  background-color: #e5e5e5;
+}
+.bgWhite {
+  background-color: white;
+}
+.fullHeight {
+  height: 100%;
+}

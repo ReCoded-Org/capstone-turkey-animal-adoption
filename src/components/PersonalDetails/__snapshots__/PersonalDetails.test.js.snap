@@ -2,200 +2,215 @@
 
 exports[`Persnal details renders correctly 1`] = `
 <div
-  className="row"
+  className="mainContainer container-fluid"
 >
   <div
-    className="col w-25 p-5 d-flex flex-column align-items-center m-5 shadow-lg "
-  >
-    <img
-      alt="userPhoto"
-      className="align-items-center mb-4"
-      height="120"
-      src="person.png"
-      width="120"
-    />
-    <h6
-      className="align-items-center mb-2 text-uppercase newColor"
-    >
-      Mohammed Manar Yazji
-    </h6>
-    <h6
-      className="align-items-center mb-4 mt-2 font-weight-light"
-    >
-      yazjiamanr92@gmail.com
-    </h6>
-    <h4
-      className="align-items-center mb-2 newColor"
-    >
-      About
-    </h4>
-    <p
-      className="text-center"
-      style={
-        Object {
-          "color": "#777777",
-        }
-      }
-    >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-    </p>
-  </div>
-  <form
-    className="col-8 w-75 p-5 d-flex flex-column align-items-center m-5 shadow-lg"
+    class="mt-3 mb-4"
+    className="container"
   >
     <div
-      className="container"
+      className="row"
     >
-      <h3
-        className="newColor"
-      >
-        Personal Details
-      </h3>
       <div
-        className="row d-flex justify-content-around mt-4 "
+        className=" col-3  d-flex flex-column align-items-center  col"
       >
-        <div>
-          <label
-            className="newColor"
-          >
-            FullName
-          </label>
-          <br />
-          <input
-            className="shadow rounded inputStyle"
-            placeholder="Full Name"
-            type="text"
+        <div
+          class="p-5 shadow-lg bgWhite"
+        >
+          <img
+            alt="userPhoto"
+            className="align-items-center mb-4"
+            height="120"
+            src="person.png"
+            width="120"
           />
-        </div>
-        <div>
-          <label
-            className="newColor"
+          <h6
+            className="align-items-center mb-2 text-uppercase newColor"
           >
-            Email
-          </label>
-          <br />
-          <input
-            className="shadow rounded inputStyle"
-            placeholder="Email"
-            type="Email"
-          />
-          <br />
-          <small
-            className="form-text text-muted"
-            id="emailHelp"
+            Mohammed Manar Yazji
+          </h6>
+          <h6
+            className="align-items-center mb-4 mt-2 font-weight-light"
           >
-            We willl never share your email with anyone else.
-          </small>
+            yazjiamanr92@gmail.com
+          </h6>
+          <h4
+            className="align-items-center mb-2 newColor"
+          >
+            About
+          </h4>
+          <p
+            className="text-center"
+            style={
+              Object {
+                "color": "#777777",
+              }
+            }
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+          </p>
         </div>
       </div>
       <div
-        className="row d-flex justify-content-around mt-4"
+        className=" col-8 w-75 p-5 d-flex flex-column align-items-center   col"
       >
         <div
-          className=""
+          className="m-5 shadow-lg bgWhite"
         >
-          <label
-            className="newColor"
-          >
-            Password
-          </label>
-          <br />
-          <input
-            className="shadow rounded inputStyle"
-            placeholder="Password"
-            type="password"
-          />
-        </div>
-        <div>
-          <label
-            className="newColor"
-          >
-            Phone
-          </label>
-          <br />
-          <input
-            className="shadow rounded inputStyle"
-            placeholder="+90 xxx xxx xx xx"
-            type="Number"
-          />
-        </div>
-      </div>
-      <div
-        className="mt-5"
-      >
-        <h3
-          className="newColor"
-        >
-          Address
-        </h3>
-        <div
-          className="row d-flex justify-content-around mt-4 "
-        >
-          <div>
-            <label>
-              City
-            </label>
-            <br />
-            <input
-              className="shadow rounded inputStyle"
-              placeholder="City Name"
-              type="text"
-            />
-          </div>
-          <div>
-            <label>
-              Street
-            </label>
-            <br />
-            <input
-              className="shadow rounded inputStyle"
-              placeholder="Street"
-              type="text"
-            />
-          </div>
-        </div>
-        <div
-          className="row d-flex justify-content-around mt-4 "
-        >
-          <div>
-            <label>
-              State
-            </label>
-            <br />
-            <input
-              className="shadow rounded newColor"
-              placeholder="State Name"
-              type="text"
-            />
-          </div>
-          <div>
-            <label>
-              Zip Code
-            </label>
-            <br />
-            <input
-              className="shadow rounded inputStyle"
-              placeholder="Zip Code"
-              type="text"
-            />
-          </div>
-        </div>
-        <div
-          className="row d-flex mt-4 justify-content-center"
-        >
-          <input
-            className="m-2 button"
-            type="submit"
-            value="Update"
-          />
-          <input
-            className="m-2 button"
-            type="submit"
-            value="Cancel"
-          />
+          <form>
+            <h3
+              className="newColor"
+            >
+              Personal Details
+            </h3>
+            <div
+              className="row d-flex justify-content-around mt-4 "
+            >
+              <div>
+                <label
+                  className="newColor"
+                >
+                  FullName
+                </label>
+                <br />
+                <input
+                  className="shadow rounded inputStyle"
+                  placeholder="Full Name"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  className="newColor"
+                >
+                  Email
+                </label>
+                <br />
+                <input
+                  className="shadow rounded inputStyle"
+                  placeholder="Email"
+                  type="Email"
+                />
+                <br />
+                <small
+                  className="form-text text-muted"
+                  id="emailHelp"
+                >
+                  We willl never share your email with anyone else.
+                </small>
+              </div>
+            </div>
+            <div
+              className="row d-flex justify-content-around mt-4"
+            >
+              <div
+                className=""
+              >
+                <label
+                  className="newColor"
+                >
+                  Password
+                </label>
+                <br />
+                <input
+                  className="shadow rounded inputStyle"
+                  placeholder="Password"
+                  type="password"
+                />
+              </div>
+              <div>
+                <label
+                  className="newColor"
+                >
+                  Phone
+                </label>
+                <br />
+                <input
+                  className="shadow rounded inputStyle"
+                  placeholder="+90 xxx xxx xx xx"
+                  type="Number"
+                />
+              </div>
+            </div>
+            <div
+              className="mt-5"
+            >
+              <h3
+                className="newColor"
+              >
+                Address
+              </h3>
+              <div
+                className="row d-flex justify-content-around mt-4 "
+              >
+                <div>
+                  <label>
+                    City
+                  </label>
+                  <br />
+                  <input
+                    className="shadow rounded inputStyle"
+                    placeholder="City Name"
+                    type="text"
+                  />
+                </div>
+                <div>
+                  <label>
+                    Street
+                  </label>
+                  <br />
+                  <input
+                    className="shadow rounded inputStyle"
+                    placeholder="Street"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div
+                className="row d-flex justify-content-around mt-4 "
+              >
+                <div>
+                  <label>
+                    State
+                  </label>
+                  <br />
+                  <input
+                    className="shadow rounded newColor"
+                    placeholder="State Name"
+                    type="text"
+                  />
+                </div>
+                <div>
+                  <label>
+                    Zip Code
+                  </label>
+                  <br />
+                  <input
+                    className="shadow rounded inputStyle"
+                    placeholder="Zip Code"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div
+                className="row d-flex mt-4 justify-content-center"
+              >
+                <input
+                  className="m-2 button"
+                  type="submit"
+                  value="Update"
+                />
+                <input
+                  className="m-2 button"
+                  type="submit"
+                  value="Cancel"
+                />
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </form>
+  </div>
 </div>
 `;
