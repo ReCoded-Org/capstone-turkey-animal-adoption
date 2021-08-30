@@ -96,16 +96,6 @@ const checkLogined = () => {
       return false;
     }
   });
-  // const user = await auth.onAuthStateChanged();
-  // if (user) {
-  //   const profile = await db
-  //     .collection("profile")
-  //     .where("uid", "==", user.uid)
-  //     .get();
-  //   return profile.docs;
-  // } else {
-  //   return false;
-  // }
 };
 
 export {
