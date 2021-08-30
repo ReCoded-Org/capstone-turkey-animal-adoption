@@ -51,10 +51,8 @@
   font-style: italic;
 }
 
-@media screen and (max-width: 1024px) {
-  .contactRow {
-    margin-top: 3rem;
-  }
+.contactRow {
+  margin: 3rem 0;
 }
 
 @media screen and (max-width: 768px) {
