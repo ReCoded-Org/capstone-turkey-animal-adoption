@@ -28,6 +28,6 @@ const Blog = () => {
       </Row>
     </Container>
   );
-}
+};
 
 export default Blog;
