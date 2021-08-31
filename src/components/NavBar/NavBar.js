@@ -1,14 +1,59 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { Navbar, Nav, Button, Form } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
+import { NavLink, useHistory } from "react-router-dom";
+import { Navbar, Nav, Button, Form, Dropdown } from "react-bootstrap";
 import logo from "../../images/logo.png";
 import Login from "../Login/Login";
 import "./NavBar.css";
+import { useDispatch } from "react-redux";
+import { logout } from "../../helpers/auth";
+import { LOG_OUT, SIGN_IN } from "../../store/actions/actionConst";
 import SignUpModal from "../SignUpModal/SignUpModal";
+import { db, app } from "../../firebase";
 
 function NavBar() {
-  const [showLogin, setShowLogin] = useState(false);
-  const [showSignUp, setShowSignUp] = useState(false);
+  const user = useSelector((state) => state.user);
+  const [LoginShown, isLoginShown] = useState(false);
+  const [signupShown, isSignupShown] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const dispatch = useDispatch();
+  let history = useHistory();
+
+  const logoutAuth = async () => {
+    try {
+      await logout();
+      dispatch({ type: LOG_OUT });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const goToProfile = () => {
+    history.push("/profile");
+  };
+
+  useEffect(() => {
+    app.auth().onAuthStateChanged((user) => {
+      if (user) {
+        db.collection("profile")
+          .where("uid", "==", user.uid)
+          .limit(1)
+          .get()
+          .then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+              dispatch({ type: SIGN_IN, payload: doc.data() });
+              setLoading(true);
+            });
+          })
+          .catch((error) => {
+            console.log("Error getting cached document:", error);
+          });
+      } else {
+        dispatch({ type: LOG_OUT });
+        setLoading(true);
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -39,19 +84,34 @@ function NavBar() {
               Resources
             </NavLink>
           </Nav>
-          <Button onClick={() => setShowSignUp(true)}>SignUp</Button>
-          <Button onClick={() => setShowLogin(true)} className="ml-2">
-            login
-          </Button>
+          {!user && loading && (
+            <div>
+              <Button onClick={() => isSignupShown(true)}>SignUp</Button>
+              <Button onClick={() => isLoginShown(true)} className="ml-2">
+                login
+              </Button>
+            </div>
+          )}
           <Form.Control as="select" className="w-auto language">
             <option value="English">English</option>
             <option value="Arabic">Arabic</option>
             <option value="Turkish">Turkish</option>
           </Form.Control>
+          {user && (
+            <Dropdown>
+              <Dropdown.Toggle id="dropdown-basic" className="language">
+                {user.name}
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item onClick={goToProfile}>Profile</Dropdown.Item>
+                <Dropdown.Item onClick={logoutAuth}>Logout</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          )}
         </Navbar.Collapse>
       </Navbar>
-      <SignUpModal show={showSignUp} hideFn={setShowSignUp} />
-      <Login show={showLogin} hideFn={setShowLogin} />
+      <SignUpModal show={signupShown} isModalShown={isSignupShown} />
+      <Login show={LoginShown} isModalShown={isLoginShown} />
     </>
   );
 }
