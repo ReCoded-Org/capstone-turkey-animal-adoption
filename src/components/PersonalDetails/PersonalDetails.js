@@ -48,7 +48,7 @@ const PersonalDetails = () => {
                   isAlertShown(true);
                 }}
               >
-                {props => {
+                {(props) => {
                   const { values } = props;
                   return (
                     <Form>
@@ -124,7 +124,7 @@ const PersonalDetails = () => {
                               className="shadow rounded inputStyle"
                             >
                               <option value="">Select a City</option>
-                              {cities.map(city => {
+                              {cities.map((city) => {
                                 return (
                                   <option value="city.name">{city.name}</option>
                                 );
