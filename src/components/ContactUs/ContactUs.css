@@ -1,0 +1,64 @@
+.contactUs h1 {
+  color: #ff5555;
+}
+
+.contactUs input,
+.contactUs textarea {
+  width: 100%;
+  border: 1px solid #ff5555;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  resize: none;
+  color: #ff7777;
+}
+
+.contactUs input::placeholder,
+.contactUs textarea::placeholder {
+  color: #ff7777;
+}
+
+.contactUs input:focus,
+.contactUs textarea:focus {
+  outline: none;
+}
+
+.contactUs textarea {
+  height: 100px;
+}
+
+.contactUs {
+  text-align: left;
+  padding: 3rem 5rem !important;
+}
+
+.contactUsForm {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 15px 15px 15px 1px #e2e1e1, -15px 15px 15px #e2e1e1;
+}
+
+.contactBtn {
+  border-radius: 10px !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+.errorMsg {
+  color: #3d3dfd;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1024px) {
+  .contactRow {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactUs {
+    padding: 3rem 1rem !important;
+  }
+}
