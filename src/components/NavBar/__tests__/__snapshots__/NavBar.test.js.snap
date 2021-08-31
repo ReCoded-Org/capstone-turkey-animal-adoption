@@ -75,22 +75,6 @@ exports[`NavBar renders correctly 1`] = `
         Resources
       </a>
     </div>
-    <button
-      className="btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      SignUp
-    </button>
-    <button
-      className="ml-2 btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      login
-    </button>
     <select
       className="w-auto language form-control"
     >
