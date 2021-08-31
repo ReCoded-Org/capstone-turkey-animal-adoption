@@ -81,9 +81,7 @@ exports[`Persnal details renders correctly 1`] = `
                   className="error"
                 />
               </div>
-              <div
-                className=""
-              >
+              <div>
                 <label
                   className="newColor"
                 >
