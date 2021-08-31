@@ -11,12 +11,13 @@ const Blog = () => {
     );
 
     const posts = await data.json();
-    console.log(posts);
     setAllPosts(posts);
   };
+
   useEffect(() => {
     getAllPosts();
   }, []);
+
   return allPosts.length > 0 ? (
     <BlogDetails blogContent={allPosts} />
   ) : (
