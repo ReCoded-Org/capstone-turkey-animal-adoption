@@ -48,7 +48,7 @@ const PersonalDetails = () => {
                   isAlertShown(true);
                 }}
               >
-                {(props) => {
+                {props => {
                   const { values } = props;
                   return (
                     <Form>
@@ -69,8 +69,7 @@ const PersonalDetails = () => {
                             <ErrorMessage name="fullname" />
                           </div>
                         </div>
-
-                        <div className="">
+                        <div>
                           <label className="newColor">Email</label>
                           <br />
                           <input
@@ -83,7 +82,6 @@ const PersonalDetails = () => {
                           />
                         </div>
                       </div>
-
                       <div className="row d-flex justify-content-around mt-4">
                         <div>
                           <label className="newColor">Phone</label>
@@ -98,7 +96,6 @@ const PersonalDetails = () => {
                             <ErrorMessage name="phone" />
                           </div>
                         </div>
-
                         <div>
                           <label className="newColor">Bio</label>
                           <br />
@@ -113,7 +110,6 @@ const PersonalDetails = () => {
                           </div>
                         </div>
                       </div>
-
                       <div className="mt-4">
                         <h3 className="newColor">Address</h3>
                         <div className="row d-flex justify-content-around mt-4 ">
@@ -128,7 +124,7 @@ const PersonalDetails = () => {
                               className="shadow rounded inputStyle"
                             >
                               <option value="">Select a City</option>
-                              {cities.map((city) => {
+                              {cities.map(city => {
                                 return (
                                   <option value="city.name">{city.name}</option>
                                 );
@@ -166,7 +162,6 @@ const PersonalDetails = () => {
                               <ErrorMessage name="street" />
                             </div>
                           </div>
-
                           <div>
                             <label className="newColor">Zip Code</label>
                             <br />
