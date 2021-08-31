@@ -1,150 +1,201 @@
-import React from "react";
-import { Col, Row, Container } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import React, { useState } from "react";
+import { Col, Row, Container, Alert } from "react-bootstrap";
 import Person from "./person.png";
 import { Formik, Field, Form, ErrorMessage } from "formik";
+import { initialValues, yupValidation } from "./formikData";
+import * as Yup from "yup";
+import cities from "../../data/cities";
 import "./PersonalDetails.css";
 
 const PersonalDetails = () => {
-  //const user = useSelector((state) => state.user);
+  const [bio, setBio] = useState(null);
+  const [alertShown, isAlertShown] = useState(false);
 
   return (
-    <Container fluid className="mainContainer">
+    <Container fluid className="mainContainer profile">
       <Container className="pt-3 pb-4">
         <Row>
-          <Col className=" col-lg-3  d-flex flex-column align-items-center ">
+          <Col lg="4" md="12">
             <div class="p-5 shadow-lg bgWhite fullHeight">
               <img
                 src={Person}
                 alt="userPhoto"
                 width="120"
                 height="120"
-                className="align-items-center mb-4"
+                className="align-items-center mb-4 avatar"
               />
-              <h6 className="align-items-center mb-2 text-uppercase newColor">
+              <h5 className="align-items-center mb-2 text-uppercase newColor">
                 Mohammed Manar Yazji
-              </h6>
-              <h6 className="align-items-center mb-4 mt-2 font-weight-light">
+              </h5>
+              <p className="align-items-center  email">
                 yazjiamanr92@gmail.com
-              </h6>
-              <h4 className="align-items-center mb-2 newColor">About</h4>
-              <p className="text-center" style={{ color: "#777777" }}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book
               </p>
+              {bio && (
+                <h4 className="align-items-center mb-2 mt-4 newColor">About</h4>
+              )}
+              <p className="text-center">{bio}</p>
             </div>
           </Col>
-          <Col className=" col-lg-9   ">
-            <div className="p-5 shadow-lg bgWhite">
-              <form>
-                <h3 className="newColor">Personal Details</h3>
+          <Col lg="8" md="12" className="mt-lg-0 mt-5">
+            <div className="p-5 shadow-lg bgWhite" align="left">
+              {alertShown && (
+                <Alert variant="success">Your profile has been updated</Alert>
+              )}
+              <Formik
+                initialValues={initialValues}
+                validationSchema={Yup.object(yupValidation)}
+                onSubmit={(values, { setSubmitting }) => {
+                  isAlertShown(true);
+                }}
+              >
+                {(props) => {
+                  const { values } = props;
+                  return (
+                    <Form>
+                      {setBio(values.bio)}
+                      <h3 className="newColor">Personal Details</h3>
 
-                <div className="row d-flex justify-content-around mt-4 ">
-                  <div>
-                    <label className="newColor">FullName</label>
-                    <br />
-                    <input
-                      placeholder="Full Name"
-                      type="text"
-                      className="shadow rounded inputStyle"
-                    />
-                  </div>
+                      <div className="row d-flex justify-content-around mt-4 ">
+                        <div>
+                          <label className="newColor">FullName</label>
+                          <br />
+                          <Field
+                            placeholder="Full Name"
+                            type="text"
+                            name="fullname"
+                            className="shadow rounded inputStyle"
+                          />
+                          <div className="error">
+                            <ErrorMessage name="fullname" />
+                          </div>
+                        </div>
 
-                  <div>
-                    <label className="newColor">Email</label>
-                    <br />
-                    <input
-                      placeholder="Email"
-                      type="Email"
-                      className="shadow rounded inputStyle"
-                    />
-                    <br />
-                    <small id="emailHelp" className="form-text text-muted">
-                      We willl never share your email with anyone else.
-                    </small>
-                  </div>
-                </div>
+                        <div className="">
+                          <label className="newColor">Email</label>
+                          <br />
+                          <input
+                            placeholder="Email"
+                            type="Email"
+                            name="email"
+                            value="yazjiamanr92@gmail.com"
+                            disabled
+                            className="shadow rounded inputStyle"
+                          />
+                        </div>
+                      </div>
 
-                <div className="row d-flex justify-content-around mt-4">
-                  <div className="">
-                    <label className="newColor">Password</label>
-                    <br />
-                    <input
-                      placeholder="Password"
-                      type="password"
-                      className="shadow rounded inputStyle"
-                    />
-                  </div>
+                      <div className="row d-flex justify-content-around mt-4">
+                        <div>
+                          <label className="newColor">Phone</label>
+                          <br />
+                          <Field
+                            placeholder="Phone Number"
+                            type="Number"
+                            name="phone"
+                            className="shadow rounded inputStyle"
+                          />
+                          <div className="error">
+                            <ErrorMessage name="phone" />
+                          </div>
+                        </div>
 
-                  <div>
-                    <label className="newColor">Phone</label>
-                    <br />
-                    <input
-                      placeholder="+90 xxx xxx xx xx"
-                      type="Number"
-                      className="shadow rounded inputStyle"
-                    />
-                  </div>
-                </div>
+                        <div>
+                          <label className="newColor">Bio</label>
+                          <br />
+                          <Field
+                            placeholder="Bio"
+                            name="bio"
+                            as="textarea"
+                            className="shadow rounded inputStyle"
+                          />
+                          <div className="error">
+                            <ErrorMessage name="bio" />
+                          </div>
+                        </div>
+                      </div>
 
-                <div className="mt-5">
-                  <h3 className="newColor">Address</h3>
-                  <div className="row d-flex justify-content-around mt-4 ">
-                    <div>
-                      <label>City</label>
-                      <br />
-                      <input
-                        placeholder="City Name"
-                        type="text"
-                        className="shadow rounded inputStyle"
-                      />
-                    </div>
-                    <div>
-                      <label>Street</label>
-                      <br />
-                      <input
-                        placeholder="Street"
-                        type="text"
-                        className="shadow rounded inputStyle"
-                      />
-                    </div>
-                  </div>
-                  <div className="row d-flex justify-content-around mt-4 ">
-                    <div>
-                      <label>State</label>
-                      <br />
-                      <input
-                        placeholder="State Name"
-                        type="text"
-                        className="shadow rounded newColor"
-                      />
-                    </div>
-                    <div>
-                      <label>Zip Code</label>
-                      <br />
-                      <input
-                        placeholder="Zip Code"
-                        type="text"
-                        className="shadow rounded inputStyle"
-                      />
-                    </div>
-                  </div>
-                  <div className="row d-flex mt-4 justify-content-center">
-                    <input
-                      className="m-2 button"
-                      type="submit"
-                      value="Update"
-                    />
-                    <input
-                      className="m-2 button"
-                      type="submit"
-                      value="Cancel"
-                    />
-                  </div>
-                </div>
-              </form>
+                      <div className="mt-4">
+                        <h3 className="newColor">Address</h3>
+                        <div className="row d-flex justify-content-around mt-4 ">
+                          <div>
+                            <label className="newColor">City</label>
+                            <br />
+                            <Field
+                              component="select"
+                              id="city"
+                              name="city"
+                              multiple={false}
+                              className="shadow rounded inputStyle"
+                            >
+                              <option value="">Select a City</option>
+                              {cities.map((city) => {
+                                return (
+                                  <option value="city.name">{city.name}</option>
+                                );
+                              })}
+                            </Field>
+                            <div className="error">
+                              <ErrorMessage name="city" />
+                            </div>
+                          </div>
+                          <div>
+                            <label className="newColor">State</label>
+                            <br />
+                            <Field
+                              placeholder="State Name"
+                              type="text"
+                              name="state"
+                              className="shadow rounded inputStyle"
+                            />
+                            <div className="error">
+                              <ErrorMessage name="state" />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="row d-flex justify-content-around mt-4 ">
+                          <div>
+                            <label className="newColor">Street</label>
+                            <br />
+                            <Field
+                              placeholder="Street"
+                              type="text"
+                              name="street"
+                              className="shadow rounded inputStyle"
+                            />
+                            <div className="error">
+                              <ErrorMessage name="street" />
+                            </div>
+                          </div>
+
+                          <div>
+                            <label className="newColor">Zip Code</label>
+                            <br />
+                            <Field
+                              placeholder="Zip Code"
+                              type="text"
+                              name="zip"
+                              className="shadow rounded inputStyle"
+                            />
+                            <div className="error">
+                              <ErrorMessage name="zip" />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="row d-flex mt-5 justify-content-center">
+                          <input
+                            className="m-2 button"
+                            type="submit"
+                            value="Update"
+                          />
+                          <button className="m-2 button cancelBtn">
+                            Cancel{" "}
+                          </button>
+                        </div>
+                      </div>
+                    </Form>
+                  );
+                }}
+              </Formik>
             </div>
           </Col>
         </Row>
