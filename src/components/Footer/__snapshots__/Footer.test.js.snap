@@ -11,7 +11,7 @@ exports[`Footer renders correctly 1`] = `
       className="row"
     >
       <div
-        className="col"
+        className="col-md-4"
       >
         <div
           className="d-flex align-items-center pb-4 pt-4"
@@ -51,15 +51,13 @@ exports[`Footer renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="col pl-5 mt-2"
+        className="col-md-4 pl-lg-5 pl-md-5 pl-0 mt-3"
       >
-        <h4
-          className="pl-5"
-        >
+        <h4>
           Menu
         </h4>
         <ul
-          className="list-group pl-5"
+          className="list-group"
         >
           <li
             className="list-unstyled text-white"
@@ -137,7 +135,7 @@ exports[`Footer renders correctly 1`] = `
         </ul>
       </div>
       <div
-        className="col  mt-2"
+        className="col-md-4  mt-3 pl-lg-5 pl-0"
       >
         <h4>
           LATEST POSTS
