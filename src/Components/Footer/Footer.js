@@ -9,6 +9,7 @@ import {
 import logo from "./logo.png";
 import { NavLink } from "react-router-dom";
 import dog from "./Bg.png";
+import "./Footer.css";
 
 // footer component start here 👌
 const Footer = () => {
@@ -47,13 +48,25 @@ const Footer = () => {
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
-                <NavLink to="/about" className="text-white">
-                  About
+                <NavLink to="/search" className="text-white">
+                  Find A Pet
                 </NavLink>
               </li>
-              <li className="list-unstyled text-white">Personal License </li>
-              <li className="list-unstyled text-white">Pricing Options </li>
-              <li className="list-unstyled text-white">Personal License</li>
+              <li className="list-unstyled text-white">
+                <NavLink to="/blog" className="text-white">
+                  Blog
+                </NavLink>
+              </li>
+              <li className="list-unstyled text-white">
+                <NavLink to="/contact" className="text-white">
+                  Contact Us
+                </NavLink>
+              </li>
+              <li className="list-unstyled text-white">
+                <NavLink to="/resources" className="text-white">
+                  Resources
+                </NavLink>
+              </li>
             </ul>
           </div>
 
