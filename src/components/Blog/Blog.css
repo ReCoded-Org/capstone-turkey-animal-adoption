@@ -1,0 +1,49 @@
+.articleContianer {
+  text-align: left;
+}
+
+.blogContianer {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.posts {
+  display: flex;
+  align-items: center;
+}
+
+.postImg {
+  max-width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-right: 2rem;
+}
+
+/* for override purposes */
+#articleTitle {
+  margin-top: 2rem;
+  color: #ff5555;
+}
+
+#publishedDate {
+  color: #96e8f0;
+  font-weight: bold;
+}
+
+#blogCol {
+  padding: 0 7rem;
+}
+
+#postTitle {
+  color: #ff5555;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .blog {
+    margin-top: 2rem;
+  }
+  #blogCol {
+    padding: 3rem 1rem;
+  }
+}

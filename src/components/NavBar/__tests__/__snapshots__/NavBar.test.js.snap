@@ -15,7 +15,7 @@ exports[`NavBar renders correctly 1`] = `
       style={Object {}}
     >
       <img
-        alt="Furry Friend"
+        alt="our Furry Friend"
         className="logoHeader"
         height="50"
         src="logo.png"
@@ -66,14 +66,15 @@ exports[`NavBar renders correctly 1`] = `
       >
         Contact
       </a>
+      <a
+        aria-current={null}
+        className="nav-link navLink"
+        href="/resources"
+        onClick={[Function]}
+      >
+        Resources
+      </a>
     </div>
-    <button
-      className="btn btn-primary"
-      disabled={false}
-      type="button"
-    >
-      SignUp
-    </button>
     <select
       className="w-auto language form-control"
     >

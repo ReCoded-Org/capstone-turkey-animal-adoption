@@ -59,3 +59,22 @@ h4 {
 li {
   text-align: left;
 }
+
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  background-color: #fc5d5d;
+  border-color: #fc5d5d;
+  box-shadow: 0 0 0 0.2rem rgb(216 58 73 / 25%);
+}
+
+.form-control:focus {
+  border-color: #9fa3a9;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(52 58 64 / 25%);
+}

@@ -1,0 +1,104 @@
+.carouselItems {
+  justify-content: space-around;
+}
+
+.guestItems {
+  background-position: center;
+  background-size: cover;
+  height: 37vh;
+  border-radius: 7px;
+}
+
+.guestsContainer h1 {
+  color: #ff3e3e;
+}
+
+.guestsContainer h6 {
+  color: #777777;
+}
+
+.modalImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+.sliderImg {
+  height: 750px;
+}
+
+.close {
+  display: none;
+}
+
+/* to override the default styles and not to use important, i gave id */
+#viewButton {
+  border: none;
+  background: #fff;
+  color: #ff7777;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+
+#closeButton {
+  border: none;
+  border-radius: 2rem;
+  background: #ff7777;
+  color: #fff;
+  width: 100%;
+  max-width: 130px;
+  margin: 0 auto 1rem auto;
+}
+
+#modalHeader {
+  background-color: #ff7777;
+  justify-content: center;
+}
+
+#modalBody {
+  text-align: center;
+  background: url("https://t4.ftcdn.net/jpg/01/06/77/37/360_F_106773743_CdPrTCQabRIeXPjCZddr3qV1PGT34rn7.jpg");
+  color: #777777;
+  font-weight: bold;
+  font-family: cursive;
+  padding: 2rem 1rem 1rem 0;
+  font-size: 25px;
+}
+
+#modalFooter {
+  background: url("https://t4.ftcdn.net/jpg/01/06/77/37/360_F_106773743_CdPrTCQabRIeXPjCZddr3qV1PGT34rn7.jpg");
+  border-top: none;
+}
+
+/* Carousel CSS, those classes are coming from bootstrap data, not showing in html. 
+So it is not possible to give additional classes or ids. Since they have inline 
+styles from backside, i have to use important to override the default css */
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100% !important;
+  background-color: #ff7777 !important;
+}
+
+/* for screens under 1024px, cards will not be displayed, 
+the carousel will be replaced instead.
+For mobile 
+*/
+@media screen and (max-width: 1024px) {
+  .carousel {
+    display: block !important;
+  }
+  .carouselItems {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sliderImg {
+    height: 400px;
+  }
+}

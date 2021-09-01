@@ -1,0 +1,91 @@
+.modalBody {
+  padding: 0 !important;
+  position: relative;
+}
+
+.modalBody .close {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  z-index: 1;
+  display: block !important;
+}
+
+.bgCat {
+  background-color: #ff7777;
+  border-radius: 0.2rem 0.2rem 0 0;
+  background: url(../../images/cat.png) #ff7777 no-repeat center bottom;
+  background-size: contain;
+  min-height: 200px;
+}
+
+.bgContent {
+  background-color: #fbfbfb;
+  border-radius: 0 0 0.2rem 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerContent {
+  margin: 40px 0;
+  width: 100%;
+}
+
+.bgContent h1 {
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: -1.92857px;
+  color: #1e1913;
+  margin-bottom: 21px;
+  margin-top: 5px;
+}
+
+.login input {
+  max-width: 300px;
+  border: 1px solid #eaeaea;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  font-size: 14px;
+}
+
+.login input::placeholder {
+  font-size: 13px;
+  color: rgba(17, 17, 17, 0.48);
+}
+
+.login .error {
+  font-size: 13px;
+  color: #ff7777;
+}
+
+.note {
+  color: rgba(17, 17, 17, 0.48);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.pawIcon {
+  transform: rotate(-20deg);
+  margin-right: 7px;
+  margin-top: -4px;
+}
+
+@media screen and (min-width: 992px) {
+  .bgCat {
+    background-size: 115% 90%;
+    border-radius: 0.2rem 0 0 0.2rem;
+  }
+
+  .bgContent {
+    border-radius: 0 0.2rem 0.2rem 0;
+  }
+
+  .innerContent {
+    margin: 100px 0;
+  }
+
+  .bgContent h1 {
+    font-size: 48px;
+    margin-top: 20px;
+  }
+}
