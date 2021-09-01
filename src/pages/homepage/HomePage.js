@@ -17,7 +17,6 @@ const dataOfHeroSection = {
 };
 
 function Homepage() {
-
   const { t } = useTranslation();
 
   return (
@@ -29,7 +28,7 @@ function Homepage() {
         side={dataOfHeroSection.side}
       />
       <AdoptionProcess adoptionProcess={adoptionProcess} />
-      <LatestGuests latestAddedGuests={latestAddedGuests} />
+      <LatestGuests latestGuest={t("latestGuest", { returnObjects: true })} />
     </div>
   );
 }

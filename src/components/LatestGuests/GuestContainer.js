@@ -5,20 +5,19 @@ import "./LatestGuests.css";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
-const GuestContainer = ({ latestAddedGuests }) => {
-   console.log(latestAddedGuests)
+const GuestContainer = ({ latestGuest }) => {
   //const { t } = useTranslation();
-  
+  console.log("hi" + latestGuest);
   return (
     <Container>
       <Row className="guestsContainer py-5">
         <Col sm={12}>
-          {latestAddedGuests && (
+          {latestGuest && (
             <>
-              <h1>{latestAddedGuests.latestGuestsTitle.title}</h1>
-              <h6>{latestAddedGuests.latestGuestsTitle.subTitle}</h6>
+              <h1>{latestGuest.title}</h1>
+              <h6>{latestGuest.text}</h6>
               <Row className="mt-5 carouselItems">
-                {latestAddedGuests.latestGuestsItems.map((guest) => (
+                {latestGuest.latestAddedGuests.latestGuestItems.map(guest => (
                   <GuestItems
                     key={guest.id}
                     img={guest.img}
@@ -33,9 +32,9 @@ const GuestContainer = ({ latestAddedGuests }) => {
           )}
         </Col>
       </Row>
-      <Carousel style={{ display: "none" }} className="carousel">
-        {latestAddedGuests &&
-          latestAddedGuests.latestGuestsItems.map((guest) => (
+      {/* <Carousel style={{ display: "none" }} className="carousel">
+        {latestGuest.latestAddedGuests.latestGuestsItems &&
+          latestGuest.latestAddedGuests.latestGuestsItems.map(guest => (
             <Carousel.Item key={guest.id}>
               <img
                 className="d-block w-100 sliderImg"
@@ -44,7 +43,7 @@ const GuestContainer = ({ latestAddedGuests }) => {
               />
             </Carousel.Item>
           ))}
-      </Carousel>
+      </Carousel> */}
     </Container>
   );
 };
