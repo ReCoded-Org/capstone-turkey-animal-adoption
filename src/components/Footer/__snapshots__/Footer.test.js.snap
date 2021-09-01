@@ -2,7 +2,7 @@
 
 exports[`Footer renders correctly 1`] = `
 <footer
-  className="text-center text-lg-start mt-4 pb-3"
+  className="text-center text-lg-start mt-5 pb-3"
 >
   <div
     className="container p-2"
