@@ -4,11 +4,8 @@ import AboutUs from "./pages/aboutus/AboutUs";
 import Homepage from "./pages/homepage/HomePage";
 import NavBar from "./components/NavBar/NavBar";
 import ResourcesPage from "./pages/resourcespage/ResourcesPage";
-<<<<<<< HEAD
 import SearchPage from "./pages/searchpage/SearchPage";
-=======
 import ContactUsPage from "./pages/contactuspage/ContactUsPage";
->>>>>>> dev
 import Profile from "./pages/profile/Profile";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
