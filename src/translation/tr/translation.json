@@ -31,10 +31,27 @@
         "text": "Evlat edinmek isteyen insanlara yardım etmek isteyen kar amacı gütmeyen bir kuruluşuz",
         "button": "Dost Bul"
       },
+      "heroSectionContact":{
+        "title": "Bize Ulaş",
+        "text":  "Zor durumda olan hayvanları sahiplenmek için bizimle iletişime geçin. Formumuzu kolayca doldurarak evlat edinme sürecini başlatabilirsiniz",
+        "button": "Dostunu Bul"
+      },
+      "heroSectionSearch":{
+        "title": "Hemen Arayın",
+        "text": "Hayvanları ve insanları bir araya getiriyoruz. Evlat edinerek onları destekleyin ve bir yuvaya sahip olmalarına yardımcı olun",
+        "button": "Dostunu Bul"
+      },
       "petAdoption": {
-        "title": "Sahiplenme Aşaması"
+        "title": "Sahiplenme Aşaması",
+        "message": "Dostunu Bul"
         
       },
+      "latestGuestsTitle": {
+      "title0": "Latest Adoptions",
+      "subTitle0": "Check Our Latest Adopted Friends 🐾",
+      "title1": "Latest Adoptions",
+      "subTitle1": "Check Our Latest Adopted Friends 🐾"
+    },
       "latestGuest": {
         "title": "Son Misafirlerimiz",
         "text": "Son Gelen Dostlarımızla Tanış🐾",
@@ -44,7 +61,7 @@
         "modalMe": "Ben",
         "latestAddedGuests": {
           "title": "Latest Guests",
-          "latestGuestItems" : [
+          "latestGuestItems0" : [
             {
               "id": 4,
               "img":
@@ -69,7 +86,7 @@
                 "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
               "buttonText": "View",
               "petName": "Sushi",
-              "petAge": "1 years",
+              "petAge": "1 year",
               "petBreed": "Maltese-Terrier"
             },
             {
@@ -96,7 +113,7 @@
                 "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
               "buttonText": "View",
               "petName": "Princess",
-              "petAge": "1 years",
+              "petAge": "1 year",
               "petBreed": "Chihuahua"
             }
         ]}
@@ -112,7 +129,73 @@
         "title": "Takımımızla Tanış",
         "job": "Ön yüz Geliştirici"
       },
-      "checklist": {
-        "title0":""
+      "checklist": [
+        {
+          "text":
+            "Because adopting a new cat comes with a lot of change for both cat and cat parent, we’ve compiled a checklist to help make the transition as smooth as possible.",
+          "title": "Cat Adoption",
+          
+          "id": "catAdoption"
+        },
+        {
+          "text":
+            "Congratulations on your new, furry, purry bundle of joy! Now that your kitten is settling into their new home, one of your first priorities is likely to be litter box training.",
+          "title": "Cat Training",
+          
+          "id": "catTraining"
+        },
+        {
+          "text":
+            "Every month you should “play vet” and conduct a careful check up on your cat to make sure that all is well. By following our checklist, you have the opportunity to spot any unusual signs.",
+          "title": "Cat Problems",
+          
+          "id": "catProblem"
+        },
+        {
+          "text":
+            "You are embarking on a wonderful and rewarding relationship. We’ve compiled a checklist to help make the transition as smooth as possible.",
+          "title": "Dog Adoption",
+          
+          "id": "dogAdoption"
+        },
+        {
+          "text":
+            "Dogs, young or old, love to learn. Include a reward and these four basic rules and you’ve got a recipe for successful dog tricks!",
+          "title": "Dog Training",
+          
+          "id": "dogTraining"
+        },
+        {
+          "text":
+            "To help prevent health concerns in your dog, it’s a good idea to get into the habit of checking your dog regularly for any changes or signs of illness.",
+          "title": "Dog Problems",
+          
+          "id": "dogProblem"
+        }
+      ],
+      "contactUs": {
+        "title": "İletişime Geç",
+        "text": "Bize Ulaş veya Mesaj at",
+        "button": "Gönder",
+        "placeholder0": "Email",
+        "placeholder1": "Mesaj"
+      },
+      "signUpModal": {
+        "title": "Hesap Oluştur",
+        "text": "veya email ile hesap oluştur",
+        "button": "Gönder",
+        "placeholder0": "Adınız",
+        "placeholder1": "Emailiniz",
+        "placeholder2": "Şifreniz"
+      },
+      "loginModal": {
+        "title": "Hesapla Giriş",
+        "text": "veya hesabınızla giriş yapın",
+        "button": "Gönder",
+        "placeholder0": "Email",
+        "placeholder1": "Şifreniz"
       }
-}
+        
+      
+  }
+  

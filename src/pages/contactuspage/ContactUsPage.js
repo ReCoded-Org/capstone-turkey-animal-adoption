@@ -21,8 +21,8 @@ const AboutUs = () => {
     <div>
       <HeroSection
         img={dataOfHeroSection.img}
-        title={t("heroSectionHome.title")}
-        text={t("heroSectionHome.text")}
+        title={t("heroSectionContact.title")}
+        text={t("heroSectionContact.text")}
         side={dataOfHeroSection.side}
       />
       <ContactUs />

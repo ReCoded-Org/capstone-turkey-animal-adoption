@@ -30,6 +30,8 @@ function Homepage() {
       />
       <AdoptionProcess adoptionProcess={adoptionProcess} />
       <LatestGuests latestAddedGuests={latestAddedGuests} />
+      {/* <LatestGuests latestAddedGuests={t("latestGuest.latestAddedGuests.latestGuestItems0", { returnObjects: true })} /> */}
+      {/* <LatestGuests latestAddedGuests={latestAddedGuests} latestGuestsTitle={t("latestGuestsTitle", { returnObjects: true })}/> */}
     </div>
   );
 }

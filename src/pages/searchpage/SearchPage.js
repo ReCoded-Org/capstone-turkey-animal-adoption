@@ -3,22 +3,27 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import searchDog from "../../images/searchDog.png";
 import { searchGuests } from "../../components/Search/data";
 import Search from "../../components/Search/Search";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const dataOfHeroSection = {
   img: `${searchDog}`,
-  title: "Search Now",
-  text:
-    "We bring pets and people together. Support them by adopting and help them to have a home",
+  // title: "Search Now",
+  // text:
+  //   "We bring pets and people together. Support them by adopting and help them to have a home",
   side: "left",
 };
 
 const SearchPage = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div>
       <HeroSection
         img={dataOfHeroSection.img}
-        title={dataOfHeroSection.title}
-        text={dataOfHeroSection.text}
+        title={t("heroSectionSearch.title")}
+        text={t("heroSectionSearch.text")}
         side={dataOfHeroSection.side}
       />
       <Search searchGuests={searchGuests} />

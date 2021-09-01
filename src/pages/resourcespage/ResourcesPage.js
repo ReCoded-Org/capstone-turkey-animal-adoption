@@ -22,8 +22,8 @@ function ResourcesPage() {
     <div>
       <HeroSection
         img={dataOfHeroSection.img}
-        title={t("heroSectionHome.title")}
-        text={t("heroSectionHome.text")}
+        title={t("heroSectionResources.title")}
+        text={t("heroSectionResources.text")}
         side={dataOfHeroSection.side}
       />
       <ChecklistContainer data={data} />

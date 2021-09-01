@@ -13,6 +13,8 @@ import {
   signInWithFacebook,
   signInWithEmailAndPassword,
 } from "../../helpers/auth";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 function Login({ show, isModalShown }) {
   const [errorMsg, setErrorMsg] = useState(false);
@@ -47,6 +49,8 @@ function Login({ show, isModalShown }) {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <Modal show={show} animation={false} size="lg" centered>
       <Modal.Body className="modalBody">
@@ -60,7 +64,7 @@ function Login({ show, isModalShown }) {
             <Col lg={6} className="bgCat"></Col>
             <Col lg={6} className="bgContent">
               <div align="center" className="innerContent">
-                <h1>Login Form</h1>
+                <h1>{t("loginModal.title")}</h1>
                 {errorMsg && <Alert variant="danger">{errorMsg}</Alert>}
                 <ImGoogle3
                   size={27}
@@ -72,7 +76,7 @@ function Login({ show, isModalShown }) {
                   className="mb-4"
                   onClick={() => signWithSocial("facebook")}
                 />
-                <p className="note mb-4">Or use your account to Login </p>
+                <p className="note mb-4">{t("loginModal.text")} </p>
                 <Formik
                   initialValues={{ email: "", password: "" }}
                   validationSchema={Yup.object({
@@ -95,7 +99,7 @@ function Login({ show, isModalShown }) {
                       name="email"
                       type="email"
                       className="form-control mb-4"
-                      placeholder="Email"
+                      placeholder={t("loginModal.placeholder0")}
                     />
                     <p className="error mb-1">
                       <ErrorMessage name="password" />
@@ -104,11 +108,11 @@ function Login({ show, isModalShown }) {
                       name="password"
                       type="password"
                       className="form-control  mb-5"
-                      placeholder="password"
+                      placeholder={t("loginModal.placeholder1")}
                     />
                     <button type="submit" className="btn btn-primary ">
                       <FaPaw className="pawIcon" />
-                      Submit
+                      {t("loginModal.button")}
                     </button>
                   </Form>
                 </Formik>

@@ -31,9 +31,26 @@
       "text": "We are non-profit organization who wants to help people who wants to adopt",
       "button": "Find A Pet"
     },
+    "heroSectionContact":{
+      "title": "Contact Us Now",
+      "text":  "Contact us to adopt those animals who are suffering. You can start the adoption process by easily filling our form.",
+      "button": "Find A Pet"
+    },
+    "heroSectionSearch":{
+      "title": "Search Now",
+      "text": "We bring pets and people together. Support them by adopting and help them to have a home",
+      "button": "Find A Pet"
+    },
     "petAdoption": {
-      "title": "Pet Adoption Process"
+      "title": "Pet Adoption Process",
+      "message": "Find Your Pet"
       
+    },
+    "latestGuestsTitle": {
+      "title0": "Latest Adoptions",
+      "subTitle0": "Check Our Latest Adopted Friends 🐾",
+      "title1": "Latest Adoptions",
+      "subTitle1": "Check Our Latest Adopted Friends 🐾"
     },
     "latestGuest": {
       "title": "Latest Guests",
@@ -44,7 +61,7 @@
       "modalMe": "I am",
       "latestAddedGuests": {
         "title": "Latest Guests",
-        "latestGuestItems" : [
+        "latestGuestItems0" : [
           {
             "id": 4,
             "img":
@@ -99,6 +116,59 @@
             "petAge": "1 years",
             "petBreed": "Chihuahua"
           }
+      ],"latestGuestsItems1": [
+        {
+          "id": 4,
+          
+          "buttonText": "View",
+          "petName":
+            "Alex. I am adopted last week. And I am so happy with my new family",
+          "petAge": "2 years",
+          "petBreed": "Poddle"
+        },
+        {
+          "id": 5,
+          
+          "buttonText": "View",
+          "petName": "Carol. I am adopted last week. I now have a new loving family",
+          "petAge": "5 years",
+          "petBreed": "Terrier"
+        },
+        {
+          "id": 6,
+          
+          "buttonText": "View",
+          "petName": "Sushi. I am adopted 2 weeks ago. My new family are the best",
+          "petAge": "1 years",
+          "petBreed": "Rottweiler"
+        },
+        {
+          "id": 7,
+          
+          "buttonText": "View",
+          "petName":
+            "Bambi. I am adopted 3 weeks ago. And I am so happy with my new family. I play games all the time with them",
+          "petAge": "3 months",
+          "petBreed": "Golden Retriever"
+        },
+        {
+          "id": 8,
+          
+          "buttonText": "View",
+          "petName":
+            "Noodle. I am adopted 5 days ago from a shelter. And I am so happy with my new family. They have the best food",
+          "petAge": "2 years",
+          "petBreed": "Tabby Cat"
+        },
+        {
+          "id": 9,
+          
+          "buttonText": "View",
+          "petName":
+            "Princess. I am adopted from a shelter last week. My new family cares me a lot",
+          "petAge": "1 years",
+          "petBreed": "Tabby Cat"
+        }
       ]}
       
       
@@ -156,7 +226,29 @@
         
         "id": "dogProblem"
       }
-    ]
+    ],
+    "contactUs": {
+      "title": "Get In Touch",
+      "text": "Contact Us On the Social Media Or Send Us a Message",
+      "button": "Send",
+      "placeholder0": "Email",
+      "placeholder1": "Message"
+    },
+    "signUpModal": {
+      "title": "Create Account",
+      "text": "Or use your email to create new account",
+      "button": "Submit",
+      "placeholder0": "Your Name",
+      "placeholder1": "Your Mail",
+      "placeholder2": "Your Password"
+    },
+    "loginModal": {
+      "title": "Login Form",
+      "text": "Or use your account to Login",
+      "button": "Submit",
+      "placeholder0": "Email",
+      "placeholder1": "Password"
+    }
       
     
 }
