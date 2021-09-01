@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Col, Modal, Button } from "react-bootstrap";
 import "./LatestGuests.css";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const GuestItems = ({ img, buttonText, petName, petAge, petBreed, id }) => {
   const [show, setShow] = useState(false);
@@ -10,6 +12,8 @@ const GuestItems = ({ img, buttonText, petName, petAge, petBreed, id }) => {
   const background = {
     backgroundImage: `url(${img})`,
   };
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -42,7 +46,7 @@ const GuestItems = ({ img, buttonText, petName, petAge, petBreed, id }) => {
             variant="secondary"
             onClick={() => handleToggle()}
           >
-            Close
+            {t("latestGuest.button1")}
           </Button>
         </Modal.Footer>
       </Modal>

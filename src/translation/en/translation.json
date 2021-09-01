@@ -39,7 +39,68 @@
       "title": "Latest Guests",
       "text": "Meet Our Latest Friends🐾",
       "button0": "View",
-      "button1": "Close"
+      "button1": "Close",
+      "modalName": "My name is",
+      "modalMe": "I am",
+      "latestAddedGuests": {
+        "title": "Latest Guests",
+        "latestGuestItems" : [
+          {
+            "id": 4,
+            "img":
+              "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+            "buttonText": "View",
+            "petName": "Cookie",
+            "petAge": "2 years",
+            "petBreed": "Poodle"
+          },
+          {
+            "id": 5,
+            "img":
+              "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+            "buttonText": "View",
+            "petName": "Alex",
+            "petAge": "5 years",
+            "petBreed": "Terrier"
+          },
+          {
+            "id": 6,
+            "img":
+              "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+            "buttonText": "View",
+            "petName": "Sushi",
+            "petAge": "1 years",
+            "petBreed": "Maltese-Terrier"
+          },
+          {
+            "id": 7,
+            "img":
+              "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+            "buttonText": "View",
+            "petName": "Bambi",
+            "petAge": "3 months",
+            "petBreed": "Golden Retriever"
+          },
+          {
+            "id": 8,
+            "img":
+              "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+            "buttonText": "View",
+            "petName": "Noodle",
+            "petAge": "2 years",
+            "petBreed": "Pomeranian"
+          },
+          {
+            "id": 9,
+            "img":
+              "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+            "buttonText": "View",
+            "petName": "Princess",
+            "petAge": "1 years",
+            "petBreed": "Chihuahua"
+          }
+      ]}
+      
       
     },
     "latestAdoption": {
@@ -52,7 +113,50 @@
       "title": "Meet Our Great Team",
       "job": "FrontEnd Engineer"
     },
-    "checklist": {
-      "title0":""
-    }
+    "checklist": [
+      {
+        "text":
+          "Because adopting a new cat comes with a lot of change for both cat and cat parent, we’ve compiled a checklist to help make the transition as smooth as possible.",
+        "title": "Cat Adoption",
+        
+        "id": "catAdoption"
+      },
+      {
+        "text":
+          "Congratulations on your new, furry, purry bundle of joy! Now that your kitten is settling into their new home, one of your first priorities is likely to be litter box training.",
+        "title": "Cat Training",
+        
+        "id": "catTraining"
+      },
+      {
+        "text":
+          "Every month you should “play vet” and conduct a careful check up on your cat to make sure that all is well. By following our checklist, you have the opportunity to spot any unusual signs.",
+        "title": "Cat Problems",
+        
+        "id": "catProblem"
+      },
+      {
+        "text":
+          "You are embarking on a wonderful and rewarding relationship. We’ve compiled a checklist to help make the transition as smooth as possible.",
+        "title": "Dog Adoption",
+        
+        "id": "dogAdoption"
+      },
+      {
+        "text":
+          "Dogs, young or old, love to learn. Include a reward and these four basic rules and you’ve got a recipe for successful dog tricks!",
+        "title": "Dog Training",
+        
+        "id": "dogTraining"
+      },
+      {
+        "text":
+          "To help prevent health concerns in your dog, it’s a good idea to get into the habit of checking your dog regularly for any changes or signs of illness.",
+        "title": "Dog Problems",
+        
+        "id": "dogProblem"
+      }
+    ]
+      
+    
 }

@@ -2,8 +2,13 @@ import React from "react";
 import GuestItems from "./GuestItems";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import "./LatestGuests.css";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const GuestContainer = ({ latestAddedGuests }) => {
+
+  //const { t } = useTranslation();
+  
   return (
     <Container>
       <Row className="guestsContainer py-5">

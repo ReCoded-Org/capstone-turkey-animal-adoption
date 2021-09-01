@@ -2,8 +2,13 @@ import React from "react";
 import catLogo from "../../checklistLogo/catLogo.png";
 import "./CheckList.css";
 import { Col } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const Checklist = ({ text, title, link }) => {
+
+  const { t } = useTranslation();
+
   return (
     <Col lg={4}>
       <div className="checkList">

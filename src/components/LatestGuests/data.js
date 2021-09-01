@@ -1,4 +1,10 @@
+// import React from "react";
+// import { useTranslation } from "react-i18next";
+// import i18next from "i18next";
+
+
 export let latestAddedGuests = {
+
   latestGuestsTitle: {
     title: "Latest Guests",
     subTitle: "Meet Our Latest Friends 🐾",
