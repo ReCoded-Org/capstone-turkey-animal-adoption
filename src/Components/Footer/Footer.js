@@ -9,12 +9,12 @@ import {
 import logo from "./logo.png";
 import { NavLink } from "react-router-dom";
 import dog from "./Bg.png";
-import "./Footer1.css";
+import "./style.css";
 
 // footer component start here 👌
 const Footer = () => {
   return (
-    <footer className="text-center text-lg-start mt-5 pb-3">
+    <footer className="text-center text-lg-start mt-4 pb-3">
       <div className="container p-2">
         <div className="row">
           <div className="col-md-4">
