@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className="text-center text-lg-start mt-4 pb-3">
       <div className="container p-2">
         <div className="row">
-          <div className="col">
+          <div className="col-md-4">
             <div className="d-flex align-items-center pb-4 pt-4">
               <div className="p-2">
                 <NavLink to="/">
@@ -34,9 +34,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col pl-5 mt-2">
-            <h4 className="pl-5">Menu</h4>
-            <ul className="list-group pl-5">
+          <div className="col-md-4 pl-lg-5 pl-md-5 pl-0 mt-3">
+            <h4>Menu</h4>
+            <ul className="list-group">
               <li className="list-unstyled text-white">
                 <NavLink to="/" className="text-white">
                   Home
@@ -70,7 +70,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col  mt-2">
+          <div className="col-md-4  mt-3 pl-lg-5 pl-0">
             <h4>LATEST POSTS</h4>
             <ul className="list-group pb-2">
               <div className=" d-flex align-items-center">
