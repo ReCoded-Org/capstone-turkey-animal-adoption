@@ -6,8 +6,8 @@
   color: #ff3e3e;
 }
 
-.adoptButton,
-.adoptButton:hover {
+#adoptButton,
+#adoptButton:hover {
   background: #ff7777;
   border: 1px solid #fff;
 }
@@ -102,8 +102,11 @@
 /* Bootstrap Id */
 
 /* For Overriding */
-#modalBody {
+#modalBodySearch {
   background: #ff7777;
+}
+
+#modalBodySearch p {
   color: #fff;
 }
 

@@ -189,7 +189,7 @@ exports[`renders Search correctly 1`] = `
             />
             <div
               className="card-body"
-              id="modalBody"
+              id="modalBodySearch"
             >
               <div
                 id="cardText"
@@ -204,8 +204,9 @@ exports[`renders Search correctly 1`] = `
                     Sushi
                   </p>
                   <button
-                    className="adoptButton shadow-none btn btn-primary"
+                    className="shadow-none btn btn-primary"
                     disabled={false}
+                    id="adoptButton"
                     onClick={[Function]}
                     type="button"
                   >
@@ -287,7 +288,7 @@ exports[`renders Search correctly 1`] = `
             />
             <div
               className="card-body"
-              id="modalBody"
+              id="modalBodySearch"
             >
               <div
                 id="cardText"
@@ -302,8 +303,9 @@ exports[`renders Search correctly 1`] = `
                     Sushi
                   </p>
                   <button
-                    className="adoptButton shadow-none btn btn-primary"
+                    className="shadow-none btn btn-primary"
                     disabled={false}
+                    id="adoptButton"
                     onClick={[Function]}
                     type="button"
                   >
@@ -385,7 +387,7 @@ exports[`renders Search correctly 1`] = `
             />
             <div
               className="card-body"
-              id="modalBody"
+              id="modalBodySearch"
             >
               <div
                 id="cardText"
@@ -400,8 +402,9 @@ exports[`renders Search correctly 1`] = `
                     Sushi
                   </p>
                   <button
-                    className="adoptButton shadow-none btn btn-primary"
+                    className="shadow-none btn btn-primary"
                     disabled={false}
+                    id="adoptButton"
                     onClick={[Function]}
                     type="button"
                   >
@@ -483,7 +486,7 @@ exports[`renders Search correctly 1`] = `
             />
             <div
               className="card-body"
-              id="modalBody"
+              id="modalBodySearch"
             >
               <div
                 id="cardText"
@@ -498,8 +501,9 @@ exports[`renders Search correctly 1`] = `
                     Sushi
                   </p>
                   <button
-                    className="adoptButton shadow-none btn btn-primary"
+                    className="shadow-none btn btn-primary"
                     disabled={false}
+                    id="adoptButton"
                     onClick={[Function]}
                     type="button"
                   >
@@ -581,7 +585,7 @@ exports[`renders Search correctly 1`] = `
             />
             <div
               className="card-body"
-              id="modalBody"
+              id="modalBodySearch"
             >
               <div
                 id="cardText"
@@ -596,8 +600,9 @@ exports[`renders Search correctly 1`] = `
                     Sushi
                   </p>
                   <button
-                    className="adoptButton shadow-none btn btn-primary"
+                    className="shadow-none btn btn-primary"
                     disabled={false}
+                    id="adoptButton"
                     onClick={[Function]}
                     type="button"
                   >
@@ -679,7 +684,7 @@ exports[`renders Search correctly 1`] = `
             />
             <div
               className="card-body"
-              id="modalBody"
+              id="modalBodySearch"
             >
               <div
                 id="cardText"
@@ -694,8 +699,9 @@ exports[`renders Search correctly 1`] = `
                     Sushi
                   </p>
                   <button
-                    className="adoptButton shadow-none btn btn-primary"
+                    className="shadow-none btn btn-primary"
                     disabled={false}
+                    id="adoptButton"
                     onClick={[Function]}
                     type="button"
                   >

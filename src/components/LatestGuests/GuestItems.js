@@ -25,7 +25,7 @@ const GuestItems = ({ img, buttonText, petName, petAge, petBreed, id }) => {
         </Button>
       </Col>
       <Modal show={show} onHide={() => handleToggle()} className="modal-open">
-        <Modal.Header closeButton id="modalHeader">
+        <Modal.Header id="modalHeader">
           <Modal.Title>
             <img src={img} className="modalImage" alt="modalImage" />
           </Modal.Title>
