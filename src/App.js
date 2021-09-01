@@ -7,6 +7,7 @@ import ResourcesPage from "./pages/resourcespage/ResourcesPage";
 import SearchPage from "./pages/searchpage/SearchPage";
 import ContactUsPage from "./pages/contactuspage/ContactUsPage";
 import Profile from "./pages/profile/Profile";
+import Footer from "./components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App() {
       <Route exact path="/search" component={SearchPage} />
       <Route exact path="/contact" component={ContactUsPage} />
       <Route path="/profile" component={Profile} />
+      <Route path="/" component={Footer} />
     </Router>
   );
 }
