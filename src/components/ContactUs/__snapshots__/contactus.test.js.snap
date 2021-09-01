@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ContactUs Component correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="contactRow row"
+  >
+    <div
+      className="col-lg-6"
+    >
+      <iframe
+        allowFullScreen=""
+        className=" w-100"
+        height="570"
+        loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.6196045518172!2d12.481084264745448!3d41.9010372719587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6053278340d5%3A0xf676f1e1cc02bbb6!2zVHJldmkgw4dlxZ9tZXNp!5e0!3m2!1str!2str!4v1630085669743!5m2!1str!2str"
+        style={
+          Object {
+            "border": "0",
+          }
+        }
+        title="map"
+      />
+    </div>
+    <div
+      className="contactUs col-lg-6"
+    >
+      <h1>
+        Get In Touch
+      </h1>
+      <p>
+        Contact Us On the Social Media 
+        <br />
+        Or Send Us a Message
+      </p>
+      <div
+        className="mb-5"
+      >
+        <img
+          alt="vkLogo"
+          className="mr-2"
+          src="Vk.png"
+        />
+        <img
+          alt="pinterestLogo"
+          className="mr-2"
+          src="Pinterest.png"
+        />
+        <img
+          alt="intagramLogo"
+          className="mr-2"
+          src="Instagram.png"
+        />
+        <img
+          alt="twitterLogo"
+          className="mr-2"
+          src="Twitter.png"
+        />
+        <img
+          alt="facebookLogo"
+          src="Facebook.png"
+        />
+      </div>
+      <form
+        className="contactUsForm"
+        onSubmit={[Function]}
+      >
+        <label
+          htmlFor="from_email"
+        />
+        <input
+          id="from_email"
+          name="from_email"
+          onChange={[Function]}
+          placeholder="Email"
+          type="email"
+          value=""
+        />
+        <label
+          htmlFor="message"
+        />
+        <textarea
+          col="50"
+          id="message"
+          name="message"
+          onChange={[Function]}
+          placeholder="Message"
+          row="50"
+          value=""
+        />
+        <button
+          className="contactBtn shadow-none btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

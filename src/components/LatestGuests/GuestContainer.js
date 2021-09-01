@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
 const GuestContainer = ({ latestAddedGuests }) => {
-
+   console.log(latestAddedGuests)
   //const { t } = useTranslation();
   
   return (

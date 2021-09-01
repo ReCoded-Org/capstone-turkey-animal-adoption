@@ -17,7 +17,7 @@ exports[`renders SearchResults correctly 1`] = `
     />
     <div
       className="card-body"
-      id="modalBody"
+      id="modalBodySearch"
     >
       <div
         id="cardText"
@@ -28,8 +28,9 @@ exports[`renders SearchResults correctly 1`] = `
           <p />
           <p />
           <button
-            className="adoptButton shadow-none btn btn-primary"
+            className="shadow-none btn btn-primary"
             disabled={false}
+            id="adoptButton"
             onClick={[Function]}
             type="button"
           >
