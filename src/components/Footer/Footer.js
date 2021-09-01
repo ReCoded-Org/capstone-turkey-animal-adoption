@@ -11,7 +11,6 @@ import { NavLink } from "react-router-dom";
 import dog from "./Bg.png";
 import "./Footer.css";
 
-// footer component start here 👌
 const Footer = () => {
   return (
     <footer className="text-center text-lg-start mt-5 pb-3">
@@ -33,7 +32,6 @@ const Footer = () => {
               Copyright © All rights reserved for Re:Coded
             </div>
           </div>
-
           <div className="col-md-4 pl-lg-5 pl-md-5 pl-0 mt-3">
             <h4>Menu</h4>
             <ul className="list-group">
@@ -69,7 +67,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div className="col-md-4  mt-3 pl-lg-5 pl-0">
             <h4>LATEST POSTS</h4>
             <ul className="list-group pb-2">
@@ -98,7 +95,6 @@ const Footer = () => {
                 </li>
               </div>
             </ul>
-
             <div className="d-sm-flex justify-content-sm-center pt-2">
               <div className="p-2">
                 <FaFacebookF />
