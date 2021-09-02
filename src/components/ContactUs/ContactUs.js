@@ -36,6 +36,7 @@ const ContactUs = () => {
         .then((result) => {
           return result.text;
         });
+      alert("Your Message is Submitted");
     },
   });
 
