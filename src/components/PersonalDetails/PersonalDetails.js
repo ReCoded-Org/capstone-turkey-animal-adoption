@@ -6,10 +6,13 @@ import { initialValues, yupValidation } from "./formikData";
 import * as Yup from "yup";
 import cities from "../../data/cities";
 import "./PersonalDetails.css";
+import { useTranslation } from "react-i18next";
 
 const PersonalDetails = () => {
   const [bio, setBio] = useState(null);
   const [alertShown, isAlertShown] = useState(false);
+
+  const { t } = useTranslation();
 
   return (
     <Container fluid className="mainContainer profile">
@@ -53,14 +56,14 @@ const PersonalDetails = () => {
                   return (
                     <Form>
                       {setBio(values.bio)}
-                      <h3 className="newColor">Personal Details</h3>
+                      <h3 className="newColor">{t("personalPage.title0")}</h3>
 
                       <div className="row d-flex justify-content-around mt-4 ">
                         <div>
-                          <label className="newColor">FullName</label>
+                          <label className="newColor">{t("personalPage.subTitle0")}</label>
                           <br />
                           <Field
-                            placeholder="Full Name"
+                            placeholder={t("personalPage.placeholder0")}
                             type="text"
                             name="fullname"
                             className="shadow rounded inputStyle"
@@ -70,10 +73,10 @@ const PersonalDetails = () => {
                           </div>
                         </div>
                         <div>
-                          <label className="newColor">Email</label>
+                          <label className="newColor">{t("personalPage.subTitle1")}</label>
                           <br />
                           <input
-                            placeholder="Email"
+                            placeholder={t("personalPage.placeholder1")}
                             type="Email"
                             name="email"
                             value="yazjiamanr92@gmail.com"
@@ -84,10 +87,10 @@ const PersonalDetails = () => {
                       </div>
                       <div className="row d-flex justify-content-around mt-4">
                         <div>
-                          <label className="newColor">Phone</label>
+                          <label className="newColor">{t("personalPage.subTitle2")}</label>
                           <br />
                           <Field
-                            placeholder="Phone Number"
+                            placeholder={t("personalPage.placeholder2")}
                             type="Number"
                             name="phone"
                             className="shadow rounded inputStyle"
@@ -97,10 +100,10 @@ const PersonalDetails = () => {
                           </div>
                         </div>
                         <div>
-                          <label className="newColor">Bio</label>
+                          <label className="newColor">{t("personalPage.subTitle3")}</label>
                           <br />
                           <Field
-                            placeholder="Bio"
+                            placeholder={t("personalPage.placeholder3")}
                             name="bio"
                             as="textarea"
                             className="shadow rounded inputStyle"
@@ -111,10 +114,10 @@ const PersonalDetails = () => {
                         </div>
                       </div>
                       <div className="mt-4">
-                        <h3 className="newColor">Address</h3>
+                        <h3 className="newColor">{t("personalPage.title1")}</h3>
                         <div className="row d-flex justify-content-around mt-4 ">
                           <div>
-                            <label className="newColor">City</label>
+                            <label className="newColor">{t("personalPage.subTitle4")}</label>
                             <br />
                             <Field
                               component="select"
@@ -123,7 +126,7 @@ const PersonalDetails = () => {
                               multiple={false}
                               className="shadow rounded inputStyle"
                             >
-                              <option value="">Select a City</option>
+                              <option value="">{t("personalPage.dropdown")}</option>
                               {cities.map((city) => {
                                 return (
                                   <option value="city.name">{city.name}</option>
@@ -135,10 +138,10 @@ const PersonalDetails = () => {
                             </div>
                           </div>
                           <div>
-                            <label className="newColor">State</label>
+                            <label className="newColor">{t("personalPage.subTitle5")}</label>
                             <br />
                             <Field
-                              placeholder="State Name"
+                              placeholder={t("personalPage.placeholder5")}
                               type="text"
                               name="state"
                               className="shadow rounded inputStyle"
@@ -150,10 +153,10 @@ const PersonalDetails = () => {
                         </div>
                         <div className="row d-flex justify-content-around mt-4 ">
                           <div>
-                            <label className="newColor">Street</label>
+                            <label className="newColor">{t("personalPage.subTitle6")}</label>
                             <br />
                             <Field
-                              placeholder="Street"
+                              placeholder={t("personalPage.placeholder6")}
                               type="text"
                               name="street"
                               className="shadow rounded inputStyle"
@@ -163,10 +166,10 @@ const PersonalDetails = () => {
                             </div>
                           </div>
                           <div>
-                            <label className="newColor">Zip Code</label>
+                            <label className="newColor">{t("personalPage.subTitle7")}</label>
                             <br />
                             <Field
-                              placeholder="Zip Code"
+                              placeholder={t("personalPage.placeholder7")}
                               type="text"
                               name="zip"
                               className="shadow rounded inputStyle"
@@ -183,7 +186,7 @@ const PersonalDetails = () => {
                             value="Update"
                           />
                           <button className="m-2 button cancelBtn">
-                            Cancel{" "}
+                            {t("personalPage.button")}{" "}
                           </button>
                         </div>
                       </div>

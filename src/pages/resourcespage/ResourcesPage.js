@@ -26,7 +26,7 @@ function ResourcesPage() {
         text={t("heroSectionResources.text")}
         side={dataOfHeroSection.side}
       />
-      <ChecklistContainer data={data} />
+      <ChecklistContainer data={t("checklist", { returnObjects: true })} />
     </div>
   );
 }

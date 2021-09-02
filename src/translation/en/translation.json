@@ -42,8 +42,36 @@
       "button": "Find A Pet"
     },
     "petAdoption": {
-      "title": "Pet Adoption Process",
-      "message": "Find Your Pet"
+      "title0": "Pet Adoption Process",
+      "title1": "Our Great Team",
+      
+      "adoptionProcessItems0": [
+        {
+          "id": 1,
+          "img":
+            "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "text": "Find Your Pet",
+          "firstDescription": "Search Easily",
+          "secondDescription": "Find Your New Friend"
+        },
+        {
+          "id": 2,
+          "img":
+            "https://i.pinimg.com/736x/5f/80/85/5f80854fd1475958717a19e345695942.jpg",
+          "text": "Know Your Pet",
+          "firstDescription": "Check Our Little Cuties",
+          "secondDescription": "Get to Know Them"
+        },
+        {
+          "id": 3,
+          "img":
+            "https://i.pinimg.com/736x/2e/23/d3/2e23d3827c8293c27cea544a8acbcd59.jpg",
+          "text": "Take Your Pet Home",
+          "firstDescription": "Fill Our Form",
+          "secondDescription": "Take Your Friend Home"
+        }
+      ],
+      "adoptionProcessItems1": []
       
     },
     "latestGuestsTitle": {
@@ -248,6 +276,46 @@
       "button": "Submit",
       "placeholder0": "Email",
       "placeholder1": "Password"
+    },
+    "footer": {
+      "title0": "Menu",
+      "title1": "LATEST POSTS",
+      "subTitleHome": "Home",
+      "subTitleAbout": "About",
+      "subTitleFindPet": "Find A Pet",
+      "subTitleBlog": "Blog",
+      "subTitleContact": "Contact Us",
+      "subTitleResources": "Resources",
+      "allRights": "Copyright © All rights reserved for Re:Coded"
+    },
+    "searchPage": {
+      "option0": "Select Location",
+      "option1": "Select Age",
+      "option2": "Select Breed",
+      "option3": "Select Gender",
+      "button": "Adopt"
+    },
+    "personalPage": {
+      "title0": "Personal Details",
+      "title1": "Address",
+      "subTitle0": "Full Name",
+      "subTitle1": "Email",
+      "subTitle2": "Phone",
+      "subTitle3": "Bio",
+      "subTitle4": "City",
+      "subTitle5": "State",
+      "subTitle6": "Street",
+      "subTitle7": "Zip Code",
+      "placeholder0": "Name",
+      "placeholder1": "Email",
+      "placeholder2": "Phone Number",
+      "placeholder3": "Bio",
+      "placeholder4": "City",
+      "placeholder5": "State",
+      "placeholder6": "Street",
+      "placeholder7": "Zip Code",
+      "dropdown": "Select a City",
+      "button": "Cancel"
     }
       
     

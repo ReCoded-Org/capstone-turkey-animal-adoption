@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 import "./Search.css";
 import { useFormik } from "formik";
+import { useTranslation } from "react-i18next";
 
 const Search = ({ searchGuests }) => {
   const [searchResults, setSearchresults] = useState(
@@ -55,6 +56,8 @@ const Search = ({ searchGuests }) => {
     );
   };
 
+  const { t } = useTranslation();
+
   return (
     <Container>
       <Row className="searchContainer py-5">
@@ -68,7 +71,7 @@ const Search = ({ searchGuests }) => {
               value={formik.values.location}
               {...formik.getFieldProps("location")}
             >
-              <option value="Select Location">Select Location</option>
+              <option value="Select Location">{t("searchPage.option0")}</option>
               {searchGuests.locationCities.map((city) => (
                 <option>{city}</option>
               ))}
@@ -80,7 +83,7 @@ const Search = ({ searchGuests }) => {
               value={formik.values.age}
               {...formik.getFieldProps("age")}
             >
-              <option value="Select Age">Select Age</option>
+              <option value="Select Age">{t("searchPage.option1")}</option>
               {searchGuests.searchAge.map((age) => (
                 <option>{age}</option>
               ))}
@@ -92,7 +95,7 @@ const Search = ({ searchGuests }) => {
               value={formik.values.breed}
               {...formik.getFieldProps("breed")}
             >
-              <option value="Select Breed">Select Breed</option>
+              <option value="Select Breed">{t("searchPage.option2")}</option>
               {searchGuests.searchBreed.map((breed) => (
                 <option>{breed}</option>
               ))}
@@ -104,7 +107,7 @@ const Search = ({ searchGuests }) => {
               value={formik.values.gender}
               {...formik.getFieldProps("gender")}
             >
-              <option value="Select Gender">Select Gender</option>
+              <option value="Select Gender">{t("searchPage.option3")}</option>
               {searchGuests.searchGender.map((gender) => (
                 <option>{gender}</option>
               ))}

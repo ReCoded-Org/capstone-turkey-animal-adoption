@@ -29,7 +29,7 @@ const AboutUs = () => {
         side={dataOfHeroSection.side}
       />
       <LatestGuests latestAddedGuests={latestAddedGuests} />
-      <AdoptionProcess adoptionProcess={adoptionProcess} />
+      <AdoptionProcess adoptionProcess={adoptionProcess} adoptionTitle={t("petAdoption.title1")} />
     </div>
   );
 };

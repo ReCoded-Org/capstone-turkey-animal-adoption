@@ -4,7 +4,6 @@ import searchDog from "../../images/searchDog.png";
 import { searchGuests } from "../../components/Search/data";
 import Search from "../../components/Search/Search";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
 const dataOfHeroSection = {
   img: `${searchDog}`,

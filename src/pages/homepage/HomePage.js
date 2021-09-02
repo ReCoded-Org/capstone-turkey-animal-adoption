@@ -28,10 +28,11 @@ function Homepage() {
         text={t("heroSectionHome.text")}
         side={dataOfHeroSection.side}
       />
-      <AdoptionProcess adoptionProcess={adoptionProcess} />
+      <AdoptionProcess adoptionProcess={adoptionProcess} adoptionTitle={t("petAdoption.title0")} />
       <LatestGuests latestAddedGuests={latestAddedGuests} />
       {/* <LatestGuests latestAddedGuests={t("latestGuest.latestAddedGuests.latestGuestItems0", { returnObjects: true })} /> */}
       {/* <LatestGuests latestAddedGuests={latestAddedGuests} latestGuestsTitle={t("latestGuestsTitle", { returnObjects: true })}/> */}
+      {/* <AdoptionProcess adoptionProcess={t("petAdoption.adoptionProcessItems0", { returnObjects: true })} adoptionTitle={t("petAdoption.title")} /> */}
     </div>
   );
 }

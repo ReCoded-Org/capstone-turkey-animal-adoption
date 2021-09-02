@@ -42,8 +42,35 @@
         "button": "Dostunu Bul"
       },
       "petAdoption": {
-        "title": "Sahiplenme Aşaması",
-        "message": "Dostunu Bul"
+        "title0": "Sahiplenme Aşaması",
+        "title1": "Takımımız",
+        
+        "adoptionProcessItems0": [
+          {
+            "id": 1,
+            "img":
+              "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+            "text": "Bul",
+            "firstDescription": "Kolayca Ara",
+            "secondDescription": "Yeni Arkadaşını Bul"
+          },
+          {
+            "id": 2,
+            "img":
+              "https://i.pinimg.com/736x/5f/80/85/5f80854fd1475958717a19e345695942.jpg",
+            "text": "Tanı",
+            "firstDescription": "Hemen Küçük Dostlarımıza Bak",
+            "secondDescription": "Onları Tanı"
+          },
+          {
+            "id": 3,
+            "img":
+              "https://i.pinimg.com/736x/2e/23/d3/2e23d3827c8293c27cea544a8acbcd59.jpg",
+            "text": "Eve Götür",
+            "firstDescription": "Formu Doldur",
+            "secondDescription": "Dostunu Eve Götür"
+          }
+        ]
         
       },
       "latestGuestsTitle": {
@@ -132,43 +159,43 @@
       "checklist": [
         {
           "text":
-            "Because adopting a new cat comes with a lot of change for both cat and cat parent, we’ve compiled a checklist to help make the transition as smooth as possible.",
-          "title": "Cat Adoption",
+            "Yeni bir kediyi sahiplenmek hem kedi hem de kedi ebeveyni için pek çok değişikliği beraberinde getirdiğinden, geçişi olabildiğince sorunsuz hale getirmek için bir kontrol listesi hazırladık.",
+          "title": "Kedi Sahiplenme",
           
           "id": "catAdoption"
         },
         {
           "text":
-            "Congratulations on your new, furry, purry bundle of joy! Now that your kitten is settling into their new home, one of your first priorities is likely to be litter box training.",
-          "title": "Cat Training",
+            "Yeni, tüylü, saf neşe paketiniz için tebrikler! Yavru kediniz artık yeni evine yerleştiğine göre, ilk önceliklerinizden biri muhtemelen tuvalet eğitimi olacaktır.",
+          "title": "Kedi Eğitimi",
           
           "id": "catTraining"
         },
         {
           "text":
-            "Every month you should “play vet” and conduct a careful check up on your cat to make sure that all is well. By following our checklist, you have the opportunity to spot any unusual signs.",
-          "title": "Cat Problems",
+            "Her ay doktorculuk oynamalı ve her şeyin yolunda olduğundan emin olmak için kedinizi dikkatli bir şekilde kontrol etmelisiniz. Kontrol listemizi takip etmek, tespitlerinize yardımcı olur.",
+          "title": "Kedi Kontrolleri",
           
           "id": "catProblem"
         },
         {
           "text":
-            "You are embarking on a wonderful and rewarding relationship. We’ve compiled a checklist to help make the transition as smooth as possible.",
-          "title": "Dog Adoption",
+            "Harika ve ödüllendirici bir ilişkiye başlıyorsunuz. Geçişi olabildiğince sorunsuz hale getirmeye yardımcı olmak için bir kontrol listesi hazırladık.",
+          "title": "Köpek Sahiplenme",
           
           "id": "dogAdoption"
         },
         {
           "text":
-            "Dogs, young or old, love to learn. Include a reward and these four basic rules and you’ve got a recipe for successful dog tricks!",
-          "title": "Dog Training",
+            "Köpekler, genç veya yaşlı, öğrenmeyi sever. Bir ödül ve bu dört temel kuralı ekleyin ve başarılı köpek ipucları için bir tarifimiz var!",
+          "title": "Köpek Eğitimi",
           
           "id": "dogTraining"
         },
         {
           "text":
-            "To help prevent health concerns in your dog, it’s a good idea to get into the habit of checking your dog regularly for any changes or signs of illness.",
-          "title": "Dog Problems",
+            "Köpeğinizdeki sağlık endişelerini önlemeye yardımcı olmak için, bir değişiklik veya hastalık belirtisi için köpeğinizi düzenli olarak kontrol etme alışkanlığı kazanmak önemlidir.",
+          "title": "Köpek Kontrolleri",
           
           "id": "dogProblem"
         }
@@ -194,6 +221,46 @@
         "button": "Gönder",
         "placeholder0": "Email",
         "placeholder1": "Şifreniz"
+      },
+      "footer": {
+        "title0": "Menü",
+        "title1": "SON PAYLAŞIMLAR",
+        "subTitleHome": "Ana Sayfa",
+        "subTitleAbout": "Hakkımızda",
+        "subTitleFindPet": "Dostunu Bul",
+        "subTitleBlog": "Blog",
+        "subTitleContact": "Bize Ulaş",
+        "subTitleResources": "Kaynaklar",
+        "allRights": "Tüm haklar Re:Coded şirketinde saklıdır"
+      },
+      "searchPage": {
+        "option0": "Lokasyon",
+        "option1": "Yaş",
+        "option2": "Tür",
+        "option3": "Cinsiyet",
+        "button": "Sahiplen"
+      },
+      "personalPage": {
+        "title0": "Kişisel Bilgiler",
+        "title1": "Adres",
+        "subTitle0": "Tam Adınız",
+        "subTitle1": "Email",
+        "subTitle2": "Telefon",
+        "subTitle3": "Bio",
+        "subTitle4": "Şehir",
+        "subTitle5": "Bölge",
+        "subTitle6": "Sokak",
+        "subTitle7": "Posta Kodu",
+        "placeholder0": "İsminiz",
+        "placeholder1": "Email",
+        "placeholder2": "Numaranız",
+        "placeholder3": "Bio",
+        "placeholder4": "Şehir",
+        "placeholder5": "Bölge",
+        "placeholder6": "Sokak",
+        "placeholder7": "Posta Kodunuz",
+        "dropdown": "Şehir Şeç",
+        "button": "İptal Et"
       }
         
       
