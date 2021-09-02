@@ -11,7 +11,6 @@ const dataOfHeroSection = {
 };
 
 function ResourcesPage() {
-
   const { t } = useTranslation();
 
   return (

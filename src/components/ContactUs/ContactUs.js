@@ -56,9 +56,7 @@ const ContactUs = () => {
         </Col>
         <Col lg={6} className="contactUs">
           <h1>{t("contactUs.title")}</h1>
-          <p>
-          {t("contactUs.text")}
-          </p>
+          <p>{t("contactUs.text")}</p>
           <div className="mb-5">
             <img src={Vk} alt="vkLogo" className="mr-2" />
             <img src={Pinterest} alt="pinterestLogo" className="mr-2" />
@@ -93,7 +91,7 @@ const ContactUs = () => {
               value={formik.values.message}
             />
             <Button className="contactBtn shadow-none" type="submit">
-            {t("contactUs.button")}
+              {t("contactUs.button")}
             </Button>
           </form>
         </Col>

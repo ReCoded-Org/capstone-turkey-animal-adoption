@@ -6,7 +6,7 @@ import "./Search.css";
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
 
-const Search = ({ searchGuests, gender }) => {
+const Search = ({ searchGuests }) => {
   const [searchResults, setSearchresults] = useState(
     searchGuests.guestsResults
   );
@@ -108,8 +108,8 @@ const Search = ({ searchGuests, gender }) => {
               {...formik.getFieldProps("gender")}
             >
               <option value="Select Gender">{t("searchPage.option3")}</option>
-              {gender.map((gender) => (
-                <option>{gender.gender0}</option>
+              {searchGuests.searchGender.map((gender) => (
+                <option>{gender}</option>
               ))}
             </select>
             <button type="submit">

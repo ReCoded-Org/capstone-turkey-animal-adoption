@@ -10,7 +10,6 @@ const dataOfHeroSection = {
 };
 
 const AboutUs = () => {
-
   const { t } = useTranslation();
 
   return (

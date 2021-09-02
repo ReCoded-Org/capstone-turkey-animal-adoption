@@ -39,7 +39,6 @@ const sendEmail = (formData) => {
 };
 
 const AdoptionFormModal = (props) => {
-
   const { t } = useTranslation();
 
   return (
@@ -82,7 +81,11 @@ const AdoptionFormModal = (props) => {
               <ErrorMessage name="from_name" />
             </div>
             <label htmlFor="from_name"></label>
-            <Field name="from_name" type="text" placeholder={t("adoptionForm.placeholder0")} />
+            <Field
+              name="from_name"
+              type="text"
+              placeholder={t("adoptionForm.placeholder0")}
+            />
             <div className="errorMessage">
               <ErrorMessage name="from_lastname" />
             </div>
@@ -123,16 +126,20 @@ const AdoptionFormModal = (props) => {
               <ErrorMessage name="from_city" />
             </div>
             <label htmlFor="from_city"></label>
-            <Field name="from_city" type="text" placeholder={t("adoptionForm.placeholder5")} />
+            <Field
+              name="from_city"
+              type="text"
+              placeholder={t("adoptionForm.placeholder5")}
+            />
             <Button type="submit" className="modalFormBtn shadow-none">
-            {t("adoptionForm.button0")}
+              {t("adoptionForm.button0")}
             </Button>
           </Form>
         </Formik>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide} className="modalFormBtn shadow-none">
-        {t("adoptionForm.button1")}
+          {t("adoptionForm.button1")}
         </Button>
       </Modal.Footer>
     </Modal>

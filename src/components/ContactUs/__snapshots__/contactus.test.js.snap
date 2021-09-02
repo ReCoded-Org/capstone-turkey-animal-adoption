@@ -28,12 +28,10 @@ exports[`renders ContactUs Component correctly 1`] = `
       className="contactUs col-lg-6"
     >
       <h1>
-        Get In Touch
+        contactUs.title
       </h1>
       <p>
-        Contact Us On the Social Media 
-        <br />
-        Or Send Us a Message
+        contactUs.text
       </p>
       <div
         className="mb-5"
@@ -74,7 +72,7 @@ exports[`renders ContactUs Component correctly 1`] = `
           id="from_email"
           name="from_email"
           onChange={[Function]}
-          placeholder="Email"
+          placeholder="contactUs.placeholder0"
           type="email"
           value=""
         />
@@ -86,7 +84,7 @@ exports[`renders ContactUs Component correctly 1`] = `
           id="message"
           name="message"
           onChange={[Function]}
-          placeholder="Message"
+          placeholder="contactUs.placeholder1"
           row="50"
           value=""
         />
@@ -95,7 +93,7 @@ exports[`renders ContactUs Component correctly 1`] = `
           disabled={false}
           type="submit"
         >
-          Send
+          contactUs.button
         </button>
       </form>
     </div>

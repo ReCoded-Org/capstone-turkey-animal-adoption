@@ -5,7 +5,6 @@ import { Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const Checklist = ({ text, title, link }) => {
-  
   const { t } = useTranslation();
 
   return (

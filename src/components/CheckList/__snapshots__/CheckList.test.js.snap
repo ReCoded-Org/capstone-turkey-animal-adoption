@@ -30,7 +30,7 @@ exports[`checlist renders correctly 1`] = `
       <button
         className="checkListButton"
       >
-        Read More
+        checklistButton
       </button>
     </a>
   </div>

@@ -6,9 +6,8 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
 const GuestContainer = ({ latestAddedGuests, latestTitle, latestSubtitle }) => {
-   
   //const { t } = useTranslation();
-  
+
   return (
     <Container>
       <Row className="guestsContainer py-5">

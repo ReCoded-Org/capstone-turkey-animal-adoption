@@ -60,7 +60,9 @@ const PersonalDetails = () => {
 
                       <div className="row d-flex justify-content-around mt-4 ">
                         <div>
-                          <label className="newColor">{t("personalPage.subTitle0")}</label>
+                          <label className="newColor">
+                            {t("personalPage.subTitle0")}
+                          </label>
                           <br />
                           <Field
                             placeholder={t("personalPage.placeholder0")}
@@ -73,7 +75,9 @@ const PersonalDetails = () => {
                           </div>
                         </div>
                         <div>
-                          <label className="newColor">{t("personalPage.subTitle1")}</label>
+                          <label className="newColor">
+                            {t("personalPage.subTitle1")}
+                          </label>
                           <br />
                           <input
                             placeholder={t("personalPage.placeholder1")}
@@ -87,7 +91,9 @@ const PersonalDetails = () => {
                       </div>
                       <div className="row d-flex justify-content-around mt-4">
                         <div>
-                          <label className="newColor">{t("personalPage.subTitle2")}</label>
+                          <label className="newColor">
+                            {t("personalPage.subTitle2")}
+                          </label>
                           <br />
                           <Field
                             placeholder={t("personalPage.placeholder2")}
@@ -100,7 +106,9 @@ const PersonalDetails = () => {
                           </div>
                         </div>
                         <div>
-                          <label className="newColor">{t("personalPage.subTitle3")}</label>
+                          <label className="newColor">
+                            {t("personalPage.subTitle3")}
+                          </label>
                           <br />
                           <Field
                             placeholder={t("personalPage.placeholder3")}
@@ -117,7 +125,9 @@ const PersonalDetails = () => {
                         <h3 className="newColor">{t("personalPage.title1")}</h3>
                         <div className="row d-flex justify-content-around mt-4 ">
                           <div>
-                            <label className="newColor">{t("personalPage.subTitle4")}</label>
+                            <label className="newColor">
+                              {t("personalPage.subTitle4")}
+                            </label>
                             <br />
                             <Field
                               component="select"
@@ -126,7 +136,9 @@ const PersonalDetails = () => {
                               multiple={false}
                               className="shadow rounded inputStyle"
                             >
-                              <option value="">{t("personalPage.dropdown")}</option>
+                              <option value="">
+                                {t("personalPage.dropdown")}
+                              </option>
                               {cities.map((city) => {
                                 return (
                                   <option value="city.name">{city.name}</option>
@@ -138,7 +150,9 @@ const PersonalDetails = () => {
                             </div>
                           </div>
                           <div>
-                            <label className="newColor">{t("personalPage.subTitle5")}</label>
+                            <label className="newColor">
+                              {t("personalPage.subTitle5")}
+                            </label>
                             <br />
                             <Field
                               placeholder={t("personalPage.placeholder5")}
@@ -153,7 +167,9 @@ const PersonalDetails = () => {
                         </div>
                         <div className="row d-flex justify-content-around mt-4 ">
                           <div>
-                            <label className="newColor">{t("personalPage.subTitle6")}</label>
+                            <label className="newColor">
+                              {t("personalPage.subTitle6")}
+                            </label>
                             <br />
                             <Field
                               placeholder={t("personalPage.placeholder6")}
@@ -166,7 +182,9 @@ const PersonalDetails = () => {
                             </div>
                           </div>
                           <div>
-                            <label className="newColor">{t("personalPage.subTitle7")}</label>
+                            <label className="newColor">
+                              {t("personalPage.subTitle7")}
+                            </label>
                             <br />
                             <Field
                               placeholder={t("personalPage.placeholder7")}

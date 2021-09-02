@@ -11,7 +11,6 @@ const dataOfHeroSection = {
 };
 
 const SearchPage = () => {
-
   const { t } = useTranslation();
 
   return (
@@ -22,7 +21,7 @@ const SearchPage = () => {
         text={t("heroSectionSearch.text")}
         side={dataOfHeroSection.side}
       />
-      <Search searchGuests={searchGuests} gender={t("searchPage.gender", { returnObjects: true })}/>
+      <Search searchGuests={searchGuests} />
     </div>
   );
 };

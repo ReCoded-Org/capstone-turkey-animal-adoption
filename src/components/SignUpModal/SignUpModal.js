@@ -77,9 +77,7 @@ function SignUpModal({ show, isModalShown }) {
                   className="mb-4"
                   onClick={() => signWithSocial("facebook")}
                 />
-                <p className="note mb-4">
-                {t("signUpModal.text")}{" "}
-                </p>
+                <p className="note mb-4">{t("signUpModal.text")} </p>
                 <Formik
                   initialValues={{ email: "", password: "", name: "" }}
                   validationSchema={Yup.object({

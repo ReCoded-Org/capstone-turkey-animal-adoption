@@ -90,15 +90,21 @@ function NavBar() {
           </Nav>
           {!user && loading && (
             <div>
-              <Button onClick={() => isSignupShown(true)}>{t("navbar.button.button0")}</Button>
+              <Button onClick={() => isSignupShown(true)}>
+                {t("navbar.button.button0")}
+              </Button>
               <Button onClick={() => isLoginShown(true)} className="ml-2">
                 {t("navbar.button.button1")}
               </Button>
             </div>
           )}
-          <Form.Control onChange={(e) => {
-            i18next.changeLanguage(e.target.value);
-          }} as="select" className="w-auto language">
+          <Form.Control
+            onChange={(e) => {
+              i18next.changeLanguage(e.target.value);
+            }}
+            as="select"
+            className="w-auto language"
+          >
             <option value="en">{t("navbar.languages.lang0")}</option>
             <option value="tr">{t("navbar.languages.lang1")}</option>
           </Form.Control>

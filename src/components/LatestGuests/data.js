@@ -1,5 +1,4 @@
 export let latestAddedGuests = {
-
   latestGuestsTitle: {
     title: "Latest Guests",
     subTitle: "Meet Our Latest Friends 🐾",

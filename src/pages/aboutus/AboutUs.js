@@ -13,7 +13,6 @@ const dataOfHeroSection = {
 };
 
 const AboutUs = () => {
-
   const { t } = useTranslation();
 
   return (
@@ -24,8 +23,15 @@ const AboutUs = () => {
         text={t("heroSectionAbout.text")}
         side={dataOfHeroSection.side}
       />
-      <LatestGuests latestAddedGuests={latestAddedGuests} latestTitle={t("latestGuestsTitle.title1")} latestSubtitle={t("latestGuestsTitle.subTitle1")} />
-      <AdoptionProcess adoptionProcess={adoptionProcess} adoptionTitle={t("petAdoption.title1")} />
+      <LatestGuests
+        latestAddedGuests={latestAddedGuests}
+        latestTitle={t("latestGuestsTitle.title1")}
+        latestSubtitle={t("latestGuestsTitle.subTitle1")}
+      />
+      <AdoptionProcess
+        adoptionProcess={adoptionProcess}
+        adoptionTitle={t("petAdoption.title1")}
+      />
     </div>
   );
 };

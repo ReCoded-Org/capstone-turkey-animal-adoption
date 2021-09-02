@@ -4,9 +4,7 @@ import logo from "../../images/buttonlogo.png";
 import "./HeroSection.css";
 import { useTranslation } from "react-i18next";
 
-
 const HeroSection = ({ img, title, text, side }) => {
-
   const { t } = useTranslation();
 
   const background = {
@@ -20,7 +18,7 @@ const HeroSection = ({ img, title, text, side }) => {
       return "containerForRight";
     }
   };
-  
+
   return (
     <Container className={changeLeftOrRight()} style={background}>
       <Row>

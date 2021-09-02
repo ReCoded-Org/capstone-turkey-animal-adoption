@@ -13,7 +13,6 @@ import "./Footer.css";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-
   const { t } = useTranslation();
 
   return (
@@ -32,41 +31,39 @@ const Footer = () => {
                 <h3>Friends</h3>
               </div>
             </div>
-            <div className="pt-4 text-white">
-            {t("footer.allRights")}
-            </div>
+            <div className="pt-4 text-white">{t("footer.allRights")}</div>
           </div>
           <div className="col-md-4 pl-lg-5 pl-md-5 pl-0 mt-3">
             <h4>{t("footer.title0")}</h4>
             <ul className="list-group">
               <li className="list-unstyled text-white">
                 <NavLink to="/" className="text-white">
-                {t("footer.subTitleHome")}
+                  {t("footer.subTitleHome")}
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
                 <NavLink to="/about" className="text-white">
-                {t("footer.subTitleAbout")}
+                  {t("footer.subTitleAbout")}
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
                 <NavLink to="/search" className="text-white">
-                {t("footer.subTitleFindPet")}
+                  {t("footer.subTitleFindPet")}
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
                 <NavLink to="/blog" className="text-white">
-                {t("footer.subTitleBlog")}
+                  {t("footer.subTitleBlog")}
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
                 <NavLink to="/contact" className="text-white">
-                {t("footer.subTitleContact")}
+                  {t("footer.subTitleContact")}
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
                 <NavLink to="/resources" className="text-white">
-                {t("footer.subTitleResources")}
+                  {t("footer.subTitleResources")}
                 </NavLink>
               </li>
             </ul>
@@ -83,7 +80,7 @@ const Footer = () => {
                   className="m-1"
                 />
                 <li className="list-unstyled text-white ">
-                {t("footer.blogText0")}
+                  {t("footer.blogText0")}
                 </li>
               </div>
               <div className="d-flex align-items-center pt-2">
@@ -95,7 +92,7 @@ const Footer = () => {
                   className="m-1"
                 />
                 <li className="list-unstyled text-white">
-                {t("footer.blogText1")}
+                  {t("footer.blogText1")}
                 </li>
               </div>
             </ul>
