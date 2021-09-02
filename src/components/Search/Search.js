@@ -6,7 +6,7 @@ import "./Search.css";
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
 
-const Search = ({ searchGuests }) => {
+const Search = ({ searchGuests, gender }) => {
   const [searchResults, setSearchresults] = useState(
     searchGuests.guestsResults
   );
@@ -46,7 +46,7 @@ const Search = ({ searchGuests }) => {
   const Error = () => {
     return (
       <Col sm={12} className="loadPage">
-        <h4>No Items Were Found Matching Your Criteria</h4>
+        <h4>{t("searchPage.notFound")}</h4>
         <img
           src="https://timesofindia.indiatimes.com/photo/67586673.cms"
           className="w-100 searchCatLogo"
@@ -61,7 +61,7 @@ const Search = ({ searchGuests }) => {
   return (
     <Container>
       <Row className="searchContainer py-5">
-        <h1>{searchGuests.searchGuestsTitle.title}</h1>
+        <h1>{t("searchPage.title")}</h1>
         <Col sm={12}>
           <form onSubmit={formik.handleSubmit} className="searchForm">
             <label htmlFor="location"></label>
@@ -108,8 +108,8 @@ const Search = ({ searchGuests }) => {
               {...formik.getFieldProps("gender")}
             >
               <option value="Select Gender">{t("searchPage.option3")}</option>
-              {searchGuests.searchGender.map((gender) => (
-                <option>{gender}</option>
+              {gender.map((gender) => (
+                <option>{gender.gender0}</option>
               ))}
             </select>
             <button type="submit">

@@ -14,7 +14,6 @@ import {
   registerWithEmailAndPassword,
 } from "../../helpers/auth";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
 function SignUpModal({ show, isModalShown }) {
   const [errorMsg, setErrorMsg] = useState(false);

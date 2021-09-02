@@ -10,7 +10,6 @@ import Twitter from "../../images/Twitter.png";
 import Facebook from "../../images/Facebook.png";
 import * as emailjs from "emailjs-com";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
 const contactValidation = {
   from_email: Yup.string().email("Invalid email address").required("Required"),

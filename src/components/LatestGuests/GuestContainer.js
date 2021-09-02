@@ -5,7 +5,7 @@ import "./LatestGuests.css";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
-const GuestContainer = ({ latestAddedGuests, latestGuestsTitle }) => {
+const GuestContainer = ({ latestAddedGuests, latestTitle, latestSubtitle }) => {
    
   //const { t } = useTranslation();
   
@@ -15,8 +15,8 @@ const GuestContainer = ({ latestAddedGuests, latestGuestsTitle }) => {
         <Col sm={12}>
           {latestAddedGuests && (
             <>
-              <h1>{latestAddedGuests.title}</h1>
-              <h6>{latestAddedGuests.subTitle}</h6>
+              <h1>{latestTitle}</h1>
+              <h6>{latestSubtitle}</h6>
               <Row className="mt-5 carouselItems">
                 {latestAddedGuests.latestGuestsItems.map((guest) => (
                   <GuestItems

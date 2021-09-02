@@ -20,7 +20,6 @@ i18n
     },
     
     fallbackLng: "en",
-    //detection: {order: ["htmlTag", "cookie", "localStorage", "path"]},
     debug: true,
     interpolation: {
     escapeValue: false,

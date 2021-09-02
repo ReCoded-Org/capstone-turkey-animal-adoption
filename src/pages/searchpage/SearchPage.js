@@ -7,9 +7,6 @@ import { useTranslation } from "react-i18next";
 
 const dataOfHeroSection = {
   img: `${searchDog}`,
-  // title: "Search Now",
-  // text:
-  //   "We bring pets and people together. Support them by adopting and help them to have a home",
   side: "left",
 };
 
@@ -25,7 +22,7 @@ const SearchPage = () => {
         text={t("heroSectionSearch.text")}
         side={dataOfHeroSection.side}
       />
-      <Search searchGuests={searchGuests} />
+      <Search searchGuests={searchGuests} gender={t("searchPage.gender", { returnObjects: true })}/>
     </div>
   );
 };

@@ -83,7 +83,7 @@ const Footer = () => {
                   className="m-1"
                 />
                 <li className="list-unstyled text-white ">
-                  Lawyaw uses AI to help lawyers draft documents faster
+                {t("footer.blogText0")}
                 </li>
               </div>
               <div className="d-flex align-items-center pt-2">
@@ -95,7 +95,7 @@ const Footer = () => {
                   className="m-1"
                 />
                 <li className="list-unstyled text-white">
-                  Going against the grain, AngelPad kills its demo day
+                {t("footer.blogText1")}
                 </li>
               </div>
             </ul>

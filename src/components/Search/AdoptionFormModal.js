@@ -4,6 +4,7 @@ import "./Search.css";
 import * as Yup from "yup";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 const searchModalValidation = {
   from_name: Yup.string()
@@ -38,6 +39,9 @@ const sendEmail = (formData) => {
 };
 
 const AdoptionFormModal = (props) => {
+
+  const { t } = useTranslation();
+
   return (
     <Modal
       {...props}
@@ -48,11 +52,11 @@ const AdoptionFormModal = (props) => {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Adoption Form
+          {t("adoptionForm.title")}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className="adoptionFormModalBody">
-        <h4 className="mb-4">Fill Our Form for Adoption Process</h4>
+        <h4 className="mb-4">{t("adoptionForm.subTitle")}</h4>
         <Formik
           initialValues={{
             from_name: "",
@@ -78,7 +82,7 @@ const AdoptionFormModal = (props) => {
               <ErrorMessage name="from_name" />
             </div>
             <label htmlFor="from_name"></label>
-            <Field name="from_name" type="text" placeholder="Your First Name" />
+            <Field name="from_name" type="text" placeholder={t("adoptionForm.placeholder0")} />
             <div className="errorMessage">
               <ErrorMessage name="from_lastname" />
             </div>
@@ -86,7 +90,7 @@ const AdoptionFormModal = (props) => {
             <Field
               name="from_lastname"
               type="text"
-              placeholder="Your Last Name"
+              placeholder={t("adoptionForm.placeholder1")}
             />
             <div className="errorMessage">
               <ErrorMessage name="from_email" />
@@ -95,7 +99,7 @@ const AdoptionFormModal = (props) => {
             <Field
               name="from_email"
               type="email"
-              placeholder="Your Email Address"
+              placeholder={t("adoptionForm.placeholder2")}
             />
             <div className="errorMessage">
               <ErrorMessage name="from_petname" />
@@ -104,7 +108,7 @@ const AdoptionFormModal = (props) => {
             <Field
               name="from_petname"
               type="text"
-              placeholder="The Name of the Pet You are Adopting"
+              placeholder={t("adoptionForm.placeholder3")}
             />
             <div className="errorMessage">
               <ErrorMessage name="from_petbreed" />
@@ -113,22 +117,22 @@ const AdoptionFormModal = (props) => {
             <Field
               name="from_petbreed"
               type="text"
-              placeholder="The Breed of the Pet You are Adopting"
+              placeholder={t("adoptionForm.placeholder4")}
             />
             <div className="errorMessage">
               <ErrorMessage name="from_city" />
             </div>
             <label htmlFor="from_city"></label>
-            <Field name="from_city" type="text" placeholder="Your City" />
+            <Field name="from_city" type="text" placeholder={t("adoptionForm.placeholder5")} />
             <Button type="submit" className="modalFormBtn shadow-none">
-              Submit
+            {t("adoptionForm.button0")}
             </Button>
           </Form>
         </Formik>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide} className="modalFormBtn shadow-none">
-          Close
+        {t("adoptionForm.button1")}
         </Button>
       </Modal.Footer>
     </Modal>

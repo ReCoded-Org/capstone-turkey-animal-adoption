@@ -3,10 +3,9 @@ import catLogo from "../../checklistLogo/catLogo.png";
 import "./CheckList.css";
 import { Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
 const Checklist = ({ text, title, link }) => {
-
+  
   const { t } = useTranslation();
 
   return (
@@ -18,7 +17,7 @@ const Checklist = ({ text, title, link }) => {
         <h2>{title}</h2>
         <p className="checkListText">{text}</p>
         <a href={link} target="_blank">
-          <button className="checkListButton">Read More</button>
+          <button className="checkListButton">{t("checklistButton")}</button>
         </a>
       </div>
     </Col>
