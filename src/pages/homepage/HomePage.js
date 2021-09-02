@@ -17,7 +17,6 @@ const dataOfHeroSection = {
 };
 
 function Homepage() {
-
   const { t } = useTranslation();
 
   return (
