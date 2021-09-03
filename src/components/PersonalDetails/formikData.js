@@ -1,6 +1,7 @@
 import * as Yup from "yup";
 const initialValues = {
   fullname: "",
+  email: "",
   phone: "",
   bio: "",
   city: "",
@@ -10,9 +11,6 @@ const initialValues = {
 };
 
 const yupValidation = {
-  fullname: Yup.string()
-    .max(100, "Must be 15 characters or less")
-    .required("Full Name is Required"),
   phone: Yup.number().required("Phone is Required"),
   bio: Yup.string().required("Bio is Required"),
   city: Yup.string().required("City is Required"),

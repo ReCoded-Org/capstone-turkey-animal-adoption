@@ -27,14 +27,10 @@ p,
 .inputStyle {
   border: 0.5px solid;
   color: #444444;
-  border: 1px solid #ff5555;
+  border: 2px solid #ff7777;
   width: 190px;
-  height: 30px;
-}
-
-.inputStyle:disabled {
-  background-color: #e9ecef;
-  opacity: 1;
+  height: 40px;
+  padding-left: .5rem;
 }
 
 .inputStyle::placeholder {
@@ -46,7 +42,7 @@ textarea.inputStyle {
 }
 
 .button {
-  background: #3f6487;
+  background: #ff7777;
   color: white;
   width: 200px;
   height: 40px;
@@ -54,12 +50,13 @@ textarea.inputStyle {
   border: 0;
 }
 
-.cancelBtn {
-  background: #777777;
+.inputStyle:disabled {
+  background-color: #e9ecef;
+  opacity: 1;
 }
 
 .mainContainer {
-  background-color: #e5e5e5;
+  background-color: #f5f4f4;
 }
 
 .bgWhite {
@@ -74,4 +71,9 @@ textarea.inputStyle {
   color: #ff5555;
   font-size: 12px;
   margin-top: 2px;
+}
+
+.bgWhite,
+.formSection {
+  border-radius: 1rem;
 }
