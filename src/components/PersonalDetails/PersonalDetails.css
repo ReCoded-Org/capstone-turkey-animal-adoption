@@ -9,19 +9,22 @@ label.newColor {
   font-weight: bold;
 }
 
-p,
-.email {
+.profileInfo {
   color: #777777;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.email {
-  font-size: 13px;
-  margin-top: -2px;
+.profileInfo span {
+  font-style: normal;
+  color:  #979797;
 }
 
 .avatar {
   border-radius: 50%;
   background: #999;
+  display: flex;
+  margin: 0 auto;
 }
 
 .inputStyle {
@@ -30,7 +33,12 @@ p,
   border: 2px solid #ff7777;
   width: 190px;
   height: 40px;
-  padding-left: .5rem;
+  padding-left: .7rem;
+  border-radius: 1.5rem;
+}
+
+.inputStyle:focus {
+  outline: none;
 }
 
 .inputStyle::placeholder {
@@ -38,7 +46,15 @@ p,
 }
 
 textarea.inputStyle {
-  height: 50px;
+  height: 100px;
+  padding-top: .5rem;
+  resize: none;
+}
+
+#profilePic {
+  width: 100%;
+  background-color: #96E8F0;
+  border-radius: 0 1rem 1rem 0;
 }
 
 .button {
@@ -56,15 +72,22 @@ textarea.inputStyle {
 }
 
 .mainContainer {
-  background-color: #f5f4f4;
+  background: url("https://i.pinimg.com/736x/3e/74/30/3e7430bab993954bbde7d61538f530a3.jpg");
+  padding: 3rem;
 }
 
 .bgWhite {
-  background-color: white;
+  background-color: #ffffff;
+  text-align: start;
+}
+
+.personelInfo {
+  padding: 6rem 3rem;
 }
 
 .fullHeight {
   height: 100%;
+  padding: 3rem;
 }
 
 .profile .error {
@@ -76,4 +99,10 @@ textarea.inputStyle {
 .bgWhite,
 .formSection {
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 768px){
+  .inputStyle {
+    margin-bottom: 1rem;
+  }
 }

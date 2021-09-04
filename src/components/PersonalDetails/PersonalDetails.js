@@ -22,11 +22,20 @@ const PersonalDetails = () => {
   const [zip, setZip] = useLocalStorage("zip", "");
   const [alertShown, isAlertShown] = useState(false);
   const [picture, setPicture] = useLocalStorage("picture", poodle);
-  const [buttonText, setButtonText] = useState("Submit");
 
   const onChangePicture = e => {
     setPicture(URL.createObjectURL(e.target.files[0]));
   };
+
+  const clearInfo = () => {
+    setBio("")
+    setPhone("")
+    setCity("")
+    setState("")
+    setStreet("")
+    setZip("")
+    setPicture(poodle);
+  }
 
   const fetchUserName = async () => {
     try {
@@ -51,8 +60,8 @@ const PersonalDetails = () => {
     <Container fluid className="mainContainer profile">
       <Container className="pt-3 pb-4">
         <Row>
-          <Col lg="4 profileSection" md="12">
-            <div class="p-5 shadow-lg bgWhite fullHeight">
+          <Col lg="4" md="12">
+            <div class="bgWhite fullHeight">
               <img
                 src={picture}
                 alt="userPhoto"
@@ -61,35 +70,43 @@ const PersonalDetails = () => {
                 className="align-items-center mb-4 avatar"
               />
               <input className="mb-5" id="profilePic" type="file" onChange={onChangePicture} />
-              <h5 className="align-items-center mb-2 text-uppercase newColor">
+              <h5 className="mb-2 text-uppercase newColor">
                 {fullname}
               </h5>
-              <p className="align-items-center  email">
+              <p className="newColor">
                 {email}
               </p>
-              <p className="align-items-center  email">
-                Tel: {phone}
+              <p className="profileInfo">
+                Tel: {''}
+                <span>{phone}</span>
               </p>
-              <p className="align-items-center  email">
-                City: {city}
+              <p className="profileInfo">
+                City: {''}
+                <span>{city}</span>
               </p>
-              <p className="align-items-center  email">
-                State: {state}
+              <p className="profileInfo">
+                State: {''}
+                <span>{state}</span>
               </p>
-              <p className="align-items-center  email">
-                Street: {street}
+              <p className="profileInfo">
+                Street: {''}
+                <span>{street}</span>
               </p>
-              <p className="align-items-center  email">
-                Zip:{zip}
+              <p className="profileInfo">
+                Zip: {''}
+                <span>{zip}</span>
               </p>
               {bio && (
-                <h4 className="align-items-center mb-2 mt-4 newColor">About</h4>
+                <h4 className="mb-2 mt-4 newColor">About</h4>
               )}
-              <p className="text-center">Bio: {bio}</p>
+              <p className="profileInfo">
+                Bio: {''}
+                <span>{bio}</span>
+              </p>
             </div>
           </Col>
           <Col lg="8" md="12" className="mt-lg-0 mt-5 formSection">
-            <div className="p-5 shadow-lg bgWhite" align="left">
+            <div className="bgWhite personelInfo" align="left">
               {alertShown && (
                 <Alert variant="success">Your profile has been updated</Alert>
               )}
@@ -111,141 +128,132 @@ const PersonalDetails = () => {
                 {(props) => {
                   const { values } = props;
                   return (
-                    <Form>
-                      <h3 className="newColor">Personal Details</h3>
-                      <div className="row d-flex justify-content-around mt-4 ">
-                        <div>
-                          <label className="newColor"></label>
-                          <br />
-                          <Field
-                            placeholder="Full Name"
-                            type="text"
-                            name="fullname"
-                            // {...(!toggle ? {disabled: 'disabled'} : {})}
-                            className="shadow rounded inputStyle"
-                          />
-                          <div className="error">
-                            <ErrorMessage name="fullname" />
-                          </div>
-                        </div>
-                        <div>
-                          <label className="newColor"></label>
-                          <br />
-                          <input
-                            placeholder="Email"
-                            type="email"
-                            name="email"
-                            disabled
-                            className="fullname shadow rounded inputStyle"
-                          />
-                        </div>
-                      </div>
-                      <div className="row d-flex justify-content-around mt-4">
-                        <div>
-                          <label className="newColor"></label>
-                          <br />
-                          <Field
-                            placeholder="Phone Number"
-                            type="tel"
-                            name="phone"
-                            className="shadow rounded inputStyle"
-                          />
-                          <div className="error">
-                            <ErrorMessage name="phone" />
-                          </div>
-                        </div>
-                        <div>
-                          <label className="newColor"></label>
-                          <br />
-                          <Field
-                            placeholder="Bio"
-                            name="bio"
-                            as="textarea"
-                            className="shadow rounded inputStyle"
-                          />
-                          <div className="error">
-                            <ErrorMessage name="bio" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="mt-4">
-                        <h3 className="newColor">Address</h3>
-                        <div className="row d-flex justify-content-around mt-4 ">
-                          <div>
-                            <label className="newColor"></label>
-                            <br />
+                    <>
+                      <Form>
+                        <h3 className="newColor">Personal Details</h3>
+                        <div className="row d-flex justify-content-around mt-4">
+                          {/* <div>
                             <Field
-                              component="select"
-                              id="city"
-                              name="city"
-                              multiple={false}
-                              className="shadow rounded inputStyle"
+                              placeholder="Full Name"
+                              type="text"
+                              name="fullname"
+                              disabled
+                              className="fullname shadow inputStyle"
+                            />
+                            <div className="error">
+                              <ErrorMessage name="fullname" />
+                            </div>
+                          </div> */}
+                          {/* <div>
+                            <input
+                              placeholder="Email"
+                              type="email"
+                              name="email"
+                              disabled
+                              className="fullname shadow inputStyle"
+                            />
+                          </div> */}
+                        </div>
+                        <div className="row d-flex justify-content-around mt-4">
+                          <div>
+                            <Field
+                              placeholder="Phone Number"
+                              type="tel"
+                              name="phone"
+                              className="shadow inputStyle"
+                            />
+                            <div className="error">
+                              <ErrorMessage name="phone" />
+                            </div>
+                          </div>
+                          <div>
+                            <Field
+                              placeholder="Bio"
+                              name="bio"
+                              as="textarea"
+                              className="shadow inputStyle"
+                            />
+                            <div className="error">
+                              <ErrorMessage name="bio" />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="mt-4">
+                          <h3 className="newColor">Address</h3>
+                          <div className="row d-flex justify-content-around mt-4 ">
+                            <div>
+                              <Field
+                                component="select"
+                                id="city"
+                                name="city"
+                                multiple={false}
+                                className="shadow inputStyle"
+                              >
+                                <option value="">Select a City</option>
+                                {cities.map((city) => {
+                                  return (
+                                    <option name="city">{city.name}</option>
+                                  );
+                                })}
+                              </Field>
+                              <div className="error">
+                                <ErrorMessage name="city" />
+                              </div>
+                            </div>
+                            <div>
+                              <Field
+                                placeholder="State Name"
+                                type="text"
+                                name="state"
+                                className="shadow inputStyle"
+                              />
+                              <div className="error">
+                                <ErrorMessage name="state" />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="row d-flex justify-content-around mt-4 ">
+                            <div>
+                              <Field
+                                placeholder="Street"
+                                type="text"
+                                name="street"
+                                className="shadow inputStyle"
+                              />
+                              <div className="error">
+                                <ErrorMessage name="street" />
+                              </div>
+                            </div>
+                            <div>
+                              <Field
+                                placeholder="Zip Code"
+                                type="text"
+                                name="zip"
+                                className="shadow inputStyle"
+                              />
+                              <div className="error">
+                                <ErrorMessage name="zip" />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="row d-flex mt-5 justify-content-center">
+                            <button
+                              className="m-2 button"
+                              type="submit"
                             >
-                              <option value="">Select a City</option>
-                              {cities.map((city) => {
-                                return (
-                                  <option name="city">{city.name}</option>
-                                );
-                              })}
-                            </Field>
-                            <div className="error">
-                              <ErrorMessage name="city" />
-                            </div>
-                          </div>
-                          <div>
-                            <label className="newColor"></label>
-                            <br />
-                            <Field
-                              placeholder="State Name"
-                              type="text"
-                              name="state"
-                              className="shadow rounded inputStyle"
-                            />
-                            <div className="error">
-                              <ErrorMessage name="state" />
-                            </div>
+                              Update
+                            </button>
+                            <button
+                              className="m-2 button cancelBtn"
+                              onClick={clearInfo}
+                              type="button"
+                            >
+                              Clear
+                            </button>
                           </div>
                         </div>
-                        <div className="row d-flex justify-content-around mt-4 ">
-                          <div>
-                            <label className="newColor"></label>
-                            <br />
-                            <Field
-                              placeholder="Street"
-                              type="text"
-                              name="street"
-                              className="shadow rounded inputStyle"
-                            />
-                            <div className="error">
-                              <ErrorMessage name="street" />
-                            </div>
-                          </div>
-                          <div>
-                            <label className="newColor"></label>
-                            <br />
-                            <Field
-                              placeholder="Zip Code"
-                              type="text"
-                              name="zip"
-                              className="shadow rounded inputStyle"
-                            />
-                            <div className="error">
-                              <ErrorMessage name="zip" />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="row d-flex mt-5 justify-content-center">
-                          <button
-                            className="m-2 button"
-                            type="submit"
-                            onClick={() => setButtonText("Update")}
-                          >
-                            {buttonText}
-                            {/* {!toggle ? "Submit" : "Update"} */}
-                          </button>    
-                        </div>
-                      </div>
-                    </Form>
+                      </Form>
+                    </>
                   );
                 }}
               </Formik>
