@@ -3,6 +3,11 @@ footer {
   color: white;
 }
 
+#footerRow {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .page-footer {
   background-color: #31393c;
   color: white;
@@ -46,4 +51,10 @@ footer h4 {
 
 footer li {
   text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .footerLogos div {
+    display: inline-block;
+  }
 }

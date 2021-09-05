@@ -9,6 +9,7 @@ exports[`Footer renders correctly 1`] = `
   >
     <div
       className="row"
+      id="footerRow"
     >
       <div
         className="col-md-4"
@@ -177,7 +178,7 @@ exports[`Footer renders correctly 1`] = `
           </div>
         </ul>
         <div
-          className="d-sm-flex justify-content-sm-center pt-2"
+          className="d-sm-flex justify-content-sm-center pt-2 footerLogos"
         >
           <div
             className="p-2"

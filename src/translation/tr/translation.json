@@ -35,6 +35,11 @@
     "text": "Zor durumda olan hayvanları sahiplenmek için bizimle iletişime geçin. Formumuzu kolayca doldurarak evlat edinme sürecini başlatabilirsiniz",
     "button": "Dostunu Bul"
   },
+  "heroSectionBlog": {
+    "title": "Blog Sayfamıza Göz Atın",
+    "text": "Blog Sayfamızda faydalı bilgiler ve makaleler bulabilirsiniz. Yazarlarımızın en son makalelerine göz atın.",
+    "button": "Dostunu Bul"
+  },
   "heroSectionSearch": {
     "title": "Hemen Arayın",
     "text": "Hayvanları ve insanları bir araya getiriyoruz. Evlat edinerek onları destekleyin ve bir yuvaya sahip olmalarına yardımcı olun",

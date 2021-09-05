@@ -22,7 +22,7 @@ exports[`renders Guest Container correctly 1`] = `
             className="guestItems"
             style={
               Object {
-                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+                "backgroundImage": "url(https://img.piri.net/mnresize/900/-/resim/imagecrop/2020/11/24/01/08/resized_d6fa9-87e89317trwt.jpg)",
               }
             }
           />
@@ -43,7 +43,7 @@ exports[`renders Guest Container correctly 1`] = `
             className="guestItems"
             style={
               Object {
-                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+                "backgroundImage": "url(https://www.bwar.org/wp-content/uploads/2019/10/Bud-e1571935997845-800x800.jpg)",
               }
             }
           />
@@ -64,7 +64,7 @@ exports[`renders Guest Container correctly 1`] = `
             className="guestItems"
             style={
               Object {
-                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+                "backgroundImage": "url(https://www.everclean.com.tr/wp-content/uploads/sites/11/2019/02/A4-feature-image-800x800-c-default.jpg)",
               }
             }
           />
@@ -85,7 +85,7 @@ exports[`renders Guest Container correctly 1`] = `
             className="guestItems"
             style={
               Object {
-                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+                "backgroundImage": "url(https://imageserver.petsbest.com/marketing/blog/meeting-new-dogs.jpg)",
               }
             }
           />
@@ -106,7 +106,7 @@ exports[`renders Guest Container correctly 1`] = `
             className="guestItems"
             style={
               Object {
-                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+                "backgroundImage": "url(https://pixnio.com/free-images/2018/06/28/2018-06-28-07-13-26-900x900.jpg)",
               }
             }
           />
@@ -127,7 +127,7 @@ exports[`renders Guest Container correctly 1`] = `
             className="guestItems"
             style={
               Object {
-                "backgroundImage": "url(https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg)",
+                "backgroundImage": "url(https://howtocleanthings.com/wp-content/uploads/2018/03/pets_dogs-900x900.jpg)",
               }
             }
           />
@@ -190,7 +190,7 @@ exports[`renders Guest Container correctly 1`] = `
         <img
           alt="slideImage"
           className="d-block w-100 sliderImg"
-          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+          src="https://img.piri.net/mnresize/900/-/resim/imagecrop/2020/11/24/01/08/resized_d6fa9-87e89317trwt.jpg"
         />
       </div>
       <div
@@ -199,7 +199,7 @@ exports[`renders Guest Container correctly 1`] = `
         <img
           alt="slideImage"
           className="d-block w-100 sliderImg"
-          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+          src="https://www.bwar.org/wp-content/uploads/2019/10/Bud-e1571935997845-800x800.jpg"
         />
       </div>
       <div
@@ -208,7 +208,7 @@ exports[`renders Guest Container correctly 1`] = `
         <img
           alt="slideImage"
           className="d-block w-100 sliderImg"
-          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+          src="https://www.everclean.com.tr/wp-content/uploads/sites/11/2019/02/A4-feature-image-800x800-c-default.jpg"
         />
       </div>
       <div
@@ -217,7 +217,7 @@ exports[`renders Guest Container correctly 1`] = `
         <img
           alt="slideImage"
           className="d-block w-100 sliderImg"
-          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+          src="https://imageserver.petsbest.com/marketing/blog/meeting-new-dogs.jpg"
         />
       </div>
       <div
@@ -226,7 +226,7 @@ exports[`renders Guest Container correctly 1`] = `
         <img
           alt="slideImage"
           className="d-block w-100 sliderImg"
-          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+          src="https://pixnio.com/free-images/2018/06/28/2018-06-28-07-13-26-900x900.jpg"
         />
       </div>
       <div
@@ -235,7 +235,7 @@ exports[`renders Guest Container correctly 1`] = `
         <img
           alt="slideImage"
           className="d-block w-100 sliderImg"
-          src="https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg"
+          src="https://howtocleanthings.com/wp-content/uploads/2018/03/pets_dogs-900x900.jpg"
         />
       </div>
     </div>

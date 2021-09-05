@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer className="text-center text-lg-start mt-5 pb-3">
       <div className="container p-2">
-        <div className="row">
+        <div className="row" id="footerRow">
           <div className="col-md-4">
             <div className="d-flex align-items-center pb-4 pt-4">
               <div className="p-2">
@@ -96,7 +96,7 @@ const Footer = () => {
                 </li>
               </div>
             </ul>
-            <div className="d-sm-flex justify-content-sm-center pt-2">
+            <div className="d-sm-flex justify-content-sm-center pt-2 footerLogos">
               <div className="p-2">
                 <FaFacebookF />
               </div>

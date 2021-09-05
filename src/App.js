@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/NavBar";
 import ResourcesPage from "./pages/resourcespage/ResourcesPage";
 import SearchPage from "./pages/searchpage/SearchPage";
 import ContactUsPage from "./pages/contactuspage/ContactUsPage";
+import BlogPage from "./pages/blogpage/BlogPage";
 import Profile from "./pages/profile/Profile";
 import Footer from "./components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/about" component={AboutUs} />
         <Route exact path="/search" component={SearchPage} />
         <Route exact path="/contact" component={ContactUsPage} />
+        <Route exact path="/blog" component={BlogPage} />
         <Route path="/profile" component={Profile} />
         <Route path="/" component={Footer} />
       </Router>
