@@ -20,5 +20,3 @@ export const useLocalStorage = (key, defaultValue) => {
 
   return [value, setValue];
 };
-
-// localStorage.clear();

@@ -248,7 +248,7 @@ const PersonalDetails = () => {
                               onClick={clearInfo}
                               type="button"
                             >
-                              Clear
+                              Cancel
                             </button>
                           </div>
                         </div>

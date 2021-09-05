@@ -72,7 +72,8 @@ textarea.inputStyle {
 }
 
 .mainContainer {
-  background: url("https://i.pinimg.com/736x/3e/74/30/3e7430bab993954bbde7d61538f530a3.jpg");
+  /* background: url("https://i.pinimg.com/736x/3e/74/30/3e7430bab993954bbde7d61538f530a3.jpg"); */
+  background-color: #e9ecef;
   padding: 3rem;
 }
 
