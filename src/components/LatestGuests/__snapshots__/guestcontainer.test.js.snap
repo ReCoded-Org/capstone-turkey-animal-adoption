@@ -10,12 +10,8 @@ exports[`renders Guest Container correctly 1`] = `
     <div
       className="col-sm-12"
     >
-      <h1>
-        Latest Guests
-      </h1>
-      <h6>
-        Meet Our Latest Friends 🐾
-      </h6>
+      <h1 />
+      <h6 />
       <div
         className="mt-5 carouselItems row"
       >

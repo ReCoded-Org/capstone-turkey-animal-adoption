@@ -10,8 +10,11 @@ import logo from "./logo.png";
 import { NavLink } from "react-router-dom";
 import dog from "./Bg.png";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="text-center text-lg-start mt-5 pb-3">
       <div className="container p-2">
@@ -28,47 +31,45 @@ const Footer = () => {
                 <h3>Friends</h3>
               </div>
             </div>
-            <div className="pt-4 text-white">
-              Copyright © All rights reserved for Re:Coded
-            </div>
+            <div className="pt-4 text-white">{t("footer.allRights")}</div>
           </div>
           <div className="col-md-4 pl-lg-5 pl-md-5 pl-0 mt-3">
-            <h4>Menu</h4>
+            <h4>{t("footer.title0")}</h4>
             <ul className="list-group">
               <li className="list-unstyled text-white">
                 <NavLink to="/" className="text-white">
-                  Home
+                  {t("footer.subTitleHome")}
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
                 <NavLink to="/about" className="text-white">
-                  About
+                  {t("footer.subTitleAbout")}
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
                 <NavLink to="/search" className="text-white">
-                  Find A Pet
+                  {t("footer.subTitleFindPet")}
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
                 <NavLink to="/blog" className="text-white">
-                  Blog
+                  {t("footer.subTitleBlog")}
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
                 <NavLink to="/contact" className="text-white">
-                  Contact Us
+                  {t("footer.subTitleContact")}
                 </NavLink>
               </li>
               <li className="list-unstyled text-white">
                 <NavLink to="/resources" className="text-white">
-                  Resources
+                  {t("footer.subTitleResources")}
                 </NavLink>
               </li>
             </ul>
           </div>
           <div className="col-md-4  mt-3 pl-lg-5 pl-0">
-            <h4>LATEST POSTS</h4>
+            <h4>{t("footer.title1")}</h4>
             <ul className="list-group pb-2">
               <div className=" d-flex align-items-center">
                 <img
@@ -79,7 +80,7 @@ const Footer = () => {
                   className="m-1"
                 />
                 <li className="list-unstyled text-white ">
-                  Lawyaw uses AI to help lawyers draft documents faster
+                  {t("footer.blogText0")}
                 </li>
               </div>
               <div className="d-flex align-items-center pt-2">
@@ -91,7 +92,7 @@ const Footer = () => {
                   className="m-1"
                 />
                 <li className="list-unstyled text-white">
-                  Going against the grain, AngelPad kills its demo day
+                  {t("footer.blogText1")}
                 </li>
               </div>
             </ul>

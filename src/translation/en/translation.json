@@ -1,0 +1,317 @@
+{
+  "navbar": {
+    "headers": {
+      "header0": "About",
+      "header1": "Blog",
+      "header2": "Contact",
+      "header3": "Resources"
+    },
+    "button": {
+      "button0": "Sign Up",
+      "button1": "Login"
+    },
+    "languages": {
+      "lang0": "English",
+      "lang1": "Turkish"
+    }
+  },
+  "heroSectionHome": {
+    "title": "Adopt Please",
+    "text": "We are non-profit organization who wants to help people who wants to adopt",
+    "button": "Find A Pet"
+  },
+  "heroSectionAbout": {
+    "title": "Who We Are",
+    "text": "Right now, animals like me are suffering in puppy mills, research labs and factory farms. Join the fight to protect us",
+    "button": "Find A Pet"
+  },
+  "heroSectionResources": {
+    "title": "Adopt Please",
+    "text": "We are non-profit organization who wants to help people who wants to adopt",
+    "button": "Find A Pet"
+  },
+  "heroSectionContact": {
+    "title": "Contact Us Now",
+    "text": "Contact us to adopt those animals who are suffering. You can start the adoption process by easily filling our form.",
+    "button": "Find A Pet"
+  },
+  "heroSectionSearch": {
+    "title": "Search Now",
+    "text": "We bring pets and people together. Support them by adopting and help them to have a home",
+    "button": "Find A Pet"
+  },
+  "petAdoption": {
+    "title0": "Pet Adoption Process",
+    "title1": "Our Great Team",
+
+    "adoptionProcessItems0": [
+      {
+        "id": 1,
+        "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+        "text": "Find Your Pet",
+        "firstDescription": "Search Easily",
+        "secondDescription": "Find Your New Friend"
+      },
+      {
+        "id": 2,
+        "img": "https://i.pinimg.com/736x/5f/80/85/5f80854fd1475958717a19e345695942.jpg",
+        "text": "Know Your Pet",
+        "firstDescription": "Check Our Little Cuties",
+        "secondDescription": "Get to Know Them"
+      },
+      {
+        "id": 3,
+        "img": "https://i.pinimg.com/736x/2e/23/d3/2e23d3827c8293c27cea544a8acbcd59.jpg",
+        "text": "Take Your Pet Home",
+        "firstDescription": "Fill Our Form",
+        "secondDescription": "Take Your Friend Home"
+      }
+    ],
+    "adoptionProcessItems1": []
+  },
+  "latestGuestsTitle": {
+    "title0": "Latest Guests",
+    "subTitle0": "Check Our Latest Friends 🐾",
+    "title1": "Latest Adoptions",
+    "subTitle1": "Check Our Latest Adopted Friends 🐾"
+  },
+  "latestGuest": {
+    "title": "Latest Guests",
+    "text": "Meet Our Latest Friends🐾",
+    "button0": "View",
+    "button1": "Close",
+    "modalName": "My name is",
+    "modalMe": "I am",
+    "latestAddedGuests": {
+      "title": "Latest Guests",
+      "latestGuestItems0": [
+        {
+          "id": 4,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Cookie",
+          "petAge": "2 years",
+          "petBreed": "Poodle"
+        },
+        {
+          "id": 5,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Alex",
+          "petAge": "5 years",
+          "petBreed": "Terrier"
+        },
+        {
+          "id": 6,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Sushi",
+          "petAge": "1 years",
+          "petBreed": "Maltese-Terrier"
+        },
+        {
+          "id": 7,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Bambi",
+          "petAge": "3 months",
+          "petBreed": "Golden Retriever"
+        },
+        {
+          "id": 8,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Noodle",
+          "petAge": "2 years",
+          "petBreed": "Pomeranian"
+        },
+        {
+          "id": 9,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Princess",
+          "petAge": "1 years",
+          "petBreed": "Chihuahua"
+        }
+      ],
+      "latestGuestsItems1": [
+        {
+          "id": 4,
+
+          "buttonText": "View",
+          "petName": "Alex. I am adopted last week. And I am so happy with my new family",
+          "petAge": "2 years",
+          "petBreed": "Poddle"
+        },
+        {
+          "id": 5,
+
+          "buttonText": "View",
+          "petName": "Carol. I am adopted last week. I now have a new loving family",
+          "petAge": "5 years",
+          "petBreed": "Terrier"
+        },
+        {
+          "id": 6,
+
+          "buttonText": "View",
+          "petName": "Sushi. I am adopted 2 weeks ago. My new family are the best",
+          "petAge": "1 years",
+          "petBreed": "Rottweiler"
+        },
+        {
+          "id": 7,
+
+          "buttonText": "View",
+          "petName": "Bambi. I am adopted 3 weeks ago. And I am so happy with my new family. I play games all the time with them",
+          "petAge": "3 months",
+          "petBreed": "Golden Retriever"
+        },
+        {
+          "id": 8,
+
+          "buttonText": "View",
+          "petName": "Noodle. I am adopted 5 days ago from a shelter. And I am so happy with my new family. They have the best food",
+          "petAge": "2 years",
+          "petBreed": "Tabby Cat"
+        },
+        {
+          "id": 9,
+
+          "buttonText": "View",
+          "petName": "Princess. I am adopted from a shelter last week. My new family cares me a lot",
+          "petAge": "1 years",
+          "petBreed": "Tabby Cat"
+        }
+      ]
+    }
+  },
+  "latestAdoption": {
+    "title": "Latest Adoptions",
+    "text": "Check Our Latest Adopted Friends 🐾",
+    "button0": "View",
+    "button1": "Close"
+  },
+  "team": {
+    "title": "Meet Our Great Team",
+    "job": "FrontEnd Engineer"
+  },
+  "checklist": [
+    {
+      "text": "Because adopting a new cat comes with a lot of change for both cat and cat parent, we’ve compiled a checklist to help make the transition as smooth as possible.",
+      "title": "Cat Adoption",
+      "link": "https://www.petfinder.com/pet-adoption/cat-adoption/cat-adoption-checklist/",
+      "id": "catAdoption"
+    },
+    {
+      "text": "Congratulations on your new, furry, purry bundle of joy! Now that your kitten is settling into their new home, one of your first priorities is likely to be litter box training.",
+      "title": "Cat Training",
+      "link": "https://www.petfinder.com/cats/cat-behavior-and-training/",
+      "id": "catTraining"
+    },
+    {
+      "text": "Every month you should “play vet” and conduct a careful check up on your cat to make sure that all is well. By following our checklist, you have the opportunity to spot any unusual signs.",
+      "title": "Cat Problems",
+      "link": "https://www.purina.com.au/kittens/health/checklist#.YSdaGI4zZPY",
+      "id": "catProblem"
+    },
+    {
+      "text": "You are embarking on a wonderful and rewarding relationship. We’ve compiled a checklist to help make the transition as smooth as possible.",
+      "title": "Dog Adoption",
+      "link": "https://www.petfinder.com/pet-adoption/dog-adoption/",
+      "id": "dogAdoption"
+    },
+    {
+      "text": "Dogs, young or old, love to learn. Include a reward and these four basic rules and you’ve got a recipe for successful dog tricks!",
+      "title": "Dog Training",
+      "link": "https://www.petfinder.com/dogs/dog-training/",
+      "id": "dogTraining"
+    },
+    {
+      "text": "To help prevent health concerns in your dog, it’s a good idea to get into the habit of checking your dog regularly for any changes or signs of illness.",
+      "title": "Dog Problems",
+      "link": "https://www.purina.com.au/dogs/health/checklist#.YSdXnY4zZPY",
+      "id": "dogProblem"
+    }
+  ],
+  "checklistButton": "Read More",
+  "contactUs": {
+    "title": "Get In Touch",
+    "text": "Contact Us On the Social Media Or Send Us a Message",
+    "button": "Send",
+    "placeholder0": "Email",
+    "placeholder1": "Message"
+  },
+  "signUpModal": {
+    "title": "Create Account",
+    "text": "Or use your email to create new account",
+    "button": "Submit",
+    "placeholder0": "Your Name",
+    "placeholder1": "Your Mail",
+    "placeholder2": "Your Password"
+  },
+  "loginModal": {
+    "title": "Login Form",
+    "text": "Or use your account to Login",
+    "button": "Submit",
+    "placeholder0": "Email",
+    "placeholder1": "Password"
+  },
+  "footer": {
+    "title0": "Menu",
+    "title1": "LATEST POSTS",
+    "subTitleHome": "Home",
+    "subTitleAbout": "About",
+    "subTitleFindPet": "Find A Pet",
+    "subTitleBlog": "Blog",
+    "subTitleContact": "Contact Us",
+    "subTitleResources": "Resources",
+    "allRights": "Copyright © All rights reserved for Re:Coded",
+    "blogText0": "Here’s How to Keep Job Stress Out of Your Home Life",
+    "blogText1": "Does your job require you to sit for 40 or more hours per week?"
+  },
+  "searchPage": {
+    "option0": "Select Location",
+    "option1": "Select Age",
+    "option2": "Select Breed",
+    "option3": "Select Gender",
+    "button": "Adopt",
+    "gender": [{ "gender0": "Female" }, { "gender0": "Male" }],
+    "notFound": "No Items Were Found Matching Your Criteria",
+    "title": "Adopt Your New Pet"
+  },
+  "personalPage": {
+    "title0": "Personal Details",
+    "title1": "Address",
+    "subTitle0": "Full Name",
+    "subTitle1": "Email",
+    "subTitle2": "Phone",
+    "subTitle3": "Bio",
+    "subTitle4": "City",
+    "subTitle5": "State",
+    "subTitle6": "Street",
+    "subTitle7": "Zip Code",
+    "placeholder0": "Name",
+    "placeholder1": "Email",
+    "placeholder2": "Phone Number",
+    "placeholder3": "Bio",
+    "placeholder4": "City",
+    "placeholder5": "State",
+    "placeholder6": "Street",
+    "placeholder7": "Zip Code",
+    "dropdown": "Select a City",
+    "button": "Cancel"
+  },
+  "adoptionForm": {
+    "title": "Adoption Form",
+    "subTitle": "Fill Our Form for Adoption Process",
+    "placeholder0": "Your First Name",
+    "placeholder1": "Your Last Name",
+    "placeholder2": "Your Email Address",
+    "placeholder3": "The Name of the Pet You Are Adopting",
+    "placeholder4": "The Breed of the Pet You Are Adopting",
+    "placeholder5": "Your City",
+    "button0": "Submit",
+    "button1": "Close"
+  }
+}

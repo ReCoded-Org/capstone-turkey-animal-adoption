@@ -10,9 +10,7 @@ exports[`renders correctly 1`] = `
     <div
       className="col-sm-12"
     >
-      <h1>
-        Pet Adoption Process
-      </h1>
+      <h1 />
       <div
         className="mt-5 items row"
       >
@@ -45,7 +43,7 @@ exports[`renders correctly 1`] = `
             src="https://i.pinimg.com/736x/5f/80/85/5f80854fd1475958717a19e345695942.jpg"
           />
           <p>
-            Find Your Pet
+            Know Your Pet
           </p>
           <span>
             Check Our Little Cuties
@@ -65,7 +63,7 @@ exports[`renders correctly 1`] = `
             src="https://i.pinimg.com/736x/2e/23/d3/2e23d3827c8293c27cea544a8acbcd59.jpg"
           />
           <p>
-            Find Your Pet
+            Take Your Pet Home
           </p>
           <span>
             Fill Our Form

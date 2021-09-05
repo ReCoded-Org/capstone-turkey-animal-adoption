@@ -9,6 +9,7 @@ import Instagram from "../../images/Instagram.png";
 import Twitter from "../../images/Twitter.png";
 import Facebook from "../../images/Facebook.png";
 import * as emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 const contactValidation = {
   from_email: Yup.string().email("Invalid email address").required("Required"),
@@ -38,7 +39,7 @@ const ContactUs = () => {
         });
     },
   });
-
+  const { t } = useTranslation();
   return (
     <Container>
       <Row className="contactRow">
@@ -54,11 +55,8 @@ const ContactUs = () => {
           ></iframe>
         </Col>
         <Col lg={6} className="contactUs">
-          <h1>Get In Touch</h1>
-          <p>
-            Contact Us On the Social Media <br />
-            Or Send Us a Message
-          </p>
+          <h1>{t("contactUs.title")}</h1>
+          <p>{t("contactUs.text")}</p>
           <div className="mb-5">
             <img src={Vk} alt="vkLogo" className="mr-2" />
             <img src={Pinterest} alt="pinterestLogo" className="mr-2" />
@@ -75,7 +73,7 @@ const ContactUs = () => {
               id="from_email"
               name="from_email"
               type="email"
-              placeholder="Email"
+              placeholder={t("contactUs.placeholder0")}
               onChange={formik.handleChange}
               value={formik.values.from_email}
             />
@@ -88,12 +86,12 @@ const ContactUs = () => {
               name="message"
               col="50"
               row="50"
-              placeholder="Message"
+              placeholder={t("contactUs.placeholder1")}
               onChange={formik.handleChange}
               value={formik.values.message}
             />
             <Button className="contactBtn shadow-none" type="submit">
-              Send
+              {t("contactUs.button")}
             </Button>
           </form>
         </Col>

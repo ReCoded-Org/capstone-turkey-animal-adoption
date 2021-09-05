@@ -4,9 +4,12 @@ import "./Search.css";
 import { BsGeoAlt } from "react-icons/bs";
 import { FaPaw } from "react-icons/fa";
 import AdoptionFormModal from "./AdoptionFormModal";
+import { useTranslation } from "react-i18next";
 
 const SearchResults = ({ img, id, location, age, breed, gender, name }) => {
   const [modalShow, setModalShow] = useState(false);
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -25,7 +28,7 @@ const SearchResults = ({ img, id, location, age, breed, gender, name }) => {
                   onClick={() => setModalShow(true)}
                 >
                   <FaPaw className="pawIcon" />
-                  Adopt
+                  {t("searchPage.button")}
                 </Button>
               </div>
               <div className="secondDiv">
