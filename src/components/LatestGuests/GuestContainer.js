@@ -2,16 +2,20 @@ import React from "react";
 import GuestItems from "./GuestItems";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import "./LatestGuests.css";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
-const GuestContainer = ({ latestAddedGuests }) => {
+const GuestContainer = ({ latestAddedGuests, latestTitle, latestSubtitle }) => {
+  //const { t } = useTranslation();
+
   return (
     <Container>
       <Row className="guestsContainer py-5">
         <Col sm={12}>
           {latestAddedGuests && (
             <>
-              <h1>{latestAddedGuests.latestGuestsTitle.title}</h1>
-              <h6>{latestAddedGuests.latestGuestsTitle.subTitle}</h6>
+              <h1>{latestTitle}</h1>
+              <h6>{latestSubtitle}</h6>
               <Row className="mt-5 carouselItems">
                 {latestAddedGuests.latestGuestsItems.map((guest) => (
                   <GuestItems

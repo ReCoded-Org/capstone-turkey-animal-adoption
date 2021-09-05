@@ -56,7 +56,7 @@ exports[`Persnal details renders correctly 1`] = `
             <h3
               className="newColor"
             >
-              Personal Details
+              personalPage.title0
             </h3>
             <div
               className="row d-flex justify-content-around mt-4 "
@@ -65,7 +65,7 @@ exports[`Persnal details renders correctly 1`] = `
                 <label
                   className="newColor"
                 >
-                  FullName
+                  personalPage.subTitle0
                 </label>
                 <br />
                 <input
@@ -73,7 +73,7 @@ exports[`Persnal details renders correctly 1`] = `
                   name="fullname"
                   onBlur={[Function]}
                   onChange={[Function]}
-                  placeholder="Full Name"
+                  placeholder="personalPage.placeholder0"
                   type="text"
                   value=""
                 />
@@ -85,14 +85,14 @@ exports[`Persnal details renders correctly 1`] = `
                 <label
                   className="newColor"
                 >
-                  Email
+                  personalPage.subTitle1
                 </label>
                 <br />
                 <input
                   className="shadow rounded inputStyle"
                   disabled={true}
                   name="email"
-                  placeholder="Email"
+                  placeholder="personalPage.placeholder1"
                   type="Email"
                   value="yazjiamanr92@gmail.com"
                 />
@@ -105,7 +105,7 @@ exports[`Persnal details renders correctly 1`] = `
                 <label
                   className="newColor"
                 >
-                  Phone
+                  personalPage.subTitle2
                 </label>
                 <br />
                 <input
@@ -113,7 +113,7 @@ exports[`Persnal details renders correctly 1`] = `
                   name="phone"
                   onBlur={[Function]}
                   onChange={[Function]}
-                  placeholder="Phone Number"
+                  placeholder="personalPage.placeholder2"
                   type="Number"
                   value=""
                 />
@@ -125,7 +125,7 @@ exports[`Persnal details renders correctly 1`] = `
                 <label
                   className="newColor"
                 >
-                  Bio
+                  personalPage.subTitle3
                 </label>
                 <br />
                 <textarea
@@ -133,7 +133,7 @@ exports[`Persnal details renders correctly 1`] = `
                   name="bio"
                   onBlur={[Function]}
                   onChange={[Function]}
-                  placeholder="Bio"
+                  placeholder="personalPage.placeholder3"
                   value=""
                 />
                 <div
@@ -147,7 +147,7 @@ exports[`Persnal details renders correctly 1`] = `
               <h3
                 className="newColor"
               >
-                Address
+                personalPage.title1
               </h3>
               <div
                 className="row d-flex justify-content-around mt-4 "
@@ -156,7 +156,7 @@ exports[`Persnal details renders correctly 1`] = `
                   <label
                     className="newColor"
                   >
-                    City
+                    personalPage.subTitle4
                   </label>
                   <br />
                   <select
@@ -171,7 +171,7 @@ exports[`Persnal details renders correctly 1`] = `
                     <option
                       value=""
                     >
-                      Select a City
+                      personalPage.dropdown
                     </option>
                     <option
                       value="city.name"
@@ -587,7 +587,7 @@ exports[`Persnal details renders correctly 1`] = `
                   <label
                     className="newColor"
                   >
-                    State
+                    personalPage.subTitle5
                   </label>
                   <br />
                   <input
@@ -595,7 +595,7 @@ exports[`Persnal details renders correctly 1`] = `
                     name="state"
                     onBlur={[Function]}
                     onChange={[Function]}
-                    placeholder="State Name"
+                    placeholder="personalPage.placeholder5"
                     type="text"
                     value=""
                   />
@@ -611,7 +611,7 @@ exports[`Persnal details renders correctly 1`] = `
                   <label
                     className="newColor"
                   >
-                    Street
+                    personalPage.subTitle6
                   </label>
                   <br />
                   <input
@@ -619,7 +619,7 @@ exports[`Persnal details renders correctly 1`] = `
                     name="street"
                     onBlur={[Function]}
                     onChange={[Function]}
-                    placeholder="Street"
+                    placeholder="personalPage.placeholder6"
                     type="text"
                     value=""
                   />
@@ -631,7 +631,7 @@ exports[`Persnal details renders correctly 1`] = `
                   <label
                     className="newColor"
                   >
-                    Zip Code
+                    personalPage.subTitle7
                   </label>
                   <br />
                   <input
@@ -639,7 +639,7 @@ exports[`Persnal details renders correctly 1`] = `
                     name="zip"
                     onBlur={[Function]}
                     onChange={[Function]}
-                    placeholder="Zip Code"
+                    placeholder="personalPage.placeholder7"
                     type="text"
                     value=""
                   />
@@ -659,7 +659,7 @@ exports[`Persnal details renders correctly 1`] = `
                 <button
                   className="m-2 button cancelBtn"
                 >
-                  Cancel
+                  personalPage.button
                    
                 </button>
               </div>

@@ -10,9 +10,7 @@ exports[`renders correctly 1`] = `
     <div
       className="col-sm-12"
     >
-      <h1>
-        Pet Adoption Process
-      </h1>
+      <h1 />
       <div
         className="mt-5 items row"
       >

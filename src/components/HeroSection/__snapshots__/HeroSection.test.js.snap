@@ -31,7 +31,7 @@ exports[`renders correctly 1`] = `
             className="buttonLogo"
             src="buttonlogo.png"
           />
-          Find A Pet
+          heroSectionHome.button
         </button>
       </a>
     </div>

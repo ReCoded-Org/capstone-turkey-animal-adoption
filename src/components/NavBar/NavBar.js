@@ -9,6 +9,8 @@ import { useDispatch } from "react-redux";
 import { logout } from "../../helpers/auth";
 import { LOG_OUT, SIGN_IN } from "../../store/actions/actionConst";
 import SignUpModal from "../SignUpModal/SignUpModal";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 import { db, app } from "../../firebase";
 
 function NavBar() {
@@ -55,6 +57,8 @@ function NavBar() {
     });
   }, []);
 
+  const { t } = useTranslation();
+
   return (
     <>
       <Navbar variant="light" expand="lg" className="bgLight">
@@ -72,30 +76,37 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <NavLink to="/about" className="nav-link navLink">
-              About
+              {t("navbar.headers.header0")}
             </NavLink>
             <NavLink to="/blog" className="nav-link navLink">
-              Blog
+              {t("navbar.headers.header1")}
             </NavLink>
             <NavLink to="/contact" className="nav-link navLink">
-              Contact
+              {t("navbar.headers.header2")}
             </NavLink>
             <NavLink to="/resources" className="nav-link navLink">
-              Resources
+              {t("navbar.headers.header3")}
             </NavLink>
           </Nav>
           {!user && loading && (
             <div>
-              <Button onClick={() => isSignupShown(true)}>SignUp</Button>
+              <Button onClick={() => isSignupShown(true)}>
+                {t("navbar.button.button0")}
+              </Button>
               <Button onClick={() => isLoginShown(true)} className="ml-2">
-                login
+                {t("navbar.button.button1")}
               </Button>
             </div>
           )}
-          <Form.Control as="select" className="w-auto language">
-            <option value="English">English</option>
-            <option value="Arabic">Arabic</option>
-            <option value="Turkish">Turkish</option>
+          <Form.Control
+            onChange={(e) => {
+              i18next.changeLanguage(e.target.value);
+            }}
+            as="select"
+            className="w-auto language"
+          >
+            <option value="en">{t("navbar.languages.lang0")}</option>
+            <option value="tr">{t("navbar.languages.lang1")}</option>
           </Form.Control>
           {user && (
             <Dropdown>

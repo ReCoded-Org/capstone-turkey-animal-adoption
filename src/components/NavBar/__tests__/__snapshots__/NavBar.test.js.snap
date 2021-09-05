@@ -48,7 +48,7 @@ exports[`NavBar renders correctly 1`] = `
         href="/about"
         onClick={[Function]}
       >
-        About
+        navbar.headers.header0
       </a>
       <a
         aria-current={null}
@@ -56,7 +56,7 @@ exports[`NavBar renders correctly 1`] = `
         href="/blog"
         onClick={[Function]}
       >
-        Blog
+        navbar.headers.header1
       </a>
       <a
         aria-current={null}
@@ -64,7 +64,7 @@ exports[`NavBar renders correctly 1`] = `
         href="/contact"
         onClick={[Function]}
       >
-        Contact
+        navbar.headers.header2
       </a>
       <a
         aria-current={null}
@@ -72,26 +72,22 @@ exports[`NavBar renders correctly 1`] = `
         href="/resources"
         onClick={[Function]}
       >
-        Resources
+        navbar.headers.header3
       </a>
     </div>
     <select
       className="w-auto language form-control"
+      onChange={[Function]}
     >
       <option
-        value="English"
+        value="en"
       >
-        English
+        navbar.languages.lang0
       </option>
       <option
-        value="Arabic"
+        value="tr"
       >
-        Arabic
-      </option>
-      <option
-        value="Turkish"
-      >
-        Turkish
+        navbar.languages.lang1
       </option>
     </select>
   </div>
