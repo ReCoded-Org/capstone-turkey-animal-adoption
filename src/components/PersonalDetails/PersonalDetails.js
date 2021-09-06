@@ -53,7 +53,7 @@ const PersonalDetails = () => {
   };
 
   useEffect(() => {
-    fetchUserName();
+    if(user) fetchUserName();
   }, [user]);
 
   return (
@@ -132,27 +132,6 @@ const PersonalDetails = () => {
                       <Form>
                         <h3 className="newColor">Personal Details</h3>
                         <div className="row d-flex justify-content-around mt-4">
-                          {/* <div>
-                            <Field
-                              placeholder="Full Name"
-                              type="text"
-                              name="fullname"
-                              disabled
-                              className="fullname shadow inputStyle"
-                            />
-                            <div className="error">
-                              <ErrorMessage name="fullname" />
-                            </div>
-                          </div> */}
-                          {/* <div>
-                            <input
-                              placeholder="Email"
-                              type="email"
-                              name="email"
-                              disabled
-                              className="fullname shadow inputStyle"
-                            />
-                          </div> */}
                         </div>
                         <div className="row d-flex justify-content-around mt-4">
                           <div>
