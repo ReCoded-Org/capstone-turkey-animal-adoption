@@ -9,32 +9,36 @@ label.newColor {
   font-weight: bold;
 }
 
-p,
-.email {
+.profileInfo {
   color: #777777;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.email {
-  font-size: 13px;
-  margin-top: -2px;
+.profileInfo span {
+  font-style: normal;
+  color: #979797;
 }
 
 .avatar {
   border-radius: 50%;
   background: #999;
+  display: flex;
+  margin: 0 auto;
 }
 
 .inputStyle {
   border: 0.5px solid;
   color: #444444;
-  border: 1px solid #ff5555;
+  border: 2px solid #ff7777;
   width: 190px;
-  height: 30px;
+  height: 40px;
+  padding-left: 0.7rem;
+  border-radius: 1.5rem;
 }
 
-.inputStyle:disabled {
-  background-color: #e9ecef;
-  opacity: 1;
+.inputStyle:focus {
+  outline: none;
 }
 
 .inputStyle::placeholder {
@@ -42,11 +46,19 @@ p,
 }
 
 textarea.inputStyle {
-  height: 50px;
+  height: 100px;
+  padding-top: 0.5rem;
+  resize: none;
+}
+
+#profilePic {
+  width: 100%;
+  background-color: #96e8f0;
+  border-radius: 0 1rem 1rem 0;
 }
 
 .button {
-  background: #3f6487;
+  background: #ff7777;
   color: white;
   width: 200px;
   height: 40px;
@@ -54,24 +66,44 @@ textarea.inputStyle {
   border: 0;
 }
 
-.cancelBtn {
-  background: #777777;
+.inputStyle:disabled {
+  background-color: #e9ecef;
+  opacity: 1;
 }
 
 .mainContainer {
-  background-color: #e5e5e5;
+  background-color: #e9ecef;
+  padding: 3rem;
 }
 
 .bgWhite {
-  background-color: white;
+  background-color: #ffffff;
+  text-align: start;
+}
+
+.personelInfo {
+  padding: 6rem 3rem;
 }
 
 .fullHeight {
   height: 100%;
+  padding: 6.55rem 3rem 3rem 3rem;
+  font-size: 18px;
 }
 
 .profile .error {
   color: #ff5555;
   font-size: 12px;
   margin-top: 2px;
+}
+
+.bgWhite,
+.formSection {
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .inputStyle {
+    margin-bottom: 1rem;
+  }
 }

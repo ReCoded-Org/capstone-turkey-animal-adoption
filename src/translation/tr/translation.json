@@ -254,7 +254,13 @@
     "placeholder6": "Sokak",
     "placeholder7": "Posta Kodunuz",
     "dropdown": "Şehir Şeç",
-    "button": "İptal Et"
+    "button0": "Güncelle",
+    "button1": "İptal Et",
+    "sideText0": "Şehir",
+    "sideText1": "Bölge",
+    "sideText2": "Sokak",
+    "sideText3": "Posta Kodu",
+    "alert0": "Profiliniz Güncellendi"
   },
   "adoptionForm": {
     "title": "Sahiplenme Formu",

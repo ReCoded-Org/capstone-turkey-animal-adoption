@@ -305,7 +305,13 @@
     "placeholder6": "Street",
     "placeholder7": "Zip Code",
     "dropdown": "Select a City",
-    "button": "Cancel"
+    "button0": "Update",
+    "button1": "Cancel",
+    "sideText0": "City",
+    "sideText1": "State",
+    "sideText2": "Street",
+    "sideText3": "Zip",
+    "alert0": "Your profile has been updated"
   },
   "adoptionForm": {
     "title": "Adoption Form",
