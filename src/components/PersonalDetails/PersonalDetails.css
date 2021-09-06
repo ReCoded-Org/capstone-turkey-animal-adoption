@@ -17,7 +17,7 @@ label.newColor {
 
 .profileInfo span {
   font-style: normal;
-  color:  #979797;
+  color: #979797;
 }
 
 .avatar {
@@ -33,7 +33,7 @@ label.newColor {
   border: 2px solid #ff7777;
   width: 190px;
   height: 40px;
-  padding-left: .7rem;
+  padding-left: 0.7rem;
   border-radius: 1.5rem;
 }
 
@@ -47,13 +47,13 @@ label.newColor {
 
 textarea.inputStyle {
   height: 100px;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   resize: none;
 }
 
 #profilePic {
   width: 100%;
-  background-color: #96E8F0;
+  background-color: #96e8f0;
   border-radius: 0 1rem 1rem 0;
 }
 
@@ -72,7 +72,6 @@ textarea.inputStyle {
 }
 
 .mainContainer {
-  /* background: url("https://i.pinimg.com/736x/3e/74/30/3e7430bab993954bbde7d61538f530a3.jpg"); */
   background-color: #e9ecef;
   padding: 3rem;
 }
@@ -88,7 +87,8 @@ textarea.inputStyle {
 
 .fullHeight {
   height: 100%;
-  padding: 3rem;
+  padding: 6.55rem 3rem 3rem 3rem;
+  font-size: 18px;
 }
 
 .profile .error {
@@ -102,7 +102,7 @@ textarea.inputStyle {
   border-radius: 1rem;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .inputStyle {
     margin-bottom: 1rem;
   }

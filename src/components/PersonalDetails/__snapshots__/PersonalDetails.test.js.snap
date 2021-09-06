@@ -14,39 +14,85 @@ exports[`Persnal details renders correctly 1`] = `
         className="col-lg-4 col-md-12"
       >
         <div
-          class="p-5 shadow-lg bgWhite fullHeight"
+          class="bgWhite fullHeight"
         >
-          <img
-            alt="userPhoto"
-            className="align-items-center mb-4 avatar"
-            height="120"
-            src="person.png"
-            width="120"
-          />
           <h5
-            className="align-items-center mb-2 text-uppercase newColor"
+            className="mb-2 text-uppercase newColor"
           >
-            Mohammed Manar Yazji
+            
           </h5>
           <p
-            className="align-items-center  email"
+            className="newColor"
           >
-            yazjiamanr92@gmail.com
+            
+          </p>
+          <p
+            className="profileInfo"
+          >
+            Tel: 
+            
+            <span>
+              
+            </span>
+          </p>
+          <p
+            className="profileInfo"
+          >
+            personalPage.sideText0
+             : 
+            
+            <span>
+              
+            </span>
+          </p>
+          <p
+            className="profileInfo"
+          >
+            personalPage.sideText1
+             : 
+            
+            <span>
+              
+            </span>
+          </p>
+          <p
+            className="profileInfo"
+          >
+            personalPage.sideText2
+             : 
+            
+            <span>
+              
+            </span>
+          </p>
+          <p
+            className="profileInfo"
+          >
+            personalPage.sideText3
+             : 
+            
+            <span>
+              
+            </span>
           </p>
           
           <p
-            className="text-center"
+            className="profileInfo"
           >
+            Bio: 
             
+            <span>
+              
+            </span>
           </p>
         </div>
       </div>
       <div
-        className="mt-lg-0 mt-5 col-lg-8 col-md-12"
+        className="mt-lg-0 mt-5 formSection col-lg-8 col-md-12"
       >
         <div
           align="left"
-          className="p-5 shadow-lg bgWhite"
+          className="bgWhite personelInfo"
         >
           <form
             action="#"
@@ -59,62 +105,19 @@ exports[`Persnal details renders correctly 1`] = `
               personalPage.title0
             </h3>
             <div
-              className="row d-flex justify-content-around mt-4 "
-            >
-              <div>
-                <label
-                  className="newColor"
-                >
-                  personalPage.subTitle0
-                </label>
-                <br />
-                <input
-                  className="shadow rounded inputStyle"
-                  name="fullname"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  placeholder="personalPage.placeholder0"
-                  type="text"
-                  value=""
-                />
-                <div
-                  className="error"
-                />
-              </div>
-              <div>
-                <label
-                  className="newColor"
-                >
-                  personalPage.subTitle1
-                </label>
-                <br />
-                <input
-                  className="shadow rounded inputStyle"
-                  disabled={true}
-                  name="email"
-                  placeholder="personalPage.placeholder1"
-                  type="Email"
-                  value="yazjiamanr92@gmail.com"
-                />
-              </div>
-            </div>
+              className="row d-flex justify-content-around mt-4"
+            />
             <div
               className="row d-flex justify-content-around mt-4"
             >
               <div>
-                <label
-                  className="newColor"
-                >
-                  personalPage.subTitle2
-                </label>
-                <br />
                 <input
-                  className="shadow rounded inputStyle"
+                  className="shadow inputStyle"
                   name="phone"
                   onBlur={[Function]}
                   onChange={[Function]}
                   placeholder="personalPage.placeholder2"
-                  type="Number"
+                  type="tel"
                   value=""
                 />
                 <div
@@ -122,14 +125,8 @@ exports[`Persnal details renders correctly 1`] = `
                 />
               </div>
               <div>
-                <label
-                  className="newColor"
-                >
-                  personalPage.subTitle3
-                </label>
-                <br />
                 <textarea
-                  className="shadow rounded inputStyle"
+                  className="shadow inputStyle"
                   name="bio"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -153,14 +150,8 @@ exports[`Persnal details renders correctly 1`] = `
                 className="row d-flex justify-content-around mt-4 "
               >
                 <div>
-                  <label
-                    className="newColor"
-                  >
-                    personalPage.subTitle4
-                  </label>
-                  <br />
                   <select
-                    className="shadow rounded inputStyle"
+                    className="shadow inputStyle"
                     id="city"
                     multiple={false}
                     name="city"
@@ -174,407 +165,407 @@ exports[`Persnal details renders correctly 1`] = `
                       personalPage.dropdown
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       adana
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       adıyaman
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       afyonkarahisar
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       ağrı
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       amasya
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       ankara
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       antalya
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       artvin
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       aydın
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       balıkesir
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       bilecik
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       bingöl
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       bitlis
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       bolu
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       burdur
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       bursa
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       çanakkale
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       çankırı
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       çorum
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       denizli
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       diyarbakır
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       edirne
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       elazığ
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       erzincan
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       erzurum
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       eskişehir
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       gaziantep
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       giresun
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       gümüşhane
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       hakkari
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       hatay
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       ısparta
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       mersin
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       istanbul
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       izmir
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       kars
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       kastamonu
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       kayseri
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       kırklareli
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       kırşehir
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       kocaeli
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       konya
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       kütahya
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       malatya
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       manisa
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       kahramanmaraş
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       mardin
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       muğla
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       muş
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       nevşehir
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       niğde
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       ordu
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       rize
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       sakarya
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       samsun
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       siirt
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       sinop
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       sivas
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       tekirdağ
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       tokat
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       trabzon
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       tunceli
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       şanlıurfa
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       uşak
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       van
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       yozgat
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       zonguldak
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       aksaray
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       bayburt
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       karaman
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       kırıkkale
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       batman
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       şırnak
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       bartın
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       ardahan
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       ığdır
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       yalova
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       karabük
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       kilis
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       osmaniye
                     </option>
                     <option
-                      value="city.name"
+                      name="city"
                     >
                       düzce
                     </option>
@@ -584,14 +575,8 @@ exports[`Persnal details renders correctly 1`] = `
                   />
                 </div>
                 <div>
-                  <label
-                    className="newColor"
-                  >
-                    personalPage.subTitle5
-                  </label>
-                  <br />
                   <input
-                    className="shadow rounded inputStyle"
+                    className="shadow inputStyle"
                     name="state"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -608,14 +593,8 @@ exports[`Persnal details renders correctly 1`] = `
                 className="row d-flex justify-content-around mt-4 "
               >
                 <div>
-                  <label
-                    className="newColor"
-                  >
-                    personalPage.subTitle6
-                  </label>
-                  <br />
                   <input
-                    className="shadow rounded inputStyle"
+                    className="shadow inputStyle"
                     name="street"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -628,14 +607,8 @@ exports[`Persnal details renders correctly 1`] = `
                   />
                 </div>
                 <div>
-                  <label
-                    className="newColor"
-                  >
-                    personalPage.subTitle7
-                  </label>
-                  <br />
                   <input
-                    className="shadow rounded inputStyle"
+                    className="shadow inputStyle"
                     name="zip"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -651,15 +624,19 @@ exports[`Persnal details renders correctly 1`] = `
               <div
                 className="row d-flex mt-5 justify-content-center"
               >
-                <input
+                <button
                   className="m-2 button"
                   type="submit"
-                  value="Update"
-                />
+                >
+                  personalPage.button0
+                   
+                </button>
                 <button
                   className="m-2 button cancelBtn"
+                  onClick={[Function]}
+                  type="button"
                 >
-                  personalPage.button
+                  personalPage.button1
                    
                 </button>
               </div>

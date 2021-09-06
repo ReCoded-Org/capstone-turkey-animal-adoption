@@ -15,28 +15,22 @@ const PersonalDetails = () => {
   const user = useSelector((state) => state.user);
   const [fullname, setFullname] = useLocalStorage("fullname", "");
   const [email, setEmail] = useLocalStorage("email", "");
-  const [bio, setBio] = useLocalStorage("bio", "")
+  const [bio, setBio] = useLocalStorage("bio", "");
   const [phone, setPhone] = useLocalStorage("phone", "");
   const [city, setCity] = useLocalStorage("city", "");
   const [state, setState] = useLocalStorage("state", "");
   const [street, setStreet] = useLocalStorage("street", "");
   const [zip, setZip] = useLocalStorage("zip", "");
   const [alertShown, isAlertShown] = useState(false);
-  const [picture, setPicture] = useLocalStorage("picture", poodle);
- 
-  const onChangePicture = e => {
-    setPicture(URL.createObjectURL(e.target.files[0]));
-  };
 
   const clearInfo = () => {
-    setBio("")
-    setPhone("")
-    setCity("")
-    setState("")
-    setStreet("")
-    setZip("")
-    setPicture("");
-  }
+    setBio("");
+    setPhone("");
+    setCity("");
+    setState("");
+    setStreet("");
+    setZip("");
+  };
 
   const fetchUserName = async () => {
     try {
@@ -54,7 +48,7 @@ const PersonalDetails = () => {
   };
 
   useEffect(() => {
-    if(user) fetchUserName();
+    if (user) fetchUserName();
   }, [user]);
 
   const { t } = useTranslation();
@@ -65,45 +59,31 @@ const PersonalDetails = () => {
         <Row>
           <Col lg="4" md="12">
             <div class="bgWhite fullHeight">
-              <img
-                src={picture}
-                alt=""
-                width="120"
-                height="120"
-                className="align-items-center mb-4 avatar"
-              />
-              <input className="mb-5" id="profilePic" type="file" onChange={onChangePicture} />
-              <h5 className="mb-2 text-uppercase newColor">
-                {fullname}
-              </h5>
-              <p className="newColor">
-                {email}
-              </p>
+              <h5 className="mb-2 text-uppercase newColor">{fullname}</h5>
+              <p className="newColor">{email}</p>
               <p className="profileInfo">
-                Tel: {''}
+                Tel: {""}
                 <span>{phone}</span>
               </p>
               <p className="profileInfo">
-              {t("personalPage.sideText0")} : {''}
+                {t("personalPage.sideText0")} : {""}
                 <span>{city}</span>
               </p>
               <p className="profileInfo">
-              {t("personalPage.sideText1")} : {''}
+                {t("personalPage.sideText1")} : {""}
                 <span>{state}</span>
               </p>
               <p className="profileInfo">
-              {t("personalPage.sideText2")} : {''}
+                {t("personalPage.sideText2")} : {""}
                 <span>{street}</span>
               </p>
               <p className="profileInfo">
-              {t("personalPage.sideText3")} : {''}
+                {t("personalPage.sideText3")} : {""}
                 <span>{zip}</span>
               </p>
-              {bio && (
-                <h4 className="mb-2 mt-4 newColor">About</h4>
-              )}
+              {bio && <h4 className="mb-2 mt-4 newColor">About</h4>}
               <p className="profileInfo">
-                Bio: {''}
+                Bio: {""}
                 <span>{bio}</span>
               </p>
             </div>
@@ -118,14 +98,14 @@ const PersonalDetails = () => {
                 validationSchema={Yup.object(yupValidation)}
                 onSubmit={(values, { setSubmitting }) => {
                   isAlertShown(true);
-                  setFullname(values.fullname)
+                  setFullname(values.fullname);
                   setEmail(values.email);
-                  setBio(values.bio)
-                  setPhone(values.phone)
-                  setCity(values.city)
-                  setState(values.state)
-                  setStreet(values.street)
-                  setZip(values.zip)
+                  setBio(values.bio);
+                  setPhone(values.phone);
+                  setCity(values.city);
+                  setState(values.state);
+                  setStreet(values.street);
+                  setZip(values.zip);
                 }}
               >
                 {(props) => {
@@ -134,8 +114,7 @@ const PersonalDetails = () => {
                     <>
                       <Form>
                         <h3 className="newColor">{t("personalPage.title0")}</h3>
-                        <div className="row d-flex justify-content-around mt-4">
-                        </div>
+                        <div className="row d-flex justify-content-around mt-4"></div>
                         <div className="row d-flex justify-content-around mt-4">
                           <div>
                             <Field
@@ -161,7 +140,9 @@ const PersonalDetails = () => {
                           </div>
                         </div>
                         <div className="mt-4">
-                          <h3 className="newColor">{t("personalPage.title1")}</h3>
+                          <h3 className="newColor">
+                            {t("personalPage.title1")}
+                          </h3>
                           <div className="row d-flex justify-content-around mt-4 ">
                             <div>
                               <Field
@@ -171,7 +152,9 @@ const PersonalDetails = () => {
                                 multiple={false}
                                 className="shadow inputStyle"
                               >
-                                <option value="">{t("personalPage.dropdown")}</option>
+                                <option value="">
+                                  {t("personalPage.dropdown")}
+                                </option>
                                 {cities.map((city) => {
                                   return (
                                     <option name="city">{city.name}</option>
@@ -219,10 +202,7 @@ const PersonalDetails = () => {
                             </div>
                           </div>
                           <div className="row d-flex mt-5 justify-content-center">
-                            <button
-                              className="m-2 button"
-                              type="submit"
-                            >
+                            <button className="m-2 button" type="submit">
                               {t("personalPage.button0")}{" "}
                             </button>
                             <button
