@@ -8,7 +8,7 @@ exports[`renders Search correctly 1`] = `
     className="searchContainer py-5 row"
   >
     <h1>
-      Adopt Your New Pet
+      searchPage.title
     </h1>
     <div
       className="col-sm-12"
@@ -30,7 +30,7 @@ exports[`renders Search correctly 1`] = `
           <option
             value="Select Location"
           >
-            Select Location
+            searchPage.option0
           </option>
           <option>
             Istanbul
@@ -70,7 +70,7 @@ exports[`renders Search correctly 1`] = `
           <option
             value="Select Age"
           >
-            Select Age
+            searchPage.option1
           </option>
           <option>
             &lt;3
@@ -95,7 +95,7 @@ exports[`renders Search correctly 1`] = `
           <option
             value="Select Breed"
           >
-            Select Breed
+            searchPage.option2
           </option>
           <option>
             Poodle
@@ -116,7 +116,19 @@ exports[`renders Search correctly 1`] = `
             Tobby cat
           </option>
           <option>
-            Scottish
+            Scottish Fold
+          </option>
+          <option>
+            Labrador
+          </option>
+          <option>
+            Cavalier King
+          </option>
+          <option>
+            Border Collie
+          </option>
+          <option>
+            British Fold
           </option>
         </select>
         <label
@@ -132,7 +144,7 @@ exports[`renders Search correctly 1`] = `
           <option
             value="Select Gender"
           >
-            Select Gender
+            searchPage.option3
           </option>
           <option>
             Female
@@ -185,7 +197,7 @@ exports[`renders Search correctly 1`] = `
           >
             <img
               className="card-img-top"
-              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Cute-kittens-12929201-1600-1200.jpg/1200px-Cute-kittens-12929201-1600-1200.jpg"
             />
             <div
               className="card-body"
@@ -198,10 +210,10 @@ exports[`renders Search correctly 1`] = `
                   className="firstDiv"
                 >
                   <p>
-                    Poodle
+                    Cat
                   </p>
                   <p>
-                    Sushi
+                    BamBam
                   </p>
                   <button
                     className="shadow-none btn btn-primary"
@@ -229,7 +241,7 @@ exports[`renders Search correctly 1`] = `
                         d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
                       />
                     </svg>
-                    Adopt
+                    searchPage.button
                   </button>
                 </div>
                 <div
@@ -238,7 +250,7 @@ exports[`renders Search correctly 1`] = `
                   <p>
                     Female
                     , 
-                    5
+                    1
                   </p>
                   <p
                     className="mt-4"
@@ -284,7 +296,7 @@ exports[`renders Search correctly 1`] = `
           >
             <img
               className="card-img-top"
-              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+              src="https://static.toiimg.com/thumb/msid-74545402,width-1200,height-900,resizemode-4/.jpg"
             />
             <div
               className="card-body"
@@ -297,10 +309,10 @@ exports[`renders Search correctly 1`] = `
                   className="firstDiv"
                 >
                   <p>
-                    Terrier
+                    Cavalier King
                   </p>
                   <p>
-                    Sushi
+                    Luna
                   </p>
                   <button
                     className="shadow-none btn btn-primary"
@@ -328,7 +340,7 @@ exports[`renders Search correctly 1`] = `
                         d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
                       />
                     </svg>
-                    Adopt
+                    searchPage.button
                   </button>
                 </div>
                 <div
@@ -383,7 +395,7 @@ exports[`renders Search correctly 1`] = `
           >
             <img
               className="card-img-top"
-              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+              src="https://cms.qz.com/wp-content/uploads/2017/04/jairo-alzate-45522.jpg?quality=75&strip=all&w=1200&h=900&crop=1"
             />
             <div
               className="card-body"
@@ -396,10 +408,10 @@ exports[`renders Search correctly 1`] = `
                   className="firstDiv"
                 >
                   <p>
-                    Poodle
+                    Labrador
                   </p>
                   <p>
-                    Sushi
+                    Archie
                   </p>
                   <button
                     className="shadow-none btn btn-primary"
@@ -427,7 +439,7 @@ exports[`renders Search correctly 1`] = `
                         d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
                       />
                     </svg>
-                    Adopt
+                    searchPage.button
                   </button>
                 </div>
                 <div
@@ -436,7 +448,106 @@ exports[`renders Search correctly 1`] = `
                   <p>
                     Female
                     , 
-                    2
+                    1
+                  </p>
+                  <p
+                    className="mt-4"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height={25}
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 16 16"
+                      width={25}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                     
+                    Ankara
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="mb-5 cardCol col-lg-4"
+        >
+          <div
+            className="card"
+            style={
+              Object {
+                "width": "18rem",
+              }
+            }
+          >
+            <img
+              className="card-img-top"
+              src="https://i.guim.co.uk/img/media/5daa5947b3a736c6641804aeb6b6a34787b1c6f5/0_1380_2448_1469/master/2448.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=422f7813d76751ce8bdb3670b7247337"
+            />
+            <div
+              className="card-body"
+              id="modalBodySearch"
+            >
+              <div
+                id="cardText"
+              >
+                <div
+                  className="firstDiv"
+                >
+                  <p>
+                    Cat
+                  </p>
+                  <p>
+                    Leo
+                  </p>
+                  <button
+                    className="shadow-none btn btn-primary"
+                    disabled={false}
+                    id="adoptButton"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <svg
+                      className="pawIcon"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
+                      />
+                    </svg>
+                    searchPage.button
+                  </button>
+                </div>
+                <div
+                  className="secondDiv"
+                >
+                  <p>
+                    Female
+                    , 
+                    4
                   </p>
                   <p
                     className="mt-4"
@@ -482,7 +593,7 @@ exports[`renders Search correctly 1`] = `
           >
             <img
               className="card-img-top"
-              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+              src="https://images.theconversation.com/files/139139/original/image-20160926-2451-1h41430.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop"
             />
             <div
               className="card-body"
@@ -495,10 +606,10 @@ exports[`renders Search correctly 1`] = `
                   className="firstDiv"
                 >
                   <p>
-                    Poodle
+                    British Fold
                   </p>
                   <p>
-                    Sushi
+                    Dobby
                   </p>
                   <button
                     className="shadow-none btn btn-primary"
@@ -526,106 +637,7 @@ exports[`renders Search correctly 1`] = `
                         d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
                       />
                     </svg>
-                    Adopt
-                  </button>
-                </div>
-                <div
-                  className="secondDiv"
-                >
-                  <p>
-                    Female
-                    , 
-                    5
-                  </p>
-                  <p
-                    className="mt-4"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height={25}
-                      stroke="currentColor"
-                      strokeWidth="0"
-                      style={
-                        Object {
-                          "color": undefined,
-                        }
-                      }
-                      viewBox="0 0 16 16"
-                      width={25}
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
-                        fillRule="evenodd"
-                      />
-                    </svg>
-                     
-                    Istanbul
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mb-5 cardCol col-lg-4"
-        >
-          <div
-            className="card"
-            style={
-              Object {
-                "width": "18rem",
-              }
-            }
-          >
-            <img
-              className="card-img-top"
-              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
-            />
-            <div
-              className="card-body"
-              id="modalBodySearch"
-            >
-              <div
-                id="cardText"
-              >
-                <div
-                  className="firstDiv"
-                >
-                  <p>
-                    Rottweiler
-                  </p>
-                  <p>
-                    Sushi
-                  </p>
-                  <button
-                    className="shadow-none btn btn-primary"
-                    disabled={false}
-                    id="adoptButton"
-                    onClick={[Function]}
-                    type="button"
-                  >
-                    <svg
-                      className="pawIcon"
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      strokeWidth="0"
-                      style={
-                        Object {
-                          "color": undefined,
-                        }
-                      }
-                      viewBox="0 0 512 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
-                      />
-                    </svg>
-                    Adopt
+                    searchPage.button
                   </button>
                 </div>
                 <div
@@ -634,7 +646,7 @@ exports[`renders Search correctly 1`] = `
                   <p>
                     Male
                     , 
-                    2
+                    5
                   </p>
                   <p
                     className="mt-4"
@@ -680,7 +692,7 @@ exports[`renders Search correctly 1`] = `
           >
             <img
               className="card-img-top"
-              src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg"
+              src="https://images.theconversation.com/files/198140/original/file-20171207-5069-1gv51c.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop"
             />
             <div
               className="card-body"
@@ -693,10 +705,10 @@ exports[`renders Search correctly 1`] = `
                   className="firstDiv"
                 >
                   <p>
-                    Poodle
+                    Border Collie
                   </p>
                   <p>
-                    Sushi
+                    Max
                   </p>
                   <button
                     className="shadow-none btn btn-primary"
@@ -724,7 +736,7 @@ exports[`renders Search correctly 1`] = `
                         d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"
                       />
                     </svg>
-                    Adopt
+                    searchPage.button
                   </button>
                 </div>
                 <div
@@ -733,7 +745,7 @@ exports[`renders Search correctly 1`] = `
                   <p>
                     Male
                     , 
-                    4
+                    1
                   </p>
                   <p
                     className="mt-4"

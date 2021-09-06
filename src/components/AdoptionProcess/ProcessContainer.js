@@ -2,14 +2,14 @@ import React from "react";
 import ProcessItems from "./ProcessItems";
 import { Container, Row, Col } from "react-bootstrap";
 
-const ProcessContainer = ({ adoptionProcess }) => {
+const ProcessContainer = ({ adoptionProcess, adoptionTitle }) => {
   return (
     <Container>
       <Row className="adoptionContainer py-5">
         <Col sm={12}>
           {adoptionProcess && (
             <>
-              <h1>{adoptionProcess.adoptionProcessTitle}</h1>
+              <h1>{adoptionTitle}</h1>
               <Row className="mt-5 items">
                 {adoptionProcess.adoptionProcessItems.map((process) => (
                   <ProcessItems

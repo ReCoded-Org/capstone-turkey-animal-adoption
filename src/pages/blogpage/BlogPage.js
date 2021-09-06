@@ -1,28 +1,28 @@
 import React from "react";
 import HeroSection from "../../components/HeroSection/HeroSection";
-import contactUsCat from "../../images/contactUsCat.jpg";
-import ContactUs from "../../components/ContactUs/ContactUs";
+import blogPageDog from "../../images/blogPageDog.png";
+import Blog from "../../components/Blog/Blog";
 import { useTranslation } from "react-i18next";
 
 const dataOfHeroSection = {
-  img: `${contactUsCat}`,
+  img: `${blogPageDog}`,
   side: "left",
 };
 
-const AboutUs = () => {
+const BlogPage = () => {
   const { t } = useTranslation();
 
   return (
     <div>
       <HeroSection
         img={dataOfHeroSection.img}
-        title={t("heroSectionContact.title")}
-        text={t("heroSectionContact.text")}
+        title={t("heroSectionBlog.title")}
+        text={t("heroSectionBlog.text")}
         side={dataOfHeroSection.side}
       />
-      <ContactUs />
+      <Blog />
     </div>
   );
 };
 
-export default AboutUs;
+export default BlogPage;

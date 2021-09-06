@@ -13,7 +13,7 @@ export let adoptionProcess = {
       id: 2,
       img:
         "https://i.pinimg.com/736x/5f/80/85/5f80854fd1475958717a19e345695942.jpg",
-      text: "Find Your Pet",
+      text: "Know Your Pet",
       firstDescription: "Check Our Little Cuties",
       secondDescription: "Get to Know Them",
     },
@@ -21,7 +21,7 @@ export let adoptionProcess = {
       id: 3,
       img:
         "https://i.pinimg.com/736x/2e/23/d3/2e23d3827c8293c27cea544a8acbcd59.jpg",
-      text: "Find Your Pet",
+      text: "Take Your Pet Home",
       firstDescription: "Fill Our Form",
       secondDescription: "Take Your Friend Home",
     },

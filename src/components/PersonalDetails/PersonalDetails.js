@@ -9,6 +9,7 @@ import "./PersonalDetails.css";
 import { useSelector } from "react-redux";
 import { db } from "../../firebase";
 import { useLocalStorage } from "./useLocalStorage";
+import { useTranslation } from "react-i18next";
 
 const PersonalDetails = () => {
   const user = useSelector((state) => state.user);
@@ -22,7 +23,7 @@ const PersonalDetails = () => {
   const [zip, setZip] = useLocalStorage("zip", "");
   const [alertShown, isAlertShown] = useState(false);
   const [picture, setPicture] = useLocalStorage("picture", poodle);
-
+ 
   const onChangePicture = e => {
     setPicture(URL.createObjectURL(e.target.files[0]));
   };
@@ -34,7 +35,7 @@ const PersonalDetails = () => {
     setState("")
     setStreet("")
     setZip("")
-    setPicture(poodle);
+    setPicture("");
   }
 
   const fetchUserName = async () => {
@@ -56,6 +57,8 @@ const PersonalDetails = () => {
     if(user) fetchUserName();
   }, [user]);
 
+  const { t } = useTranslation();
+
   return (
     <Container fluid className="mainContainer profile">
       <Container className="pt-3 pb-4">
@@ -64,7 +67,7 @@ const PersonalDetails = () => {
             <div class="bgWhite fullHeight">
               <img
                 src={picture}
-                alt="userPhoto"
+                alt=""
                 width="120"
                 height="120"
                 className="align-items-center mb-4 avatar"
@@ -81,19 +84,19 @@ const PersonalDetails = () => {
                 <span>{phone}</span>
               </p>
               <p className="profileInfo">
-                City: {''}
+              {t("personalPage.sideText0")} : {''}
                 <span>{city}</span>
               </p>
               <p className="profileInfo">
-                State: {''}
+              {t("personalPage.sideText1")} : {''}
                 <span>{state}</span>
               </p>
               <p className="profileInfo">
-                Street: {''}
+              {t("personalPage.sideText2")} : {''}
                 <span>{street}</span>
               </p>
               <p className="profileInfo">
-                Zip: {''}
+              {t("personalPage.sideText3")} : {''}
                 <span>{zip}</span>
               </p>
               {bio && (
@@ -108,7 +111,7 @@ const PersonalDetails = () => {
           <Col lg="8" md="12" className="mt-lg-0 mt-5 formSection">
             <div className="bgWhite personelInfo" align="left">
               {alertShown && (
-                <Alert variant="success">Your profile has been updated</Alert>
+                <Alert variant="success">{t("personalPage.alert0")}</Alert>
               )}
               <Formik
                 initialValues={initialValues}
@@ -130,13 +133,13 @@ const PersonalDetails = () => {
                   return (
                     <>
                       <Form>
-                        <h3 className="newColor">Personal Details</h3>
+                        <h3 className="newColor">{t("personalPage.title0")}</h3>
                         <div className="row d-flex justify-content-around mt-4">
                         </div>
                         <div className="row d-flex justify-content-around mt-4">
                           <div>
                             <Field
-                              placeholder="Phone Number"
+                              placeholder={t("personalPage.placeholder2")}
                               type="tel"
                               name="phone"
                               className="shadow inputStyle"
@@ -147,7 +150,7 @@ const PersonalDetails = () => {
                           </div>
                           <div>
                             <Field
-                              placeholder="Bio"
+                              placeholder={t("personalPage.placeholder3")}
                               name="bio"
                               as="textarea"
                               className="shadow inputStyle"
@@ -158,7 +161,7 @@ const PersonalDetails = () => {
                           </div>
                         </div>
                         <div className="mt-4">
-                          <h3 className="newColor">Address</h3>
+                          <h3 className="newColor">{t("personalPage.title1")}</h3>
                           <div className="row d-flex justify-content-around mt-4 ">
                             <div>
                               <Field
@@ -168,7 +171,7 @@ const PersonalDetails = () => {
                                 multiple={false}
                                 className="shadow inputStyle"
                               >
-                                <option value="">Select a City</option>
+                                <option value="">{t("personalPage.dropdown")}</option>
                                 {cities.map((city) => {
                                   return (
                                     <option name="city">{city.name}</option>
@@ -181,7 +184,7 @@ const PersonalDetails = () => {
                             </div>
                             <div>
                               <Field
-                                placeholder="State Name"
+                                placeholder={t("personalPage.placeholder5")}
                                 type="text"
                                 name="state"
                                 className="shadow inputStyle"
@@ -194,7 +197,7 @@ const PersonalDetails = () => {
                           <div className="row d-flex justify-content-around mt-4 ">
                             <div>
                               <Field
-                                placeholder="Street"
+                                placeholder={t("personalPage.placeholder6")}
                                 type="text"
                                 name="street"
                                 className="shadow inputStyle"
@@ -205,7 +208,7 @@ const PersonalDetails = () => {
                             </div>
                             <div>
                               <Field
-                                placeholder="Zip Code"
+                                placeholder={t("personalPage.placeholder7")}
                                 type="text"
                                 name="zip"
                                 className="shadow inputStyle"
@@ -220,14 +223,14 @@ const PersonalDetails = () => {
                               className="m-2 button"
                               type="submit"
                             >
-                              Update
+                              {t("personalPage.button0")}{" "}
                             </button>
                             <button
                               className="m-2 button cancelBtn"
                               onClick={clearInfo}
                               type="button"
                             >
-                              Cancel
+                              {t("personalPage.button1")}{" "}
                             </button>
                           </div>
                         </div>

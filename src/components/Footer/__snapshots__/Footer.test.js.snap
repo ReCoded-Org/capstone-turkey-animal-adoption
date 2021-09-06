@@ -9,6 +9,7 @@ exports[`Footer renders correctly 1`] = `
   >
     <div
       className="row"
+      id="footerRow"
     >
       <div
         className="col-md-4"
@@ -47,14 +48,14 @@ exports[`Footer renders correctly 1`] = `
         <div
           className="pt-4 text-white"
         >
-          Copyright © All rights reserved for Re:Coded
+          footer.allRights
         </div>
       </div>
       <div
         className="col-md-4 pl-lg-5 pl-md-5 pl-0 mt-3"
       >
         <h4>
-          Menu
+          footer.title0
         </h4>
         <ul
           className="list-group"
@@ -69,7 +70,7 @@ exports[`Footer renders correctly 1`] = `
               onClick={[Function]}
               style={Object {}}
             >
-              Home
+              footer.subTitleHome
             </a>
           </li>
           <li
@@ -81,7 +82,7 @@ exports[`Footer renders correctly 1`] = `
               href="/about"
               onClick={[Function]}
             >
-              About
+              footer.subTitleAbout
             </a>
           </li>
           <li
@@ -93,7 +94,7 @@ exports[`Footer renders correctly 1`] = `
               href="/search"
               onClick={[Function]}
             >
-              Find A Pet
+              footer.subTitleFindPet
             </a>
           </li>
           <li
@@ -105,7 +106,7 @@ exports[`Footer renders correctly 1`] = `
               href="/blog"
               onClick={[Function]}
             >
-              Blog
+              footer.subTitleBlog
             </a>
           </li>
           <li
@@ -117,7 +118,7 @@ exports[`Footer renders correctly 1`] = `
               href="/contact"
               onClick={[Function]}
             >
-              Contact Us
+              footer.subTitleContact
             </a>
           </li>
           <li
@@ -129,7 +130,7 @@ exports[`Footer renders correctly 1`] = `
               href="/resources"
               onClick={[Function]}
             >
-              Resources
+              footer.subTitleResources
             </a>
           </li>
         </ul>
@@ -138,7 +139,7 @@ exports[`Footer renders correctly 1`] = `
         className="col-md-4  mt-3 pl-lg-5 pl-0"
       >
         <h4>
-          LATEST POSTS
+          footer.title1
         </h4>
         <ul
           className="list-group pb-2"
@@ -156,7 +157,7 @@ exports[`Footer renders correctly 1`] = `
             <li
               className="list-unstyled text-white "
             >
-              Lawyaw uses AI to help lawyers draft documents faster
+              footer.blogText0
             </li>
           </div>
           <div
@@ -172,12 +173,12 @@ exports[`Footer renders correctly 1`] = `
             <li
               className="list-unstyled text-white"
             >
-              Going against the grain, AngelPad kills its demo day
+              footer.blogText1
             </li>
           </div>
         </ul>
         <div
-          className="d-sm-flex justify-content-sm-center pt-2"
+          className="d-sm-flex justify-content-sm-center pt-2 footerLogos"
         >
           <div
             className="p-2"

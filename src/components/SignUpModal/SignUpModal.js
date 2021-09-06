@@ -13,6 +13,7 @@ import {
   signInWithFacebook,
   registerWithEmailAndPassword,
 } from "../../helpers/auth";
+import { useTranslation } from "react-i18next";
 
 function SignUpModal({ show, isModalShown }) {
   const [errorMsg, setErrorMsg] = useState(false);
@@ -46,6 +47,7 @@ function SignUpModal({ show, isModalShown }) {
       isModalShown(false);
     }
   };
+  const { t } = useTranslation();
 
   return (
     <Modal show={show} animation={false} size="lg" centered>
@@ -63,7 +65,7 @@ function SignUpModal({ show, isModalShown }) {
             <Col lg={6} className="bgCat"></Col>
             <Col lg={6} className="bgContent">
               <div align="center" className="innerContent">
-                <h1>Create Account</h1>
+                <h1>{t("signUpModal.title")}</h1>
                 {errorMsg && <Alert variant="danger">{errorMsg}</Alert>}
                 <ImGoogle3
                   size={27}
@@ -75,9 +77,7 @@ function SignUpModal({ show, isModalShown }) {
                   className="mb-4"
                   onClick={() => signWithSocial("facebook")}
                 />
-                <p className="note mb-4">
-                  Or use your email to create new account{" "}
-                </p>
+                <p className="note mb-4">{t("signUpModal.text")} </p>
                 <Formik
                   initialValues={{ email: "", password: "", name: "" }}
                   validationSchema={Yup.object({
@@ -98,7 +98,7 @@ function SignUpModal({ show, isModalShown }) {
                       name="name"
                       type="text"
                       className="form-control  mb-3"
-                      placeholder="Your Name"
+                      placeholder={t("signUpModal.placeholder0")}
                     />
                     <p className="error mb-1">
                       <ErrorMessage name="email" />
@@ -107,7 +107,7 @@ function SignUpModal({ show, isModalShown }) {
                       name="email"
                       type="email"
                       className="form-control mb-3"
-                      placeholder="Your Email"
+                      placeholder={t("signUpModal.placeholder1")}
                     />
                     <p className="error mb-1">
                       <ErrorMessage name="password" />
@@ -116,11 +116,11 @@ function SignUpModal({ show, isModalShown }) {
                       name="password"
                       type="password"
                       className="form-control  mb-5"
-                      placeholder="Your Password"
+                      placeholder={t("signUpModal.placeholder2")}
                     />
                     <button type="submit" className="btn btn-primary ">
                       <FaPaw className="pawIcon" />
-                      Submit
+                      {t("signUpModal.button")}
                     </button>
                   </Form>
                 </Formik>

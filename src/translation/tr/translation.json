@@ -1,0 +1,277 @@
+{
+  "navbar": {
+    "headers": {
+      "header0": "Hakkımızda",
+      "header1": "Blog",
+      "header2": "İletişim",
+      "header3": "Kaynaklar"
+    },
+    "button": {
+      "button0": "Kayıt Ol",
+      "button1": "Giriş Yap"
+    },
+    "languages": {
+      "lang0": "İngilizce",
+      "lang1": "Türkçe"
+    }
+  },
+  "heroSectionHome": {
+    "title": "Sahiplenelim",
+    "text": "Evlat edinmek isteyen insanlara yardım etmek isteyen kar amacı gütmeyen bir kuruluşuz",
+    "button": "Dost Bul"
+  },
+  "heroSectionAbout": {
+    "title": "Biz Kimiz",
+    "text": "Şu anda benim gibi hayvanlar yavru barınaklarında, araştırma laboratuvarlarında ve fabrika çiftliklerinde acı çekiyor. Bizi korumak için mücadeleye katılın",
+    "button": "Dost Bul"
+  },
+  "heroSectionResources": {
+    "title": "Sahiplenelim",
+    "text": "Evlat edinmek isteyen insanlara yardım etmek isteyen kar amacı gütmeyen bir kuruluşuz",
+    "button": "Dost Bul"
+  },
+  "heroSectionContact": {
+    "title": "Bize Ulaş",
+    "text": "Zor durumda olan hayvanları sahiplenmek için bizimle iletişime geçin. Formumuzu kolayca doldurarak evlat edinme sürecini başlatabilirsiniz",
+    "button": "Dostunu Bul"
+  },
+  "heroSectionBlog": {
+    "title": "Blog Sayfamıza Göz Atın",
+    "text": "Blog Sayfamızda faydalı bilgiler ve makaleler bulabilirsiniz. Yazarlarımızın en son makalelerine göz atın.",
+    "button": "Dostunu Bul"
+  },
+  "heroSectionSearch": {
+    "title": "Hemen Arayın",
+    "text": "Hayvanları ve insanları bir araya getiriyoruz. Evlat edinerek onları destekleyin ve bir yuvaya sahip olmalarına yardımcı olun",
+    "button": "Dostunu Bul"
+  },
+  "petAdoption": {
+    "title0": "Sahiplenme Aşaması",
+    "title1": "Takımımız",
+
+    "adoptionProcessItems0": [
+      {
+        "id": 1,
+        "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+        "text": "Bul",
+        "firstDescription": "Kolayca Ara",
+        "secondDescription": "Yeni Arkadaşını Bul"
+      },
+      {
+        "id": 2,
+        "img": "https://i.pinimg.com/736x/5f/80/85/5f80854fd1475958717a19e345695942.jpg",
+        "text": "Tanı",
+        "firstDescription": "Hemen Küçük Dostlarımıza Bak",
+        "secondDescription": "Onları Tanı"
+      },
+      {
+        "id": 3,
+        "img": "https://i.pinimg.com/736x/2e/23/d3/2e23d3827c8293c27cea544a8acbcd59.jpg",
+        "text": "Eve Götür",
+        "firstDescription": "Formu Doldur",
+        "secondDescription": "Dostunu Eve Götür"
+      }
+    ]
+  },
+  "latestGuestsTitle": {
+    "title0": "Son Misafirlerimiz",
+    "subTitle0": "Son Gelen Dostlarımızla Tanış🐾",
+    "title1": "Sahiplenilen Dostlarımız",
+    "subTitle1": "Son Sahiplenilen Dostlarımızla Tanış 🐾"
+  },
+  "latestGuest": {
+    "title": "Son Misafirlerimiz",
+    "text": "Son Gelen Dostlarımızla Tanış🐾",
+    "button0": "Göster",
+    "button1": "Kapat",
+    "modalName": "Benim adım",
+    "modalMe": "Ben",
+    "latestAddedGuests": {
+      "title": "Latest Guests",
+      "latestGuestItems0": [
+        {
+          "id": 4,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Cookie",
+          "petAge": "2 years",
+          "petBreed": "Poodle"
+        },
+        {
+          "id": 5,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Alex",
+          "petAge": "5 years",
+          "petBreed": "Terrier"
+        },
+        {
+          "id": 6,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Sushi",
+          "petAge": "1 year",
+          "petBreed": "Maltese-Terrier"
+        },
+        {
+          "id": 7,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Bambi",
+          "petAge": "3 months",
+          "petBreed": "Golden Retriever"
+        },
+        {
+          "id": 8,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Noodle",
+          "petAge": "2 years",
+          "petBreed": "Pomeranian"
+        },
+        {
+          "id": 9,
+          "img": "https://pyxis.nymag.com/v1/imgs/c9c/2c2/be941ee1a78099dc7f3efea9dab847e011-25-rescue-dog-lede.rsquare.w1200.jpg",
+          "buttonText": "View",
+          "petName": "Princess",
+          "petAge": "1 year",
+          "petBreed": "Chihuahua"
+        }
+      ]
+    }
+  },
+  "latestAdoption": {
+    "title": "Evlat Edililen Dostlarımız",
+    "text": "Yakında evlat edinilen dostlarımıza bak🐾",
+    "button0": "Göster",
+    "button1": "Kapat"
+  },
+  "team": {
+    "title": "Takımımızla Tanış",
+    "job": "Ön yüz Geliştirici"
+  },
+  "checklist": [
+    {
+      "text": "Yeni bir kediyi sahiplenmek hem kedi hem de kedi ebeveyni için pek çok değişikliği beraberinde getirdiğinden, geçişi olabildiğince sorunsuz hale getirmek için bir kontrol listesi hazırladık.",
+      "title": "Kedi Sahiplenme",
+      "link": "https://www.petfinder.com/pet-adoption/cat-adoption/cat-adoption-checklist/",
+      "id": "catAdoption"
+    },
+    {
+      "text": "Yeni, tüylü, saf neşe paketiniz için tebrikler! Yavru kediniz artık yeni evine yerleştiğine göre, ilk önceliklerinizden biri muhtemelen tuvalet eğitimi olacaktır.",
+      "title": "Kedi Eğitimi",
+      "link": "https://www.petfinder.com/cats/cat-behavior-and-training/",
+      "id": "catTraining"
+    },
+    {
+      "text": "Her ay doktorculuk oynamalı ve her şeyin yolunda olduğundan emin olmak için kedinizi dikkatli bir şekilde kontrol etmelisiniz. Kontrol listemizi takip etmek, tespitlerinize yardımcı olur.",
+      "title": "Kedi Kontrolleri",
+      "link": "https://www.purina.com.au/kittens/health/checklist#.YSdaGI4zZPY",
+      "id": "catProblem"
+    },
+    {
+      "text": "Harika ve ödüllendirici bir ilişkiye başlıyorsunuz. Geçişi olabildiğince sorunsuz hale getirmeye yardımcı olmak için bir kontrol listesi hazırladık.",
+      "title": "Köpek Sahiplenme",
+      "link": "https://www.petfinder.com/pet-adoption/dog-adoption/",
+      "id": "dogAdoption"
+    },
+    {
+      "text": "Köpekler, genç veya yaşlı, öğrenmeyi sever. Bir ödül ve bu dört temel kuralı ekleyin ve başarılı köpek ipucları için bir tarifimiz var!",
+      "title": "Köpek Eğitimi",
+      "link": "https://www.petfinder.com/dogs/dog-training/",
+      "id": "dogTraining"
+    },
+    {
+      "text": "Köpeğinizdeki sağlık endişelerini önlemeye yardımcı olmak için, bir değişiklik veya hastalık belirtisi için köpeğinizi düzenli olarak kontrol etme alışkanlığı kazanmak önemlidir.",
+      "title": "Köpek Kontrolleri",
+      "link": "https://www.purina.com.au/dogs/health/checklist#.YSdXnY4zZPY",
+      "id": "dogProblem"
+    }
+  ],
+  "checklistButton": "Devamını Oku",
+  "contactUs": {
+    "title": "İletişime Geç",
+    "text": "Bize Ulaş veya Mesaj at",
+    "button": "Gönder",
+    "placeholder0": "Email",
+    "placeholder1": "Mesaj"
+  },
+  "signUpModal": {
+    "title": "Hesap Oluştur",
+    "text": "veya email ile hesap oluştur",
+    "button": "Gönder",
+    "placeholder0": "Adınız",
+    "placeholder1": "Emailiniz",
+    "placeholder2": "Şifreniz"
+  },
+  "loginModal": {
+    "title": "Hesapla Giriş",
+    "text": "veya hesabınızla giriş yapın",
+    "button": "Gönder",
+    "placeholder0": "Email",
+    "placeholder1": "Şifreniz"
+  },
+  "footer": {
+    "title0": "Menü",
+    "title1": "SON PAYLAŞIMLAR",
+    "subTitleHome": "Ana Sayfa",
+    "subTitleAbout": "Hakkımızda",
+    "subTitleFindPet": "Dostunu Bul",
+    "subTitleBlog": "Blog",
+    "subTitleContact": "Bize Ulaş",
+    "subTitleResources": "Kaynaklar",
+    "allRights": "Tüm haklar Re:Coded şirketinde saklıdır",
+    "blogText0": "İş Stresini Ev Hayatınızdan Nasıl Uzak Tutabilirsiniz?",
+    "blogText1": "İşiniz haftada 40 saat veya daha fazla oturmanızı gerektiriyor mu?"
+  },
+  "searchPage": {
+    "option0": "Lokasyon",
+    "option1": "Yaş",
+    "option2": "Tür",
+    "option3": "Cinsiyet",
+    "button": "Sahiplen",
+    "gender": [{ "gender0": "Dişi" }, { "gender0": "Erkek" }],
+    "notFound": "Aradığınız Kriterde Arkadaş Bulunamadı",
+    "title": "Dost Sahiplen"
+  },
+  "personalPage": {
+    "title0": "Kişisel Bilgiler",
+    "title1": "Adres",
+    "subTitle0": "Tam Adınız",
+    "subTitle1": "Email",
+    "subTitle2": "Telefon",
+    "subTitle3": "Bio",
+    "subTitle4": "Şehir",
+    "subTitle5": "Bölge",
+    "subTitle6": "Sokak",
+    "subTitle7": "Posta Kodu",
+    "placeholder0": "İsminiz",
+    "placeholder1": "Email",
+    "placeholder2": "Numaranız",
+    "placeholder3": "Bio",
+    "placeholder4": "Şehir",
+    "placeholder5": "Bölge",
+    "placeholder6": "Sokak",
+    "placeholder7": "Posta Kodunuz",
+    "dropdown": "Şehir Şeç",
+    "button0": "Güncelle",
+    "button1": "İptal Et",
+    "sideText0": "Şehir",
+    "sideText1": "Bölge",
+    "sideText2": "Sokak",
+    "sideText3": "Posta Kodu",
+    "alert0": "Profiliniz Güncellendi"
+  },
+  "adoptionForm": {
+    "title": "Sahiplenme Formu",
+    "subTitle": "Formu Doldurun",
+    "placeholder0": "İsminiz",
+    "placeholder1": "Soyadınız",
+    "placeholder2": "Email Adresiniz",
+    "placeholder3": "Sahiplenilen Dostun İsmi",
+    "placeholder4": "Sahiplenilen Dostun Türü",
+    "placeholder5": "Şehir",
+    "button0": "Gönder",
+    "button1": "Kapat"
+  }
+}
