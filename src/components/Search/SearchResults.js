@@ -33,10 +33,10 @@ const SearchResults = ({ img, id, location, age, breed, gender, name }) => {
     };
     emailjs
       .send(
-        "service_gmz8yep",
-        "template_xfkp32m",
+        "service_71s2u1k",
+        "template_bq06lrm",
         emailParams,
-        "user_kzsnySDvDdrtgNCu03zXF"
+        "user_wB9r1kTnY69BGCuL7Bw3U"
       )
       .then((result) => {
         setMessage("your adoption application was sent to admins");
