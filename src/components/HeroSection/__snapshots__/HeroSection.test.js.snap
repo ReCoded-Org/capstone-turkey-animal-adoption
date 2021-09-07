@@ -22,7 +22,9 @@ exports[`renders correctly 1`] = `
         We are non-profit organization
       </p>
       <a
+        aria-current={null}
         href="/search"
+        onClick={[Function]}
       >
         <button
           className="findMeButton"
