@@ -30,6 +30,7 @@ const SearchResults = ({ img, id, location, age, breed, gender, name }) => {
       from_city: city,
       from_petname: name,
       from_petbreed: breed,
+      to_email: "aysebasar91@gmail.com",
     };
     emailjs
       .send(
