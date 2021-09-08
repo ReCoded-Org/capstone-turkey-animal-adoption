@@ -1,6 +1,7 @@
 import HeroSection from "./HeroSection.js";
 import React from "react";
 import renderer from "react-test-renderer";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const data = {
   img:
@@ -13,12 +14,14 @@ const data = {
 it("renders correctly", () => {
   const tree = renderer
     .create(
-      <HeroSection
-        img={data.img}
-        title={data.title}
-        text={data.text}
-        side={data.side}
-      />
+      <Router>
+        <HeroSection
+          img={data.img}
+          title={data.title}
+          text={data.text}
+          side={data.side}
+        />
+      </Router>
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
